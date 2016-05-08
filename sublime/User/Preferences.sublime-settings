@@ -104,6 +104,7 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Emmet",
 		"SublimeLinter-jshint",
 		"SublimeLinter-jsxhint",
 		"SublimeLinter-ruby",

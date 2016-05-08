@@ -1,5 +1,4 @@
 [
 	{ "keys": ["super+\\"], "command": "toggle_side_bar" },
-	{ "keys": ["super+ctrl+right"], "command": "alignment" },
 ]
 
