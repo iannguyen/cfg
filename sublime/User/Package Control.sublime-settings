@@ -1,0 +1,48 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"All Autocomplete",
+		"AutoFileName",
+		"Babel",
+		"Babel Snippets",
+		"BeautifyRuby",
+		"BracketHighlighter",
+		"Case Conversion",
+		"Chuby Ninja Color Scheme",
+		"Color Highlighter",
+		"ColorPicker",
+		"Emmet",
+		"FindKeyConflicts",
+		"Git",
+		"Git Config",
+		"GitGutter",
+		"gruvbox",
+		"HTML Nest Comments",
+		"HTML5",
+		"Javascript Beautify",
+		"JavaScript Completions",
+		"jQuery",
+		"Markdown Preview",
+		"Material Theme",
+		"Package Control",
+		"PackageResourceViewer",
+		"Pretty JSON",
+		"Random Everything",
+		"Sass",
+		"Schemr",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-jshint",
+		"SublimeLinter-jsxhint",
+		"SublimeLinter-ruby",
+		"Themes Menu Switcher",
+		"Trimmer"
+	]
+}
