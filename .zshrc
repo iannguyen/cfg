@@ -13,13 +13,15 @@ alias o="open"
 alias a="atom"
 alias subl="sublime"
 
-# atom
+# editor
 alias atomfolder="cd ~/.atom"
-alias sublfolder="cd Library/Application\ Support/Sublime\ Text\ 3"
+alias sublfolder="cd ~/Library/Application\ Support/Sublime\ Text\ 3"
 
 # shell
-alias bshcfg="atom ~/.bashrc"
-alias zshcfg="atom ~/.zshrc"
+alias bshcfg="sublime ~/.bashrc"
+alias zshcfg="sublime ~/.zshrc"
+alias gitcfg="sublime ~/.gitconfig"
+alias gitlst="sublime ~/.oh-my-zsh/plugins/git/git.plugin.zsh"
 alias ohmyzsh="cd ~/.oh-my-zsh"
 
 # ruby & rails
