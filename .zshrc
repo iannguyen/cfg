@@ -11,7 +11,7 @@ plugins=(git)
 # alias ..="cd .."
 alias o="open"
 alias a="atom"
-alias subl="sublime"
+alias sl="sublime"
 
 # editor
 alias atomfolder="cd ~/.atom"
