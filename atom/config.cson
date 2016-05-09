@@ -80,11 +80,7 @@
       "atom-material-ui"
       "gruvbox-plus-syntax"
     ]
-  "disable-keybindings":
-    prefixKeys: [
-      "ctrl-tab"
-      "ctrl-shift-tab"
-    ]
+  "disable-keybindings": {}
   editor:
     fontFamily: "DejaVu Sans Mono"
     fontSize: 16
