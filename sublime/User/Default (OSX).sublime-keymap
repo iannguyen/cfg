@@ -12,6 +12,5 @@
 		"command": "move_tab",
 		"args": { "position": "+1" }
 	}
-
 ]
 
