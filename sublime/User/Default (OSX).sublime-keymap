@@ -1,5 +1,6 @@
 [
 	{ "keys": ["super+\\"], "command": "toggle_side_bar" },
 	{ "keys": ["super+ctrl+right"], "command": "alignment" },
+	{ "keys": ["ctrl+."], "command": "erb" },
 	{ "keys": ["ctrl+e"], "command": "expand_as_you_type" },
 ]

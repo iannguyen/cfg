@@ -19,7 +19,9 @@ alias ohmyzsh="cd ~/.oh-my-zsh"
 # ruby & rails
 alias be="bundle exec"
 alias bi="bundle install"
-alias bers="WEB_ROOT=localhost:3000 bundle exec rails s -b 127.0.0.1"
+alias rdb="rails db"
+alias rc="rails c"
+alias rs="WEB_ROOT=localhost:3000 bundle exec rails s -b 127.0.0.1"
 
 # LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
 if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
