@@ -85,6 +85,7 @@
     fontFamily: "DejaVu Sans Mono"
     fontSize: 16
     invisibles: {}
+    lineHeight: 1.25
     preferredLineLength: 250
     scrollPastEnd: true
     showIndentGuide: true

@@ -44,9 +44,7 @@
 		"SideBarEnhancements",
 		"SublimeERB",
 		"SublimeLinter",
-		"SublimeLinter-jshint",
-		"SublimeLinter-jsxhint",
-		"SublimeLinter-ruby",
+		"SublimeLinter-rubocop",
 		"Themes Menu Switcher",
 		"Trimmer"
 	]

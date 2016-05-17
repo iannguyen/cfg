@@ -17,18 +17,25 @@
                 "args": [],
                 "excludes": []
             },
+            "rubocop": {
+                "@disable": false,
+                "args": [],
+                "excludes": []
+            },
             "ruby": {
                 "@disable": false,
                 "args": [],
                 "excludes": []
             }
         },
-        "mark_style": "fill",
+        "mark_style": "stippled underline",
         "no_column_highlights_line": false,
         "passive_warnings": false,
         "paths": {
             "linux": [],
-            "osx": [],
+            "osx": [
+                "~/.rbenv/shims"
+            ],
             "windows": []
         },
         "python_paths": {

@@ -1,0 +1,106 @@
+[
+    {
+        "children": [
+            {
+                "caption": "Theme", 
+                "children": [
+                    {
+                        "caption": "Material Theme", 
+                        "children": [
+                            {
+                                "caption": "Material Theme", 
+                                "command": "switchtheme", 
+                                "args": {
+                                    "name": "Material-Theme.sublime-theme"
+                                }
+                            }, 
+                            {
+                                "caption": "Material Theme Darker", 
+                                "command": "switchtheme", 
+                                "args": {
+                                    "name": "Material-Theme-Darker.sublime-theme"
+                                }
+                            }, 
+                            {
+                                "caption": "Material Theme Lighter", 
+                                "command": "switchtheme", 
+                                "args": {
+                                    "name": "Material-Theme-Lighter.sublime-theme"
+                                }
+                            }
+                        ]
+                    }, 
+                    {
+                        "caption": "Theme - Default", 
+                        "children": [
+                            {
+                                "caption": "Default", 
+                                "command": "switchtheme", 
+                                "args": {
+                                    "name": "Default.sublime-theme"
+                                }
+                            }
+                        ]
+                    }, 
+                    {
+                        "caption": "gruvbox", 
+                        "children": [
+                            {
+                                "caption": "gruvbox (Dark) (Hard)", 
+                                "command": "switchtheme", 
+                                "args": {
+                                    "name": "gruvbox (Dark) (Hard).sublime-theme"
+                                }
+                            }, 
+                            {
+                                "caption": "gruvbox (Dark) (Medium)", 
+                                "command": "switchtheme", 
+                                "args": {
+                                    "name": "gruvbox (Dark) (Medium).sublime-theme"
+                                }
+                            }, 
+                            {
+                                "caption": "gruvbox (Dark) (Soft)", 
+                                "command": "switchtheme", 
+                                "args": {
+                                    "name": "gruvbox (Dark) (Soft).sublime-theme"
+                                }
+                            }, 
+                            {
+                                "caption": "gruvbox (Light) (Hard)", 
+                                "command": "switchtheme", 
+                                "args": {
+                                    "name": "gruvbox (Light) (Hard).sublime-theme"
+                                }
+                            }, 
+                            {
+                                "caption": "gruvbox (Light) (Medium)", 
+                                "command": "switchtheme", 
+                                "args": {
+                                    "name": "gruvbox (Light) (Medium).sublime-theme"
+                                }
+                            }, 
+                            {
+                                "caption": "gruvbox (Light) (Soft)", 
+                                "command": "switchtheme", 
+                                "args": {
+                                    "name": "gruvbox (Light) (Soft).sublime-theme"
+                                }
+                            }
+                        ]
+                    }, 
+                    {
+                        "caption": "-", 
+                        "id": "separator"
+                    }, 
+                    {
+                        "caption": "Refresh Theme Cache", 
+                        "command": "refresh"
+                    }
+                ], 
+                "id": "themes"
+            }
+        ], 
+        "id": "preferences"
+    }
+]
