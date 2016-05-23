@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
     <key>name</key>
@@ -5131,7 +5131,7 @@
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
-                <string></string>
+                <string />
                 <key>foreground</key>
                 <string>#525252</string>
             </dict>
@@ -5144,7 +5144,7 @@
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
-                <string></string>
+                <string />
                 <key>foreground</key>
                 <string>#525252</string>
             </dict>
@@ -5170,7 +5170,7 @@
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
-                <string></string>
+                <string />
                 <key>foreground</key>
                 <string>#060d31</string>
             </dict>
@@ -5183,7 +5183,7 @@
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
-                <string></string>
+                <string />
                 <key>foreground</key>
                 <string>#9d9036</string>
             </dict>
@@ -5196,7 +5196,7 @@
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
-                <string></string>
+                <string />
                 <key>foreground</key>
                 <string>#9e79d0</string>
             </dict>
@@ -5209,7 +5209,7 @@
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
-                <string></string>
+                <string />
                 <key>foreground</key>
                 <string>#98ff46</string>
             </dict>
@@ -5222,7 +5222,7 @@
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
-                <string></string>
+                <string />
                 <key>foreground</key>
                 <string>#9e79d0</string>
             </dict>
@@ -5235,7 +5235,7 @@
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
-                <string></string>
+                <string />
                 <key>foreground</key>
                 <string>#c5e28d</string>
             </dict>
@@ -5274,7 +5274,7 @@
                 <key>background</key>
                 <string>#0c0d00</string>
                 <key>fontStyle</key>
-                <string></string>
+                <string />
                 <key>foreground</key>
                 <string>#89ac3e</string>
             </dict>
@@ -5287,7 +5287,7 @@
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
-                <string></string>
+                <string />
                 <key>foreground</key>
                 <string>#ffffff</string>
             </dict>
@@ -5302,7 +5302,7 @@
                 <key>background</key>
                 <string>#0416521A</string>
                 <key>fontStyle</key>
-                <string></string>
+                <string />
                 <key>foreground</key>
                 <string>#4398f0</string>
             </dict>
@@ -5315,7 +5315,7 @@
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
-                <string></string>
+                <string />
                 <key>foreground</key>
                 <string>#1965b3</string>
             </dict>
@@ -5366,7 +5366,7 @@
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
-                <string></string>
+                <string />
                 <key>foreground</key>
                 <string>#808080</string>
             </dict>
@@ -5455,7 +5455,7 @@
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
-                <string></string>
+                <string />
                 <key>foreground</key>
                 <string>#666666</string>
             </dict>
@@ -5725,7 +5725,7 @@
                 <key>background</key>
                 <string>#150d0a</string>
                 <key>fontStyle</key>
-                <string></string>
+                <string />
                 <key>foreground</key>
                 <string>#bcbcbc</string>
             </dict>
@@ -5902,7 +5902,7 @@
             </dict>
         </dict>
 
-        <!-- Below definitions belong to thirdparty plugins. -->
+        
         <dict>
             <key>name</key>
             <string>WordHighlight</string>
@@ -5929,7 +5929,7 @@
                 <string>#FF420077</string>
             </dict>
         </dict>
-        <!-- Support for GitGutter -->
+        
         <dict>
             <key>name</key>
             <string>GitGutter deleted</string>
@@ -5985,7 +5985,37 @@
                 <string>#565656</string>
             </dict>
         </dict>
-    </array>
+    <dict>
+            <key>name</key>
+            <string>SublimeLinter Warning</string>
+            <key>scope</key>
+            <string>sublimelinter.mark.warning</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#DDB700</string>
+            </dict>
+        </dict><dict>
+            <key>name</key>
+            <string>SublimeLinter Error</string>
+            <key>scope</key>
+            <string>sublimelinter.mark.error</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#D02000</string>
+            </dict>
+        </dict><dict>
+            <key>name</key>
+            <string>SublimeLinter Gutter Mark</string>
+            <key>scope</key>
+            <string>sublimelinter.gutter-mark</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFFFFF</string>
+            </dict>
+        </dict></array>
     <key>uuid</key>
     <string>BF4E1964-0DB9-4E88-8142-E8F52D7EDEEC</string>
 </dict>

@@ -22,6 +22,10 @@ alias bi="bundle install"
 alias rdb="rails db"
 alias rc="rails c"
 alias rs="WEB_ROOT=localhost:3000 bundle exec rails s -b 127.0.0.1"
+alias wrs="WRENCH=hot WEB_ROOT=localhost:3000 bundle exec rails s -b 127.0.0.1"
+
+# wrench
+alias nrd="npm run dev"
 
 # LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
 if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
