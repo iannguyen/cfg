@@ -40,8 +40,8 @@
 	"bold_folder_labels": false,
 	"caret_extra_bottom": 0,
 	"caret_extra_top": 0,
-	"caret_extra_width": 0,
-	"caret_style": "smooth",
+	"caret_extra_width": 1,
+	"caret_style": "phase",
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/User/SublimeLinter/1337 (SL).tmTheme",
 	"copy_with_empty_selection": true,
@@ -96,8 +96,8 @@
 	"font_options":
 	[
 	],
-	"font_size": 15,
-	"gpu_window_buffer": "auto",
+	"font_size": 16,
+	"gpu_window_buffer": true,
 	"gutter": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": false,
