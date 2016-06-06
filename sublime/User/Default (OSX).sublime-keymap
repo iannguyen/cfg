@@ -3,4 +3,5 @@
 	{ "keys": ["super+ctrl+right"], "command": "alignment" },
 	{ "keys": ["ctrl+."], "command": "erb" },
 	{ "keys": ["ctrl+e"], "command": "expand_as_you_type" },
+  {"keys": ["super+ctrl+left"], "command": "reindent", "args": {"single_line": false}}
 ]

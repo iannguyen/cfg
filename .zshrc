@@ -51,7 +51,7 @@ export VISUAL=vim
 export EDITOR=$VISUAL
 export DISABLE_AUTO_TITLE=true
 
-export PATH="$HOME/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:$PATH"
 eval "$(rbenv init -)"
 # export PATH="/usr/local/bin:$PATH"
 # export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/iannguyen/.rvm/gems/ruby-2.2.4/bin:/Users/iannguyen/.rvm/gems/ruby-2.2.4@global/bin:/Users/iannguyen/.rvm/rubies/ruby-2.2.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/iannguyen/.rvm/bin:/Users/iannguyen/.rvm/bin"
