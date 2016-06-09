@@ -19,8 +19,8 @@ alias ohmyzsh="cd ~/.oh-my-zsh"
 # ruby & rails
 alias be="bundle exec"
 alias bi="bundle install"
-alias rdb="rails db"
-alias rc="rails c"
+alias rdb="bundle exec rails db"
+alias rc="bundle exec rails c"
 alias rs="WEB_ROOT=localhost:3000 bundle exec rails s -b 127.0.0.1"
 alias wrs="WRENCH=hot WEB_ROOT=localhost:3000 bundle exec rails s -b 127.0.0.1"
 
@@ -46,8 +46,8 @@ fi
 export NVM_DIR="/Users/iannguyen/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# Use VIM as visual editor
-export VISUAL=vim
+# Use sublime as visual editor
+export VISUAL='sublime -w'
 export EDITOR=$VISUAL
 export DISABLE_AUTO_TITLE=true
 

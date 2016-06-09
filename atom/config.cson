@@ -53,11 +53,11 @@
   "atom-material-ui":
     colors:
       abaseColor:
-        red: 96
-        green: 125
-        blue: 139
+        red: 126
+        green: 126
+        blue: 126
         alpha: 1
-      predefinedColor: "Blue Grey"
+      predefinedColor: "Grey"
     fonts:
       fontSize: 15
     tabs:
@@ -78,7 +78,7 @@
     excludeVcsIgnoredPaths: false
     themes: [
       "atom-material-ui"
-      "gruvbox-plus-syntax"
+      "flame"
     ]
   "disable-keybindings": {}
   editor:
