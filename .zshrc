@@ -19,6 +19,7 @@ alias ohmyzsh="cd ~/.oh-my-zsh"
 # ruby & rails
 alias be="bundle exec"
 alias bi="bundle install"
+alias rake="bundle exec rake"
 alias rdb="bundle exec rails db"
 alias rc="bundle exec rails c"
 alias rs="WEB_ROOT=localhost:3000 bundle exec rails s -b 127.0.0.1"

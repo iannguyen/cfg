@@ -37,7 +37,7 @@
 		"*.jar",
 		"*.zip"
 	],
-	"bold_folder_labels": false,
+	"bold_folder_labels": true,
 	"caret_extra_bottom": 0,
 	"caret_extra_top": 0,
 	"caret_extra_width": 1,
@@ -145,6 +145,7 @@
 	"remember_open_files": true,
 	"rulers":
 	[
+		120
 	],
 	"save_on_focus_lost": false,
 	"scroll_past_end": true,
@@ -169,5 +170,5 @@
 	"use_tab_stops": true,
 	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
 	"word_wrap": "auto",
-	"wrap_width": 0
+	"wrap_width": 80
 }
