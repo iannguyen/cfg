@@ -105,6 +105,7 @@
 	"ignored_packages":
 	[
 		"MarkdownEditing",
+		"RuboCop",
 		"Vintage"
 	],
 	"indent_guide_options":
@@ -169,6 +170,6 @@
 	"use_simple_full_screen": false,
 	"use_tab_stops": true,
 	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
-	"word_wrap": "auto",
-	"wrap_width": 80
+	"word_wrap": true,
+	"wrap_width": "auto"
 }

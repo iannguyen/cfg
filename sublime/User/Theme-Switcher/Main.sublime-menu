@@ -9,24 +9,24 @@
                         "children": [
                             {
                                 "caption": "Material Theme", 
-                                "command": "switchtheme", 
                                 "args": {
                                     "name": "Material-Theme.sublime-theme"
-                                }
+                                }, 
+                                "command": "switchtheme"
                             }, 
                             {
                                 "caption": "Material Theme Darker", 
-                                "command": "switchtheme", 
                                 "args": {
                                     "name": "Material-Theme-Darker.sublime-theme"
-                                }
+                                }, 
+                                "command": "switchtheme"
                             }, 
                             {
                                 "caption": "Material Theme Lighter", 
-                                "command": "switchtheme", 
                                 "args": {
                                     "name": "Material-Theme-Lighter.sublime-theme"
-                                }
+                                }, 
+                                "command": "switchtheme"
                             }
                         ]
                     }, 
@@ -35,10 +35,10 @@
                         "children": [
                             {
                                 "caption": "Default", 
-                                "command": "switchtheme", 
                                 "args": {
                                     "name": "Default.sublime-theme"
-                                }
+                                }, 
+                                "command": "switchtheme"
                             }
                         ]
                     }, 
@@ -47,45 +47,45 @@
                         "children": [
                             {
                                 "caption": "gruvbox (Dark) (Hard)", 
-                                "command": "switchtheme", 
                                 "args": {
                                     "name": "gruvbox (Dark) (Hard).sublime-theme"
-                                }
+                                }, 
+                                "command": "switchtheme"
                             }, 
                             {
                                 "caption": "gruvbox (Dark) (Medium)", 
-                                "command": "switchtheme", 
                                 "args": {
                                     "name": "gruvbox (Dark) (Medium).sublime-theme"
-                                }
+                                }, 
+                                "command": "switchtheme"
                             }, 
                             {
                                 "caption": "gruvbox (Dark) (Soft)", 
-                                "command": "switchtheme", 
                                 "args": {
                                     "name": "gruvbox (Dark) (Soft).sublime-theme"
-                                }
+                                }, 
+                                "command": "switchtheme"
                             }, 
                             {
                                 "caption": "gruvbox (Light) (Hard)", 
-                                "command": "switchtheme", 
                                 "args": {
                                     "name": "gruvbox (Light) (Hard).sublime-theme"
-                                }
+                                }, 
+                                "command": "switchtheme"
                             }, 
                             {
                                 "caption": "gruvbox (Light) (Medium)", 
-                                "command": "switchtheme", 
                                 "args": {
                                     "name": "gruvbox (Light) (Medium).sublime-theme"
-                                }
+                                }, 
+                                "command": "switchtheme"
                             }, 
                             {
                                 "caption": "gruvbox (Light) (Soft)", 
-                                "command": "switchtheme", 
                                 "args": {
                                     "name": "gruvbox (Light) (Soft).sublime-theme"
-                                }
+                                }, 
+                                "command": "switchtheme"
                             }
                         ]
                     }, 

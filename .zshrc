@@ -1,3 +1,30 @@
+##### ZSH #####
+
+ZSH_THEME="kennethreitz"
+plugins=(git)
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/iannguyen/.oh-my-zsh"
+# User configuration
+source $ZSH/oh-my-zsh.sh
+
+##### Exports #####
+
+# LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
+if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
+  . $LUNCHY_DIR/lunchy-completion.zsh
+fi
+
+export NVM_DIR="/Users/iannguyen/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="$PATH:$HOME/.rbenv/bin:$HOME/.rbenv/shims:$HOME/usr/local/bin:$HOME/usr/bin:$HOME/bin"
+eval "$(rbenv init -)"
+
+# Use sublime as visual editor
+export VISUAL='sublime -w'
+export EDITOR=$VISUAL
+export DISABLE_AUTO_TITLE=true
+
 ##### Aliases #####
 
 # terminal
@@ -23,37 +50,15 @@ alias rake="bundle exec rake"
 alias rdb="bundle exec rails db"
 alias rc="bundle exec rails c"
 alias rs="WEB_ROOT=localhost:3000 bundle exec rails s -b 127.0.0.1"
-alias wrs="WRENCH=hot WEB_ROOT=localhost:3000 bundle exec rails s -b 127.0.0.1"
 
 # wrench
 alias nrd="npm run dev"
 
-##### ZSH #####
 
-ZSH_THEME="kennethreitz"
-plugins=(git)
-# Path to your oh-my-zsh installation.
-export ZSH=/Users/iannguyen/.oh-my-zsh
-# User configuration
-source $ZSH/oh-my-zsh.sh
 
-##### Exports #####
+# Other
 
-# LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
-if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
-  . $LUNCHY_DIR/lunchy-completion.zsh
-fi
 
-export NVM_DIR="/Users/iannguyen/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# Use sublime as visual editor
-export VISUAL='sublime -w'
-export EDITOR=$VISUAL
-export DISABLE_AUTO_TITLE=true
-
-export PATH="$HOME/.rbenv/bin:/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:$PATH"
-eval "$(rbenv init -)"
 # export PATH="/usr/local/bin:$PATH"
 # export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/iannguyen/.rvm/gems/ruby-2.2.4/bin:/Users/iannguyen/.rvm/gems/ruby-2.2.4@global/bin:/Users/iannguyen/.rvm/rubies/ruby-2.2.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/iannguyen/.rvm/bin:/Users/iannguyen/.rvm/bin"
-
