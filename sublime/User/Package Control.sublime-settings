@@ -19,6 +19,7 @@
 		"Color Highlighter",
 		"Emmet",
 		"FindKeyConflicts",
+		"FireCode Color Scheme",
 		"Git",
 		"Git Config",
 		"GitGutter",
@@ -37,6 +38,7 @@
 		"Monokai - Spacegray",
 		"Monokai Extended",
 		"MoveTab",
+		"muukii",
 		"Package Control",
 		"PackageResourceViewer",
 		"Pretty JSON",
@@ -50,6 +52,7 @@
 		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-rubocop",
 		"Themes Menu Switcher",
-		"Trimmer"
+		"Trimmer",
+		"Wombat Color Scheme"
 	]
 }
