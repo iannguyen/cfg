@@ -1,6 +1,11 @@
 {
 	"extensions":
 	[
-		"jsx"
-	]
+		"jsx",
+    "js",
+    "scss",
+    "css",
+    "sass",
+	],
+  "color_scheme": "Packages/Atomic Color Scheme/Atomic.tmTheme",
 }
