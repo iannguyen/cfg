@@ -2676,7 +2676,7 @@
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 593 592 584 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3 7 1914 1168 0 0 1920 1177 </string>
+	<string>0 8 1680 1014 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 101 1680 748 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_A79A78D6-0857-4856-9B2F-2A6318C25688</key>
@@ -4284,7 +4284,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>46208BE9-0C7C-4879-B317-CD9442A11DCC</string>
 	<key>NoSyncLastTipTime</key>
-	<real>491345203.52206302</real>
+	<real>491932745.56146699</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -4342,6 +4342,12 @@
 		<string>0039</string>
 		<string>0040</string>
 		<string>0041</string>
+		<string>0042</string>
+		<string>0043</string>
+		<string>0044</string>
+		<string>0045</string>
+		<string>0046</string>
+		<string>0047</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -4413,7 +4419,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-07-27T20:34:38Z</date>
+	<date>2016-08-03T15:58:13Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -12952,13 +12958,21 @@
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>1168</real>
+				<real>1200</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
 				<false/>
 				<key>Is Hotkey Window</key>
 				<false/>
+				<key>Old Height</key>
+				<real>0.0</real>
+				<key>Old Width</key>
+				<real>0.0</real>
+				<key>Old X Origin</key>
+				<real>0.0</real>
+				<key>Old Y Origin</key>
+				<real>0.0</real>
 				<key>Saved Window Type</key>
 				<integer>0</integer>
 				<key>Screen</key>
@@ -13869,9 +13883,9 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>80</integer>
+										<integer>83</integer>
 										<key>Server PID</key>
-										<integer>6867</integer>
+										<integer>19663</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -13894,9 +13908,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1124</real>
+										<real>1178</real>
 										<key>width</key>
-										<real>956</real>
+										<real>959</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -14803,9 +14817,9 @@
 													<string>Shell Launcher</string>
 												</dict>
 												<key>Rows</key>
-												<integer>39</integer>
+												<integer>41</integer>
 												<key>Server PID</key>
-												<integer>6869</integer>
+												<integer>19665</integer>
 												<key>Session Default Name</key>
 												<string>Mein</string>
 												<key>Session GUID</key>
@@ -14828,9 +14842,9 @@
 											<key>frame</key>
 											<dict>
 												<key>height</key>
-												<real>561</real>
+												<real>588</real>
 												<key>width</key>
-												<real>957</real>
+												<real>960</real>
 												<key>x</key>
 												<real>0.0</real>
 												<key>y</key>
@@ -15734,9 +15748,9 @@
 													<string>Shell Launcher</string>
 												</dict>
 												<key>Rows</key>
-												<integer>39</integer>
+												<integer>41</integer>
 												<key>Server PID</key>
-												<integer>6872</integer>
+												<integer>19667</integer>
 												<key>Session Default Name</key>
 												<string>Mein</string>
 												<key>Session GUID</key>
@@ -15759,13 +15773,13 @@
 											<key>frame</key>
 											<dict>
 												<key>height</key>
-												<real>562</real>
+												<real>589</real>
 												<key>width</key>
-												<real>957</real>
+												<real>960</real>
 												<key>x</key>
 												<real>0.0</real>
 												<key>y</key>
-												<real>562</real>
+												<real>589</real>
 											</dict>
 										</dict>
 									</array>
@@ -15774,11 +15788,11 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1124</real>
+										<real>1178</real>
 										<key>width</key>
-										<real>957</real>
+										<real>960</real>
 										<key>x</key>
-										<real>957</real>
+										<real>960</real>
 										<key>y</key>
 										<real>0.0</real>
 									</dict>
@@ -15791,9 +15805,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>1124</real>
+								<real>1178</real>
 								<key>width</key>
-								<real>1914</real>
+								<real>1920</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -16705,9 +16719,9 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>80</integer>
+										<integer>83</integer>
 										<key>Server PID</key>
-										<integer>6891</integer>
+										<integer>19672</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -16730,9 +16744,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1124</real>
+										<real>1178</real>
 										<key>width</key>
-										<real>956</real>
+										<real>959</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -17639,9 +17653,9 @@
 													<string>Shell Launcher</string>
 												</dict>
 												<key>Rows</key>
-												<integer>39</integer>
+												<integer>41</integer>
 												<key>Server PID</key>
-												<integer>6909</integer>
+												<integer>19691</integer>
 												<key>Session Default Name</key>
 												<string>Mein</string>
 												<key>Session GUID</key>
@@ -17664,9 +17678,9 @@
 											<key>frame</key>
 											<dict>
 												<key>height</key>
-												<real>561</real>
+												<real>588</real>
 												<key>width</key>
-												<real>957</real>
+												<real>960</real>
 												<key>x</key>
 												<real>0.0</real>
 												<key>y</key>
@@ -18570,9 +18584,9 @@
 													<string>Shell Launcher</string>
 												</dict>
 												<key>Rows</key>
-												<integer>39</integer>
+												<integer>41</integer>
 												<key>Server PID</key>
-												<integer>6968</integer>
+												<integer>19719</integer>
 												<key>Session Default Name</key>
 												<string>Mein</string>
 												<key>Session GUID</key>
@@ -18595,13 +18609,13 @@
 											<key>frame</key>
 											<dict>
 												<key>height</key>
-												<real>562</real>
+												<real>589</real>
 												<key>width</key>
-												<real>957</real>
+												<real>960</real>
 												<key>x</key>
 												<real>0.0</real>
 												<key>y</key>
-												<real>562</real>
+												<real>589</real>
 											</dict>
 										</dict>
 									</array>
@@ -18610,11 +18624,11 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1124</real>
+										<real>1178</real>
 										<key>width</key>
-										<real>957</real>
+										<real>960</real>
 										<key>x</key>
-										<real>957</real>
+										<real>960</real>
 										<key>y</key>
 										<real>0.0</real>
 									</dict>
@@ -18627,9 +18641,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>1124</real>
+								<real>1178</real>
 								<key>width</key>
-								<real>1914</real>
+								<real>1920</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -19541,9 +19555,9 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>80</integer>
+										<integer>83</integer>
 										<key>Server PID</key>
-										<integer>7095</integer>
+										<integer>19792</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -19566,9 +19580,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1124</real>
+										<real>1178</real>
 										<key>width</key>
-										<real>956</real>
+										<real>959</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -20475,9 +20489,9 @@
 													<string>Shell Launcher</string>
 												</dict>
 												<key>Rows</key>
-												<integer>39</integer>
+												<integer>41</integer>
 												<key>Server PID</key>
-												<integer>7256</integer>
+												<integer>19946</integer>
 												<key>Session Default Name</key>
 												<string>Mein</string>
 												<key>Session GUID</key>
@@ -20500,9 +20514,9 @@
 											<key>frame</key>
 											<dict>
 												<key>height</key>
-												<real>561</real>
+												<real>588</real>
 												<key>width</key>
-												<real>957</real>
+												<real>960</real>
 												<key>x</key>
 												<real>0.0</real>
 												<key>y</key>
@@ -21406,9 +21420,9 @@
 													<string>Shell Launcher</string>
 												</dict>
 												<key>Rows</key>
-												<integer>39</integer>
+												<integer>41</integer>
 												<key>Server PID</key>
-												<integer>7411</integer>
+												<integer>20081</integer>
 												<key>Session Default Name</key>
 												<string>Mein</string>
 												<key>Session GUID</key>
@@ -21431,13 +21445,13 @@
 											<key>frame</key>
 											<dict>
 												<key>height</key>
-												<real>562</real>
+												<real>589</real>
 												<key>width</key>
-												<real>957</real>
+												<real>960</real>
 												<key>x</key>
 												<real>0.0</real>
 												<key>y</key>
-												<real>562</real>
+												<real>589</real>
 											</dict>
 										</dict>
 									</array>
@@ -21446,11 +21460,11 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1124</real>
+										<real>1178</real>
 										<key>width</key>
-										<real>957</real>
+										<real>960</real>
 										<key>x</key>
-										<real>957</real>
+										<real>960</real>
 										<key>y</key>
 										<real>0.0</real>
 									</dict>
@@ -21463,9 +21477,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>1124</real>
+								<real>1178</real>
 								<key>width</key>
-								<real>1914</real>
+								<real>1920</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -22377,9 +22391,9 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>80</integer>
+										<integer>83</integer>
 										<key>Server PID</key>
-										<integer>7601</integer>
+										<integer>20268</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -22395,16 +22409,16 @@
 										<key>TTY</key>
 										<string>/dev/ttys009</string>
 										<key>Working Directory</key>
-										<string>/Users/iannguyen/Desktop/procore-home</string>
+										<string>/Users/iannguyen/Desktop/cfg</string>
 									</dict>
 									<key>View Type</key>
 									<string>SessionView</string>
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1124</real>
+										<real>1178</real>
 										<key>width</key>
-										<real>956</real>
+										<real>959</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -23311,9 +23325,9 @@
 													<string>Shell Launcher</string>
 												</dict>
 												<key>Rows</key>
-												<integer>39</integer>
+												<integer>41</integer>
 												<key>Server PID</key>
-												<integer>7807</integer>
+												<integer>20467</integer>
 												<key>Session Default Name</key>
 												<string>Mein</string>
 												<key>Session GUID</key>
@@ -23329,16 +23343,16 @@
 												<key>TTY</key>
 												<string>/dev/ttys010</string>
 												<key>Working Directory</key>
-												<string>/Users/iannguyen/Desktop/procore-home</string>
+												<string>/Users/iannguyen/Desktop/procore-home/documentation</string>
 											</dict>
 											<key>View Type</key>
 											<string>SessionView</string>
 											<key>frame</key>
 											<dict>
 												<key>height</key>
-												<real>562</real>
+												<real>588</real>
 												<key>width</key>
-												<real>957</real>
+												<real>960</real>
 												<key>x</key>
 												<real>0.0</real>
 												<key>y</key>
@@ -24242,9 +24256,9 @@
 													<string>Shell Launcher</string>
 												</dict>
 												<key>Rows</key>
-												<integer>39</integer>
+												<integer>41</integer>
 												<key>Server PID</key>
-												<integer>8034</integer>
+												<integer>20635</integer>
 												<key>Session Default Name</key>
 												<string>Mein</string>
 												<key>Session GUID</key>
@@ -24267,13 +24281,13 @@
 											<key>frame</key>
 											<dict>
 												<key>height</key>
-												<real>561</real>
+												<real>589</real>
 												<key>width</key>
-												<real>957</real>
+												<real>960</real>
 												<key>x</key>
 												<real>0.0</real>
 												<key>y</key>
-												<real>563</real>
+												<real>589</real>
 											</dict>
 										</dict>
 									</array>
@@ -24282,11 +24296,11 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1124</real>
+										<real>1178</real>
 										<key>width</key>
-										<real>957</real>
+										<real>960</real>
 										<key>x</key>
-										<real>957</real>
+										<real>960</real>
 										<key>y</key>
 										<real>0.0</real>
 									</dict>
@@ -24299,9 +24313,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>1124</real>
+								<real>1178</real>
 								<key>width</key>
-								<real>1914</real>
+								<real>1920</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -24315,13 +24329,13 @@
 				<key>TerminalGuid</key>
 				<string>pty-F5629C51-62FC-4117-B6B8-71BAF50F72E3</string>
 				<key>Width</key>
-				<real>1914</real>
+				<real>1920</real>
 				<key>Window Type</key>
-				<integer>0</integer>
+				<integer>4</integer>
 				<key>X Origin</key>
-				<real>3</real>
+				<real>0.0</real>
 				<key>Y Origin</key>
-				<real>7</real>
+				<real>0.0</real>
 			</dict>
 		</array>
 	</dict>
