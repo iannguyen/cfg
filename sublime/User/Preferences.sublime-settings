@@ -96,7 +96,7 @@
 	"font_options":
 	[
 	],
-	"font_size": 16,
+	"font_size": 14,
 	"gpu_window_buffer": true,
 	"gutter": true,
 	"highlight_line": true,
