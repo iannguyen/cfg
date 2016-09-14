@@ -2561,7 +2561,7 @@
 		</dict>
 	</dict>
 	<key>Default Arrangement Name</key>
-	<string>Vertical</string>
+	<string>Single</string>
 	<key>Default Bookmark Guid</key>
 	<string>A79A78D6-0857-4856-9B2F-2A6318C25688</string>
 	<key>DimBackgroundWindows</key>
@@ -2674,11 +2674,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>650 607 620 392 0 0 1920 1200 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1004 534 796 473 -1080 -486 1080 1920 </string>
+	<string>2221 486 937 464 1920 0 1920 1080 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 593 592 584 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1077 -485 1074 1896 -1080 -486 1080 1897 </string>
+	<string>0 9 1914 1042 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 101 1680 748 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_A79A78D6-0857-4856-9B2F-2A6318C25688</key>
@@ -4439,7 +4439,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-09-12T03:33:52Z</date>
+	<date>2016-09-13T17:12:38Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -4504,13 +4504,13 @@
 				<key>Old Width</key>
 				<real>400</real>
 				<key>Old X Origin</key>
-				<real>226</real>
+				<real>-1694</real>
 				<key>Old Y Origin</key>
 				<real>130</real>
 				<key>Saved Window Type</key>
 				<integer>4</integer>
 				<key>Screen</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>Selected Tab Index</key>
 				<integer>0</integer>
 				<key>Tabs</key>
@@ -5397,7 +5397,7 @@
 										<key>Bookmark Name</key>
 										<string>Mein</string>
 										<key>Columns</key>
-										<integer>135</integer>
+										<integer>73</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -5419,7 +5419,7 @@
 										<key>Rows</key>
 										<integer>75</integer>
 										<key>Server PID</key>
-										<integer>623</integer>
+										<integer>21955</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -5444,7 +5444,7 @@
 										<key>height</key>
 										<real>1058</real>
 										<key>width</key>
-										<real>959</real>
+										<real>525</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -6328,7 +6328,7 @@
 										<key>Bookmark Name</key>
 										<string>Mein</string>
 										<key>Columns</key>
-										<integer>135</integer>
+										<integer>197</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -6350,7 +6350,7 @@
 										<key>Rows</key>
 										<integer>75</integer>
 										<key>Server PID</key>
-										<integer>625</integer>
+										<integer>21958</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -6375,9 +6375,9 @@
 										<key>height</key>
 										<real>1058</real>
 										<key>width</key>
-										<real>960</real>
+										<real>1394</real>
 										<key>x</key>
-										<real>960</real>
+										<real>526</real>
 										<key>y</key>
 										<real>0.0</real>
 									</dict>
@@ -7304,7 +7304,7 @@
 										<key>Rows</key>
 										<integer>75</integer>
 										<key>Server PID</key>
-										<integer>632</integer>
+										<integer>21968</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -8235,7 +8235,7 @@
 										<key>Rows</key>
 										<integer>75</integer>
 										<key>Server PID</key>
-										<integer>646</integer>
+										<integer>21981</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -9189,7 +9189,7 @@
 										<key>Rows</key>
 										<integer>75</integer>
 										<key>Server PID</key>
-										<integer>663</integer>
+										<integer>22004</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -10120,7 +10120,7 @@
 										<key>Rows</key>
 										<integer>75</integer>
 										<key>Server PID</key>
-										<integer>726</integer>
+										<integer>22075</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -11074,7 +11074,7 @@
 										<key>Rows</key>
 										<integer>75</integer>
 										<key>Server PID</key>
-										<integer>830</integer>
+										<integer>22191</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -12005,7 +12005,7 @@
 										<key>Rows</key>
 										<integer>75</integer>
 										<key>Server PID</key>
-										<integer>978</integer>
+										<integer>22359</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -12959,7 +12959,7 @@
 										<key>Rows</key>
 										<integer>75</integer>
 										<key>Server PID</key>
-										<integer>1126</integer>
+										<integer>22535</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -13893,7 +13893,7 @@
 												<key>Rows</key>
 												<integer>37</integer>
 												<key>Server PID</key>
-												<integer>1290</integer>
+												<integer>22702</integer>
 												<key>Session Default Name</key>
 												<string>Mein</string>
 												<key>Session GUID</key>
@@ -14824,7 +14824,7 @@
 												<key>Rows</key>
 												<integer>37</integer>
 												<key>Server PID</key>
-												<integer>1473</integer>
+												<integer>22866</integer>
 												<key>Session Default Name</key>
 												<string>Mein</string>
 												<key>Session GUID</key>
@@ -14899,7 +14899,7 @@
 				<key>Window Type</key>
 				<integer>4</integer>
 				<key>X Origin</key>
-				<real>1920</real>
+				<real>0.0</real>
 				<key>Y Origin</key>
 				<real>0.0</real>
 			</dict>
