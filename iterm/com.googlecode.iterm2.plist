@@ -2674,11 +2674,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>650 607 620 392 0 0 1920 1200 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>2221 486 937 464 1920 0 1920 1080 </string>
+	<string>-1619 495 796 473 -1920 0 1920 1080 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 593 592 584 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 9 1914 1042 0 0 1920 1057 </string>
+	<string>-1080 0 1080 1057 -1920 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 101 1680 748 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_A79A78D6-0857-4856-9B2F-2A6318C25688</key>
@@ -4439,7 +4439,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-09-13T17:12:38Z</date>
+	<date>2016-09-20T16:25:39Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -14926,9 +14926,9 @@
 				<key>Old Width</key>
 				<real>400</real>
 				<key>Old X Origin</key>
-				<real>-979</real>
+				<real>226</real>
 				<key>Old Y Origin</key>
-				<real>-184</real>
+				<real>130</real>
 				<key>Saved Window Type</key>
 				<integer>4</integer>
 				<key>Screen</key>
@@ -15839,9 +15839,9 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>67</integer>
+										<integer>99</integer>
 										<key>Server PID</key>
-										<integer>585</integer>
+										<integer>5116</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -15864,7 +15864,7 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>948</real>
+										<real>1396</real>
 										<key>width</key>
 										<real>1080</real>
 										<key>x</key>
@@ -16772,9 +16772,9 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>67</integer>
+										<integer>35</integer>
 										<key>Server PID</key>
-										<integer>587</integer>
+										<integer>5118</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -16797,13 +16797,13 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>949</real>
+										<real>501</real>
 										<key>width</key>
 										<real>1080</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
-										<real>949</real>
+										<real>1397</real>
 									</dict>
 								</dict>
 							</array>
@@ -17728,7 +17728,7 @@
 										<key>Rows</key>
 										<integer>67</integer>
 										<key>Server PID</key>
-										<integer>593</integer>
+										<integer>5122</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -18659,7 +18659,7 @@
 										<key>Rows</key>
 										<integer>67</integer>
 										<key>Server PID</key>
-										<integer>608</integer>
+										<integer>5139</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -19613,7 +19613,7 @@
 										<key>Rows</key>
 										<integer>67</integer>
 										<key>Server PID</key>
-										<integer>625</integer>
+										<integer>5163</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -20544,7 +20544,7 @@
 										<key>Rows</key>
 										<integer>67</integer>
 										<key>Server PID</key>
-										<integer>695</integer>
+										<integer>5233</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -21498,7 +21498,7 @@
 										<key>Rows</key>
 										<integer>65</integer>
 										<key>Server PID</key>
-										<integer>820</integer>
+										<integer>5356</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -22429,7 +22429,7 @@
 										<key>Rows</key>
 										<integer>69</integer>
 										<key>Server PID</key>
-										<integer>981</integer>
+										<integer>5535</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -23383,7 +23383,7 @@
 										<key>Rows</key>
 										<integer>44</integer>
 										<key>Server PID</key>
-										<integer>1133</integer>
+										<integer>5728</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -24314,7 +24314,7 @@
 										<key>Rows</key>
 										<integer>45</integer>
 										<key>Server PID</key>
-										<integer>1230</integer>
+										<integer>5920</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -25245,7 +25245,7 @@
 										<key>Rows</key>
 										<integer>45</integer>
 										<key>Server PID</key>
-										<integer>1336</integer>
+										<integer>6089</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -25305,7 +25305,7 @@
 				<key>X Origin</key>
 				<real>-1080</real>
 				<key>Y Origin</key>
-				<real>-486</real>
+				<real>-407</real>
 			</dict>
 		</array>
 	</dict>
