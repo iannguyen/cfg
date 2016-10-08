@@ -6,6 +6,70 @@
   <string>Atomic</string>
   <key>settings</key>
   <array>
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_110000FF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#110000FF</string>
+<key>foreground</key>
+<string>#FFEEEEFF</string>
+<key>caret</key>
+<string>#FFEEEEFF</string>
+</dict>
+</dict>
+
+<dict>
+<key>name</key>
+<string>mon_text_color</string>
+<key>scope</key>
+<string>mcol_text_110000FF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#19191aFF</string>
+<key>foreground</key>
+<string>#110000FF</string>
+<key>caret</key>
+<string>#FFEEEEFF</string>
+</dict>
+</dict>
+
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_88000000</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#88000000</string>
+<key>foreground</key>
+<string>#FF7777FF</string>
+<key>caret</key>
+<string>#FF7777FF</string>
+</dict>
+</dict>
+
+<dict>
+<key>name</key>
+<string>mon_text_color</string>
+<key>scope</key>
+<string>mcol_text_88000000</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#19191aFF</string>
+<key>foreground</key>
+<string>#88000000</string>
+<key>caret</key>
+<string>#FF7777FF</string>
+</dict>
+</dict>
+
     <dict>
       <key>settings</key>
       <dict>
@@ -2428,6 +2492,16 @@
     </dict>
   <dict>
             <key>name</key>
+            <string>SublimeLinter Warning</string>
+            <key>scope</key>
+            <string>sublimelinter.mark.warning</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#DDB700</string>
+            </dict>
+        </dict><dict>
+            <key>name</key>
             <string>SublimeLinter Gutter Mark</string>
             <key>scope</key>
             <string>sublimelinter.gutter-mark</string>
@@ -2445,16 +2519,6 @@
             <dict>
                 <key>foreground</key>
                 <string>#D02000</string>
-            </dict>
-        </dict><dict>
-            <key>name</key>
-            <string>SublimeLinter Warning</string>
-            <key>scope</key>
-            <string>sublimelinter.mark.warning</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#DDB700</string>
             </dict>
         </dict></array>
   <key>uuid</key>

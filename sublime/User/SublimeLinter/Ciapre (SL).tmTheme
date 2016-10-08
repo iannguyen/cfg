@@ -2,27 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>name</key>
-	<string>Eiffel</string>
 	<key>author</key>
-	<string>Ian Joyner</string>
+	<string>Vinh Nguyen</string>
+	<key>name</key>
+	<string>Ciapre</string>
 	<key>settings</key>
 	<array>
 		<dict>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#FFFFFF</string>
+				<string>#1F2433</string>
 				<key>caret</key>
-				<string>#000000</string>
+				<string>#A89770</string>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#C2B790</string>
 				<key>invisibles</key>
 				<string>#BFBFBF</string>
 				<key>lineHighlight</key>
-				<string>#00000012</string>
+				<string>#1B324A</string>
 				<key>selection</key>
-				<string>#C3DCFF</string>
+				<string>#1B324A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -35,33 +35,20 @@
 				<key>fontStyle</key>
 				<string />
 				<key>foreground</key>
-				<string>#00B418</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Variable</string>
-			<key>scope</key>
-			<string>variable</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
-				<key>foreground</key>
-				<string>#0206FF</string>
+				<string>#696969</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Keyword</string>
 			<key>scope</key>
-			<string>keyword</string>
+			<string>keyword, storage</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string />
 				<key>foreground</key>
-				<string>#0100B6</string>
+				<string>#C24D43</string>
 			</dict>
 		</dict>
 		<dict>
@@ -72,9 +59,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string />
 				<key>foreground</key>
-				<string>#CD0000</string>
+				<string>#C24D43</string>
 			</dict>
 		</dict>
 		<dict>
@@ -85,9 +72,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string />
 				<key>foreground</key>
-				<string>#C5060B</string>
+				<string>#C24D43</string>
 			</dict>
 		</dict>
 		<dict>
@@ -98,9 +85,22 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string />
 				<key>foreground</key>
-				<string>#585CF6</string>
+				<string>#DB592E</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Variable</string>
+			<key>scope</key>
+			<string>variable.language, variable.other</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string />
+				<key>foreground</key>
+				<string>#E64976</string>
 			</dict>
 		</dict>
 		<dict>
@@ -113,7 +113,7 @@
 				<key>fontStyle</key>
 				<string />
 				<key>foreground</key>
-				<string>#D80800</string>
+				<string>#BAB972</string>
 			</dict>
 		</dict>
 		<dict>
@@ -126,7 +126,7 @@
 				<key>fontStyle</key>
 				<string />
 				<key>foreground</key>
-				<string>#26B31A</string>
+				<string>#E8BF6A</string>
 			</dict>
 		</dict>
 		<dict>
@@ -139,7 +139,7 @@
 				<key>fontStyle</key>
 				<string />
 				<key>foreground</key>
-				<string>#1A921C</string>
+				<string>#896492</string>
 			</dict>
 		</dict>
 		<dict>
@@ -150,22 +150,22 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string />
 				<key>foreground</key>
-				<string>#0C450D</string>
+				<string>#676767</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Function name</string>
 			<key>scope</key>
-			<string>entity.name.function, keyword.other.name-of-parameter.objc</string>
+			<string>entity.name.function</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string />
 				<key>foreground</key>
-				<string>#0000A2</string>
+				<string>#DEA050</string>
 			</dict>
 		</dict>
 		<dict>
@@ -176,7 +176,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string />
+				<key>foreground</key>
+				<string>#6B84A3</string>
 			</dict>
 		</dict>
 		<dict>
@@ -187,7 +189,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string />
+				<key>foreground</key>
+				<string>#B9AA99</string>
 			</dict>
 		</dict>
 		<dict>
@@ -198,7 +202,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string />
+				<key>foreground</key>
+				<string>#6D948D</string>
 			</dict>
 		</dict>
 		<dict>
@@ -222,7 +228,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string />
+				<key>foreground</key>
+				<string>#B9AA99</string>
 			</dict>
 		</dict>
 		<dict>
@@ -233,9 +241,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string />
 				<key>foreground</key>
-				<string>#3C4C72</string>
+				<string>#5C644C</string>
 			</dict>
 		</dict>
 		<dict>
@@ -246,9 +254,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string />
 				<key>foreground</key>
-				<string>#6D79DE</string>
+				<string>#C2B790</string>
 			</dict>
 		</dict>
 		<dict>
@@ -259,9 +267,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string />
 				<key>foreground</key>
-				<string>#06960E</string>
+				<string>#a94D37</string>
 			</dict>
 		</dict>
 		<dict>
@@ -272,9 +280,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string />
 				<key>foreground</key>
-				<string>#21439C</string>
+				<string>#000000</string>
 			</dict>
 		</dict>
 		<dict>
@@ -285,7 +293,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#687687</string>
+				<string>#D6D6D6</string>
 			</dict>
 		</dict>
 		<dict>
@@ -310,8 +318,11 @@
 			<dict>
 				<key>background</key>
 				<string>#FFD0D0</string>
+				<key>foreground</key>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
+
 		<dict>
 			<key>name</key>
 			<string>Embedded source</string>
@@ -320,44 +331,61 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#427FF530</string>
+				<string>#1D1D1D</string>
+				<key>foreground</key>
+				<string>#B9AA99</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Embedded embedded source</string>
+			<key>scope</key>
+			<string>text source string.unquoted, text source text source</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#232323</string>
+				<key>foreground</key>
+				<string>#D6BFB8</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Markup XML declaration</string>
 			<key>scope</key>
-			<string>meta.xml-processing, declaration.xml-processing</string>
+			<string>meta.tag.preprocessor.xml</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string />
 				<key>foreground</key>
-				<string>#68685B</string>
+				<string>#676767</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Markup DOCTYPE</string>
 			<key>scope</key>
-			<string>meta.doctype, declaration.doctype</string>
+			<string>meta.tag.sgml.doctype, meta.tag.sgml.doctype entity, meta.tag.sgml.doctype string, meta.tag.preprocessor.xml, meta.tag.preprocessor.xml entity, meta.tag.preprocessor.xml string</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string />
 				<key>foreground</key>
-				<string>#888888</string>
+				<string>#676767</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Markup DTD</string>
 			<key>scope</key>
-			<string>meta.doctype.DTD, declaration.doctype.DTD</string>
+			<string>string.quoted.docinfo.doctype.DTD</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string />
+				<key>foreground</key>
+				<string>#CC695F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -370,7 +398,7 @@
 				<key>fontStyle</key>
 				<string />
 				<key>foreground</key>
-				<string>#1C02FF</string>
+				<string>#A87B60</string>
 			</dict>
 		</dict>
 		<dict>
@@ -381,7 +409,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>bold</string>
+				<string />
+				<key>foreground</key>
+				<string>#A87B60</string>
 			</dict>
 		</dict>
 		<dict>
@@ -392,7 +422,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string />
+				<key>foreground</key>
+				<string>#60827E</string>
 			</dict>
 		</dict>
 		<dict>
@@ -405,7 +437,7 @@
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>#0C07FF</string>
+				<string>#EBEB91</string>
 			</dict>
 		</dict>
 		<dict>
@@ -416,9 +448,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string />
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#EBEB91</string>
 			</dict>
 		</dict>
 		<dict>
@@ -429,9 +461,66 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#B90690</string>
+				<string>#EBEB91</string>
 			</dict>
 		</dict>
+	
+		<dict>
+		  <key>name</key>
+		  <string>css.id</string>
+		  <key>scope</key>
+		  <string>meta.selector.css entity.other.attribute-name.id</string>
+		  <key>settings</key>
+		  <dict>
+		    <key>foreground</key>
+		    <string>#6B84A3</string>
+		  </dict>
+		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>css.class</string>
+		  <key>scope</key>
+		  <string>entity.other.attribute-name.class</string>
+		  <key>settings</key>
+		  <dict>
+		    <key>foreground</key>
+		    <string>#38add8</string>
+		  </dict>
+		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>less.mixin</string>
+		  <key>scope</key>
+		  <string>entity.other.less.mixin</string>
+		  <key>settings</key>
+		  <dict>
+		    <key>foreground</key>
+		    <string>#38add8</string>
+		  </dict>
+		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>css.element</string>
+		  <key>scope</key>
+		  <string>keyword.control.html.elements</string>
+		  <key>settings</key>
+		  <dict>
+		    <key>foreground</key>
+		    <string>#fc3</string>
+		  </dict>
+		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>css.string</string>
+		  <key>scope</key>
+		  <string>meta.attribute-selector.css string</string>
+		  <key>settings</key>
+		  <dict>
+		    <key>foreground</key>
+		    <string>#FF950A</string>
+		  </dict>
+		</dict>
+		
 	<dict>
             <key>name</key>
             <string>SublimeLinter Warning</string>
@@ -464,6 +553,6 @@
             </dict>
         </dict></array>
 	<key>uuid</key>
-	<string>ADD7FDE7-C6BE-454B-A71A-7951ED54FB04</string>
+	<string>97a5f77c-f111-4740-a458-7748adea237a</string>
 </dict>
 </plist>

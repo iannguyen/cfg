@@ -15,6 +15,10 @@
 		{
 			"characters": "<",
 			"selector": "text.html"
+		},
+		{
+			"characters": "/",
+			"selector": "string.quoted.double.html, string.quoted.single.html, source.css, text.tex.latex"
 		}
 	],
 	"auto_complete_with_fields": false,

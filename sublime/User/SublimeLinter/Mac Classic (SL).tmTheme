@@ -2,10 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>name</key>
-	<string>Eiffel</string>
 	<key>author</key>
-	<string>Ian Joyner</string>
+	<string>Chris Thomas</string>
+	<key>name</key>
+	<string>Mac Classic</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -22,7 +22,7 @@
 				<key>lineHighlight</key>
 				<string>#00000012</string>
 				<key>selection</key>
-				<string>#C3DCFF</string>
+				<string>#4D97FF54</string>
 			</dict>
 		</dict>
 		<dict>
@@ -33,35 +33,22 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string />
-				<key>foreground</key>
-				<string>#00B418</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Variable</string>
-			<key>scope</key>
-			<string>variable</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#0206FF</string>
+				<string>#0066FF</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Keyword</string>
 			<key>scope</key>
-			<string>keyword</string>
+			<string>keyword, storage</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>#0100B6</string>
+				<string>#0000FF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -72,9 +59,9 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string />
 				<key>foreground</key>
-				<string>#CD0000</string>
+				<string>#0000CD</string>
 			</dict>
 		</dict>
 		<dict>
@@ -85,7 +72,7 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string>bold</string>
 				<key>foreground</key>
 				<string>#C5060B</string>
 			</dict>
@@ -98,9 +85,22 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string>bold</string>
 				<key>foreground</key>
 				<string>#585CF6</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Variable</string>
+			<key>scope</key>
+			<string>variable.language, variable.other</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string />
+				<key>foreground</key>
+				<string>#318495</string>
 			</dict>
 		</dict>
 		<dict>
@@ -113,7 +113,7 @@
 				<key>fontStyle</key>
 				<string />
 				<key>foreground</key>
-				<string>#D80800</string>
+				<string>#036A07</string>
 			</dict>
 		</dict>
 		<dict>
@@ -159,7 +159,7 @@
 			<key>name</key>
 			<string>Function name</string>
 			<key>scope</key>
-			<string>entity.name.function, keyword.other.name-of-parameter.objc</string>
+			<string>entity.name.function, support.function.any-method</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -176,7 +176,7 @@
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>italic</string>
+				<string>underline</string>
 			</dict>
 		</dict>
 		<dict>
@@ -320,14 +320,25 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#427FF530</string>
+				<string>#0000000D</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Embedded embedded source</string>
+			<key>scope</key>
+			<string>text source string.unquoted, text source text source</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#0000000F</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Markup XML declaration</string>
 			<key>scope</key>
-			<string>meta.xml-processing, declaration.xml-processing</string>
+			<string>meta.tag.preprocessor.xml</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -340,7 +351,7 @@
 			<key>name</key>
 			<string>Markup DOCTYPE</string>
 			<key>scope</key>
-			<string>meta.doctype, declaration.doctype</string>
+			<string>meta.tag.sgml.doctype, meta.tag.sgml.doctype entity, meta.tag.sgml.doctype string, meta.tag.preprocessor.xml, meta.tag.preprocessor.xml entity, meta.tag.preprocessor.xml string</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -353,7 +364,7 @@
 			<key>name</key>
 			<string>Markup DTD</string>
 			<key>scope</key>
-			<string>meta.doctype.DTD, declaration.doctype.DTD</string>
+			<string>string.quoted.docinfo.doctype.DTD</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -444,16 +455,6 @@
             </dict>
         </dict><dict>
             <key>name</key>
-            <string>SublimeLinter Gutter Mark</string>
-            <key>scope</key>
-            <string>sublimelinter.gutter-mark</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#FFFFFF</string>
-            </dict>
-        </dict><dict>
-            <key>name</key>
             <string>SublimeLinter Error</string>
             <key>scope</key>
             <string>sublimelinter.mark.error</string>
@@ -462,8 +463,18 @@
                 <key>foreground</key>
                 <string>#D02000</string>
             </dict>
+        </dict><dict>
+            <key>name</key>
+            <string>SublimeLinter Gutter Mark</string>
+            <key>scope</key>
+            <string>sublimelinter.gutter-mark</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFFFFF</string>
+            </dict>
         </dict></array>
 	<key>uuid</key>
-	<string>ADD7FDE7-C6BE-454B-A71A-7951ED54FB04</string>
+	<string>71D40D9D-AE48-11D9-920A-000D93589AF6</string>
 </dict>
 </plist>
