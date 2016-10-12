@@ -28,3 +28,4 @@ Install packages with:
 Copy & paste themes into:
 
 ~/.oh-my-zsh/custom/themes
+
