@@ -1,9 +1,9 @@
 ##### ZSH #####
 
-ZSH_THEME="kennethreitz"
+ZSH_THEME="mein"
 plugins=(git)
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/iannguyen/.oh-my-zsh"
+export ZSH="/Users/aiun-mbp/.oh-my-zsh"
 # User configuration
 source $ZSH/oh-my-zsh.sh
 
@@ -14,7 +14,7 @@ if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
   . $LUNCHY_DIR/lunchy-completion.zsh
 fi
 
-export NVM_DIR="/Users/iannguyen/.nvm"
+export NVM_DIR="/Users/aiun-mbp/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export PATH="$PATH:$HOME/.rbenv/bin:$HOME/.rbenv/shims:$HOME/usr/local/bin:$HOME/usr/bin:$HOME/bin"
@@ -64,4 +64,4 @@ alias nrd="npm run dev"
 
 
 # export PATH="/usr/local/bin:$PATH"
-# export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/iannguyen/.rvm/gems/ruby-2.2.4/bin:/Users/iannguyen/.rvm/gems/ruby-2.2.4@global/bin:/Users/iannguyen/.rvm/rubies/ruby-2.2.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/iannguyen/.rvm/bin:/Users/iannguyen/.rvm/bin"
+# export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/aiun-mbp/.rvm/gems/ruby-2.2.4/bin:/Users/aiun-mbp/.rvm/gems/ruby-2.2.4@global/bin:/Users/aiun-mbp/.rvm/rubies/ruby-2.2.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/aiun-mbp/.rvm/bin:/Users/aiun-mbp/.rvm/bin"
