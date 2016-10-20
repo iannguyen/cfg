@@ -24,8 +24,8 @@
         <key>selection</key>
         <string>#336633</string>
         
-        <key>selectionForeground</key>
-        <string>#CCCCCC</string>
+<!--         <key>selectionForeground</key> -->
+<!--         <string>#CCCCCC</string> -->
       </dict>
     </dict>
     <dict>

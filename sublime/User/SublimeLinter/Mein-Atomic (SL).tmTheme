@@ -216,8 +216,8 @@
         <string>#3E4F60</string>
         <key>selectionBorder</key>
         <string>#3E4F60</string>
-        <key>selectionForeground</key>
-        <string>#A6B5C5</string>
+<!--         <key>selectionForeground</key> -->
+<!--         <string>#A6B5C5</string> -->
         <key>findHighlight</key>
         <string>#C97016</string>
         <key>findHighlightForeground</key>
