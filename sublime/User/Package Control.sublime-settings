@@ -9,6 +9,7 @@
 		"AdvancedNewFile",
 		"Alignment",
 		"All Autocomplete",
+		"Atomic Color Scheme",
 		"AutoFileName",
 		"Babel",
 		"Babel Snippets",
@@ -16,8 +17,11 @@
 		"Boron Color Scheme",
 		"BracketHighlighter",
 		"Case Conversion",
+		"Chouku Color Scheme",
+		"Ciapre Color Scheme",
 		"Color Highlighter",
 		"Emmet",
+		"ES6-Toolkit",
 		"FindKeyConflicts",
 		"Git",
 		"Git Config",
@@ -37,6 +41,9 @@
 		"Monokai - Spacegray",
 		"Monokai Extended",
 		"MoveTab",
+		"Multi Select Alphabetizer",
+		"muukii",
+		"Obsidian Color Scheme",
 		"Package Control",
 		"PackageResourceViewer",
 		"Pretty JSON",
@@ -49,7 +56,6 @@
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-rubocop",
-		"Themes Menu Switcher",
 		"Trimmer"
 	]
 }
