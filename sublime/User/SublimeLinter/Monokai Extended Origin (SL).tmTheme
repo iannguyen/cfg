@@ -1095,17 +1095,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Python: function call</string>
-			<key>scope</key>
-			<string>meta.function-call.python - punctuation - meta.function-call.arguments.python</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#A6E22E</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Perl: variables</string>
 			<key>scope</key>
 			<string>punctuation.definition.variable.perl, variable.other.readwrite.global.perl, variable.other.predefined.perl, keyword.operator.comparison.perl</string>
@@ -1833,17 +1822,6 @@
 				<string />
 				<key>foreground</key>
 				<string>#66d9ef</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>LaTeX: Math Variables</string>
-			<key>scope</key>
-			<string>variable.other.math.tex</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#E6DB74</string>
 			</dict>
 		</dict>
 		<dict>
