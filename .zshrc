@@ -3,7 +3,7 @@
 ZSH_THEME="mein"
 plugins=(git)
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/aiun-mbp/.oh-my-zsh"
+export ZSH="/Users/iannguyen/.oh-my-zsh"
 # User configuration
 source $ZSH/oh-my-zsh.sh
 
@@ -14,7 +14,7 @@ if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
 fi
 
 # NVM
-export NVM_DIR="/Users/aiun-mbp/.nvm"
+export NVM_DIR="/Users/iannguyen/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # RBENV
