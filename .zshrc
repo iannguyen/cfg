@@ -1,22 +1,23 @@
 ##### ZSH #####
 
-ZSH_THEME="kennethreitz"
+ZSH_THEME="mein"
 plugins=(git)
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/iannguyen/.oh-my-zsh"
+export ZSH="/Users/aiun-mbp/.oh-my-zsh"
 # User configuration
 source $ZSH/oh-my-zsh.sh
 
 ##### Exports #####
 
-# LUNCHY_DIR=$(dirname `gem which lunchy`)/../extras
 if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
   . $LUNCHY_DIR/lunchy-completion.zsh
 fi
 
-export NVM_DIR="/Users/iannguyen/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# NVM
+export NVM_DIR="/Users/aiun-mbp/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
+# RBENV
 export PATH="$PATH:$HOME/.rbenv/bin:$HOME/.rbenv/shims:$HOME/usr/local/bin:$HOME/usr/bin:$HOME/bin"
 eval "$(rbenv init -)"
 
@@ -54,14 +55,5 @@ alias env_test="RAILS_ENV=test"
 alias env_dev="RAILS_ENV=development"
 alias rs="WEB_ROOT=localhost:3000 bundle exec rails s -b 127.0.0.1"
 
-# wrench
+# npm
 alias nrd="npm run dev"
-
-
-
-# Other
-
-
-
-# export PATH="/usr/local/bin:$PATH"
-# export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/iannguyen/.rvm/gems/ruby-2.2.4/bin:/Users/iannguyen/.rvm/gems/ruby-2.2.4@global/bin:/Users/iannguyen/.rvm/rubies/ruby-2.2.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/iannguyen/.rvm/bin:/Users/iannguyen/.rvm/bin"
