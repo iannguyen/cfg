@@ -10,15 +10,15 @@
 <key>name</key>
 <string>mon_color</string>
 <key>scope</key>
-<string>mcol_339966FF</string>
+<string>mcol_020304FF</string>
 <key>settings</key>
 <dict>
 <key>background</key>
-<string>#339966FF</string>
+<string>#020304FF</string>
 <key>foreground</key>
-<string>#66CB99FF</string>
+<string>#FBFCFDFF</string>
 <key>caret</key>
-<string>#66CB99FF</string>
+<string>#FBFCFDFF</string>
 </dict>
 </dict>
 
@@ -26,15 +26,15 @@
 <key>name</key>
 <string>mon_text_color</string>
 <key>scope</key>
-<string>mcol_text_339966FF</string>
+<string>mcol_text_020304FF</string>
 <key>settings</key>
 <dict>
 <key>background</key>
 <string>#FF0001FF</string>
 <key>foreground</key>
-<string>#339966FF</string>
+<string>#020304FF</string>
 <key>caret</key>
-<string>#66CB99FF</string>
+<string>#FBFCFDFF</string>
 </dict>
 </dict>
 
@@ -248,8 +248,8 @@
         <string>#3E4F60</string>
         <key>selectionBorder</key>
         <string>#3E4F60</string>
-        <key>selectionForeground</key>
-        <string>#A6B5C5</string>
+<!--         <key>selectionForeground</key> -->
+<!--         <string>#A6B5C5</string> -->
         <key>findHighlight</key>
         <string>#C97016</string>
         <key>findHighlightForeground</key>
