@@ -100,7 +100,7 @@
 	"font_options":
 	[
 	],
-	"font_size": 16,
+	"font_size": 17,
 	"gpu_window_buffer": true,
 	"gutter": true,
 	"highlight_line": true,
@@ -144,7 +144,7 @@
 	"material_theme_small_tab": true,
 	"move_to_limit_on_up_down": false,
 	"open_files_in_new_window": true,
-	"overlay_scroll_bars": "system",
+	"overlay_scroll_bars": "enabled",
 	"preview_on_click": true,
 	"remember_full_screen": true,
 	"remember_open_files": false,
@@ -171,7 +171,7 @@
 	"tree_animation_enabled": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": false,
-	"use_simple_full_screen": true,
+	"use_simple_full_screen": false,
 	"use_tab_stops": true,
 	"word_separators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?",
 	"word_wrap": true,
