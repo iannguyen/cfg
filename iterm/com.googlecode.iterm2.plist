@@ -2563,7 +2563,7 @@
 		</dict>
 	</dict>
 	<key>Default Arrangement Name</key>
-	<string>Vertical-Mein</string>
+	<string>Single-Mein</string>
 	<key>Default Bookmark Guid</key>
 	<string>A79A78D6-0857-4856-9B2F-2A6318C25688</string>
 	<key>DimBackgroundWindows</key>
@@ -2661,9 +2661,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 494 620 392 0 0 1680 1050 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-994 822 937 464 -1080 -454 1080 1920 </string>
+	<string>268 494 796 473 0 0 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1077 -453 1074 1896 -1080 -454 1080 1898 </string>
+	<string>0 5 1680 1023 0 0 1680 1028 </string>
 	<key>NeverWarnAboutShortLivedSessions_A79A78D6-0857-4856-9B2F-2A6318C25688</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -4265,7 +4265,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>064ECCEB-8060-4ABE-90C2-4B631D464D7E</string>
 	<key>NoSyncLastTipTime</key>
-	<real>498280216.14262801</real>
+	<real>498827280.00217801</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -4279,6 +4279,9 @@
 		<string>000</string>
 		<string>0000</string>
 		<string>0001</string>
+		<string>0002</string>
+		<string>0003</string>
+		<string>0004</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -4350,7 +4353,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-10-17T01:51:49Z</date>
+	<date>2016-10-22T06:21:01Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
