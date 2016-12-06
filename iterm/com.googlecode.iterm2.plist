@@ -2563,7 +2563,7 @@
 		</dict>
 	</dict>
 	<key>Default Arrangement Name</key>
-	<string>Vertical</string>
+	<string>Single</string>
 	<key>Default Bookmark Guid</key>
 	<string>A79A78D6-0857-4856-9B2F-2A6318C25688</string>
 	<key>DimBackgroundWindows</key>
@@ -2638,23 +2638,29 @@
 	<false/>
 	<key>NSScrollViewShouldScrollUnderTitlebar</key>
 	<false/>
-	<key>NSTableView Columns KeyBingingTable</key>
-	<array>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErATCG
-		</data>
-		<string>198</string>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErATGG
-		</data>
-		<string>307</string>
-	</array>
-	<key>NSTableView Hidden Columns KeyBingingTable</key>
-	<array/>
-	<key>NSTableView Sort Ordering KeyBingingTable</key>
-	<array/>
+	<key>NSTableView Columns v2 KeyBingingTable</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGNjdYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
+	AAGGoK4HCA8aGxwdHh8gJjAxMlUkbnVsbNIJCgsOWk5TLm9iamVjdHNWJGNsYXNzogwN
+	gAKACoAN0xAJChEVGVdOUy5rZXlzoxITFIADgASABaMWFxiABoAHgAiACVpJZGVudGlm
+	aWVyVVdpZHRoVkhpZGRlblEwI0BowAAAAAAACNIhIiMkWiRjbGFzc25hbWVYJGNsYXNz
+	ZXNcTlNEaWN0aW9uYXJ5oiMlWE5TT2JqZWN00xAJCicrGaMSExSAA4AEgAWjLC0YgAuA
+	DIAIgAlRMSNAdCAAAAAAANIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
+	TlNLZXllZEFyY2hpdmVy0Tg5VUFycmF5gAEACAARABoAIwAtADIANwBGAEwAUQBcAGMA
+	ZgBoAGoAbABzAHsAfwCBAIMAhQCJAIsAjQCPAJEAnACiAKkAqwC0ALUAugDFAM4A2wDe
+	AOcA7gDyAPQA9gD4APwA/gEAAQIBBAEGAQ8BFAEjAScBLwFBAUQBSgAAAAAAAAIBAAAA
+	AAAAADoAAAAAAAAAAAAAAAAAAAFM
+	</data>
+	<key>NSTableView Sort Ordering v2 KeyBingingTable</key>
+	<data>
+	YnBsaXN0MDDUAQIDBAUGFBVYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
+	AAGGoKMHCA1VJG51bGzSCQoLDFpOUy5vYmplY3RzViRjbGFzc6CAAtIODxARWiRjbGFz
+	c25hbWVYJGNsYXNzZXNeTlNNdXRhYmxlQXJyYXmjEBITV05TQXJyYXlYTlNPYmplY3Rf
+	EA9OU0tleWVkQXJjaGl2ZXLRFhdVQXJyYXmAAQgRGiMtMjc7QUZRWFlbYGt0g4ePmKqt
+	swAAAAAAAAEBAAAAAAAAABgAAAAAAAAAAAAAAAAAAAC1
+	</data>
+	<key>NSTableView Supports v2 KeyBingingTable</key>
+	<true/>
 	<key>NSToolbar Configuration Terminal Toolbar</key>
 	<dict>
 		<key>TB Display Mode</key>
@@ -2672,19 +2678,19 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>860 217 805 285 0 0 1920 1200 </string>
+	<string>-2813 495 805 579 -3000 40 1080 1920 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>613 593 606 456 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>-850 660 620 392 -1080 -486 1080 1920 </string>
+	<string>-2770 1186 620 392 -3000 40 1080 1920 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 1317 606 456 0 1200 1920 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-977 547 937 464 -1080 -372 1080 1920 </string>
+	<string>-1512 464 937 464 -1920 0 1920 1080 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 593 592 584 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>-1077 -371 1074 1896 -1080 -372 1080 1898 </string>
+	<string>-1920 0 1080 1058 -1920 0 1920 1058 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 101 1680 748 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_A79A78D6-0857-4856-9B2F-2A6318C25688</key>
@@ -4291,6 +4297,8 @@
 	<true/>
 	<key>NoSyncHaveShownPromoWithId_4</key>
 	<true/>
+	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
+	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>46208BE9-0C7C-4879-B317-CD9442A11DCC</string>
 	<key>NoSyncLastTipTime</key>
@@ -4447,7 +4455,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-11-10T17:11:09Z</date>
+	<date>2016-11-29T17:17:55Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -15248,6 +15256,8 @@
 											<integer>250</integer>
 											<key>Command</key>
 											<string></string>
+											<key>Cursor Boost</key>
+											<real>0.0</real>
 											<key>Cursor Color</key>
 											<dict>
 												<key>Alpha Component</key>
@@ -15664,11 +15674,11 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.99999129772186279</real>
 												<key>Color Space</key>
 												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.99997437000274658</real>
 												<key>Red Component</key>
 												<real>1</real>
 											</dict>
@@ -15847,9 +15857,9 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>100</integer>
+										<integer>99</integer>
 										<key>Server PID</key>
-										<integer>4942</integer>
+										<integer>454</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -15872,7 +15882,7 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1404</real>
+										<real>1397</real>
 										<key>width</key>
 										<real>1080</real>
 										<key>x</key>
@@ -16179,6 +16189,8 @@
 											<integer>250</integer>
 											<key>Command</key>
 											<string></string>
+											<key>Cursor Boost</key>
+											<real>0.0</real>
 											<key>Cursor Color</key>
 											<dict>
 												<key>Alpha Component</key>
@@ -16595,11 +16607,11 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.99999129772186279</real>
 												<key>Color Space</key>
 												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.99997437000274658</real>
 												<key>Red Component</key>
 												<real>1</real>
 											</dict>
@@ -16780,9 +16792,9 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>34</integer>
+										<integer>35</integer>
 										<key>Server PID</key>
-										<integer>4944</integer>
+										<integer>457</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -16805,13 +16817,13 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>493</real>
+										<real>500</real>
 										<key>width</key>
 										<real>1080</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
-										<real>1405</real>
+										<real>1398</real>
 									</dict>
 								</dict>
 							</array>
@@ -17135,6 +17147,8 @@
 											<integer>250</integer>
 											<key>Command</key>
 											<string></string>
+											<key>Cursor Boost</key>
+											<real>0.0</real>
 											<key>Cursor Color</key>
 											<dict>
 												<key>Alpha Component</key>
@@ -17551,11 +17565,11 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.99999129772186279</real>
 												<key>Color Space</key>
 												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.99997437000274658</real>
 												<key>Red Component</key>
 												<real>1</real>
 											</dict>
@@ -17736,7 +17750,7 @@
 										<key>Rows</key>
 										<integer>67</integer>
 										<key>Server PID</key>
-										<integer>4949</integer>
+										<integer>464</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -18066,6 +18080,8 @@
 											<integer>250</integer>
 											<key>Command</key>
 											<string></string>
+											<key>Cursor Boost</key>
+											<real>0.0</real>
 											<key>Cursor Color</key>
 											<dict>
 												<key>Alpha Component</key>
@@ -18482,11 +18498,11 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.99999129772186279</real>
 												<key>Color Space</key>
 												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.99997437000274658</real>
 												<key>Red Component</key>
 												<real>1</real>
 											</dict>
@@ -18667,7 +18683,7 @@
 										<key>Rows</key>
 										<integer>67</integer>
 										<key>Server PID</key>
-										<integer>4965</integer>
+										<integer>471</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -19020,6 +19036,8 @@
 											<integer>250</integer>
 											<key>Command</key>
 											<string></string>
+											<key>Cursor Boost</key>
+											<real>0.0</real>
 											<key>Cursor Color</key>
 											<dict>
 												<key>Alpha Component</key>
@@ -19436,11 +19454,11 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.99999129772186279</real>
 												<key>Color Space</key>
 												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.99997437000274658</real>
 												<key>Red Component</key>
 												<real>1</real>
 											</dict>
@@ -19621,7 +19639,7 @@
 										<key>Rows</key>
 										<integer>67</integer>
 										<key>Server PID</key>
-										<integer>4990</integer>
+										<integer>489</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -19951,6 +19969,8 @@
 											<integer>250</integer>
 											<key>Command</key>
 											<string></string>
+											<key>Cursor Boost</key>
+											<real>0.0</real>
 											<key>Cursor Color</key>
 											<dict>
 												<key>Alpha Component</key>
@@ -20367,11 +20387,11 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.99999129772186279</real>
 												<key>Color Space</key>
 												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.99997437000274658</real>
 												<key>Red Component</key>
 												<real>1</real>
 											</dict>
@@ -20552,7 +20572,7 @@
 										<key>Rows</key>
 										<integer>67</integer>
 										<key>Server PID</key>
-										<integer>5071</integer>
+										<integer>508</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -20905,6 +20925,8 @@
 											<integer>250</integer>
 											<key>Command</key>
 											<string></string>
+											<key>Cursor Boost</key>
+											<real>0.0</real>
 											<key>Cursor Color</key>
 											<dict>
 												<key>Alpha Component</key>
@@ -21321,11 +21343,11 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.99999129772186279</real>
 												<key>Color Space</key>
 												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.99997437000274658</real>
 												<key>Red Component</key>
 												<real>1</real>
 											</dict>
@@ -21506,7 +21528,7 @@
 										<key>Rows</key>
 										<integer>67</integer>
 										<key>Server PID</key>
-										<integer>5208</integer>
+										<integer>542</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -21836,6 +21858,8 @@
 											<integer>250</integer>
 											<key>Command</key>
 											<string></string>
+											<key>Cursor Boost</key>
+											<real>0.0</real>
 											<key>Cursor Color</key>
 											<dict>
 												<key>Alpha Component</key>
@@ -22252,11 +22276,11 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.99999129772186279</real>
 												<key>Color Space</key>
 												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.99997437000274658</real>
 												<key>Red Component</key>
 												<real>1</real>
 											</dict>
@@ -22437,7 +22461,7 @@
 										<key>Rows</key>
 										<integer>67</integer>
 										<key>Server PID</key>
-										<integer>5384</integer>
+										<integer>573</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -22790,6 +22814,8 @@
 											<integer>250</integer>
 											<key>Command</key>
 											<string></string>
+											<key>Cursor Boost</key>
+											<real>0.0</real>
 											<key>Cursor Color</key>
 											<dict>
 												<key>Alpha Component</key>
@@ -23206,11 +23232,11 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.99999129772186279</real>
 												<key>Color Space</key>
 												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.99997437000274658</real>
 												<key>Red Component</key>
 												<real>1</real>
 											</dict>
@@ -23391,7 +23417,7 @@
 										<key>Rows</key>
 										<integer>44</integer>
 										<key>Server PID</key>
-										<integer>5568</integer>
+										<integer>592</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -23721,6 +23747,8 @@
 											<integer>250</integer>
 											<key>Command</key>
 											<string></string>
+											<key>Cursor Boost</key>
+											<real>0.0</real>
 											<key>Cursor Color</key>
 											<dict>
 												<key>Alpha Component</key>
@@ -24137,11 +24165,11 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.99999129772186279</real>
 												<key>Color Space</key>
 												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.99997437000274658</real>
 												<key>Red Component</key>
 												<real>1</real>
 											</dict>
@@ -24322,7 +24350,7 @@
 										<key>Rows</key>
 										<integer>44</integer>
 										<key>Server PID</key>
-										<integer>5748</integer>
+										<integer>605</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -24652,6 +24680,8 @@
 											<integer>250</integer>
 											<key>Command</key>
 											<string></string>
+											<key>Cursor Boost</key>
+											<real>0.0</real>
 											<key>Cursor Color</key>
 											<dict>
 												<key>Alpha Component</key>
@@ -25068,11 +25098,11 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.99999129772186279</real>
 												<key>Color Space</key>
 												<string>Calibrated</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.99997437000274658</real>
 												<key>Red Component</key>
 												<real>1</real>
 											</dict>
@@ -25253,7 +25283,7 @@
 										<key>Rows</key>
 										<integer>44</integer>
 										<key>Server PID</key>
-										<integer>5925</integer>
+										<integer>624</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -25311,9 +25341,9 @@
 				<key>Window Type</key>
 				<integer>4</integer>
 				<key>X Origin</key>
-				<real>-1080</real>
+				<real>-3000</real>
 				<key>Y Origin</key>
-				<real>652</real>
+				<real>40</real>
 			</dict>
 		</array>
 	</dict>
@@ -25328,7 +25358,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.10</string>
+	<string>3.0.12</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
