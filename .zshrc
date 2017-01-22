@@ -3,7 +3,7 @@
 ZSH_THEME="mein"
 plugins=(git)
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/aiun-mbp/.oh-my-zsh"
+export ZSH="/Users/iannguyen/.oh-my-zsh"
 # User configuration
 source $ZSH/oh-my-zsh.sh
 
@@ -14,7 +14,7 @@ if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
 fi
 
 # NVM
-export NVM_DIR="/Users/aiun-mbp/.nvm"
+export NVM_DIR="/Users/iannguyen/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # RBENV
@@ -49,11 +49,13 @@ alias be="bundle exec"
 alias bi="bundle install"
 alias rake="bundle exec rake"
 alias rdb="bundle exec rails db"
+alias rdbm="bundle exec rake db:migrate"
 alias rc="bundle exec rails console"
 alias rr="bundle exec rails runner"
 alias env_test="RAILS_ENV=test"
 alias env_dev="RAILS_ENV=development"
 alias rs="WEB_ROOT=localhost:3000 bundle exec rails s -b 127.0.0.1"
+alias revive="bundle exec rake db:drop db:create db:structure:load db:migrate db:setup db:test:prepare"
 
 # npm
 alias nrd="npm run dev"
