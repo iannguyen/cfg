@@ -216,8 +216,8 @@
         <string>#3E4F60</string>
         <key>selectionBorder</key>
         <string>#3E4F60</string>
-<!--         <key>selectionForeground</key> -->
-<!--         <string>#A6B5C5</string> -->
+        <key>selectionForeground</key>
+        <string>#A6B5C5</string>
         <key>findHighlight</key>
         <string>#C97016</string>
         <key>findHighlightForeground</key>
@@ -2620,13 +2620,13 @@
     </dict>
   <dict>
             <key>name</key>
-            <string>SublimeLinter Error</string>
+            <string>SublimeLinter Warning</string>
             <key>scope</key>
-            <string>sublimelinter.mark.error</string>
+            <string>sublimelinter.mark.warning</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#D02000</string>
+                <string>#DDB700</string>
             </dict>
         </dict><dict>
             <key>name</key>
@@ -2640,13 +2640,13 @@
             </dict>
         </dict><dict>
             <key>name</key>
-            <string>SublimeLinter Warning</string>
+            <string>SublimeLinter Error</string>
             <key>scope</key>
-            <string>sublimelinter.mark.warning</string>
+            <string>sublimelinter.mark.error</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
-                <string>#DDB700</string>
+                <string>#D02000</string>
             </dict>
         </dict></array>
   <key>uuid</key>
