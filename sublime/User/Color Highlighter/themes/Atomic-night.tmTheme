@@ -1,40 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Atomic dark</string>
+	<string>Atomic night</string>
 	<key>settings</key>
 	<array>
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_FFFFFFFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#FFFFFFFF</string>
+<key>foreground</key>
+<string>#000000FF</string>
+<key>caret</key>
+<string>#000000FF</string>
+</dict>
+</dict>
+
+<dict>
+<key>name</key>
+<string>mon_text_color</string>
+<key>scope</key>
+<string>mcol_text_FFFFFFFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#1E1814FF</string>
+<key>foreground</key>
+<string>#FFFFFFFF</string>
+<key>caret</key>
+<string>#000000FF</string>
+</dict>
+</dict>
+
 		<dict>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#141A1F</string>
+				<string>#1E1813</string>
 				<key>caret</key>
 				<string>#6ECFCF</string>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 				<key>invisibles</key>
-				<string>#141A1F</string>
+				<string>#1E1813</string>
 				<key>lineHighlight</key>
-				<string>#202931</string>
+				<string>#2E261E</string>
 				<key>selection</key>
-				<string>#53697F</string>
+				<string>#76614D</string>
 				<key>selectionBorder</key>
-				<string>#53697F</string>
+				<string>#76614D</string>
 				<key>selectionForeground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 				<key>findHighlight</key>
 				<string>#C97016</string>
 				<key>findHighlightForeground</key>
-				<string>#141A1F</string>
+				<string>#1E1813</string>
 				<key>bracketsForeground</key>
 				<string>#6ECFCF</string>
 			</dict>
 		</dict>
 
-		
+		<!-- All Languages -->
 		<dict>
 			<key>name</key>
 			<string>All: Comment</string>
@@ -43,7 +75,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#53697F</string>
+				<string>#76614D</string>
 			</dict>
 		</dict>
 		<dict>
@@ -131,7 +163,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -219,7 +251,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -246,7 +278,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>All: Tag start/end</string>
+			<string>All: Tag start&#x2f;end</string>
 			<key>scope</key>
 			<string>punctuation.definition.tag.html, punctuation.definition.tag.begin, punctuation.definition.tag.end</string>
 			<key>settings</key>
@@ -279,7 +311,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>All: Library class/type</string>
+			<string>All: Library class&#x2f;type</string>
 			<key>scope</key>
 			<string>support.type, support.class</string>
 			<key>settings</key>
@@ -298,11 +330,11 @@
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>#53697F</string>
+				<string>#76614D</string>
 			</dict>
 		</dict>
 
-		
+		<!-- CSS -->
 		<dict>
 			<key>name</key>
 			<string>CSS: ID punctuation</string>
@@ -368,7 +400,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -494,7 +526,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -549,7 +581,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -564,7 +596,7 @@
 			</dict>
 		</dict>
 
-		
+		<!-- HTML -->
 		<dict>
 			<key>name</key>
 			<string>HTML: Default</string>
@@ -573,7 +605,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -589,7 +621,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>HTML: Tag start/end</string>
+			<string>HTML: Tag start&#x2f;end</string>
 			<key>scope</key>
 			<string>text.html.basic punctuation.definition.tag.begin, text.html.basic punctuation.definition.tag.end, text.html.basic meta.tag.sgml.html punctuation.definition.tag.html</string>
 			<key>settings</key>
@@ -617,7 +649,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -665,7 +697,7 @@
 			</dict>
 		</dict>
 
-		
+		<!-- JavaScript -->
 		<dict>
 			<key>name</key>
 			<string>JS: Default</string>
@@ -674,7 +706,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -696,7 +728,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -723,7 +755,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>JS: Regexp start/end</string>
+			<string>JS: Regexp start&#x2f;end</string>
 			<key>scope</key>
 			<string>source.js string.regexp.js punctuation.definition.string.begin.js, source.js string.regexp.js punctuation.definition.string.end.js</string>
 			<key>settings</key>
@@ -828,7 +860,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -905,7 +937,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -931,7 +963,7 @@
 			</dict>
 		</dict>
 
-		
+		<!-- PHP -->
 		<dict>
 			<key>name</key>
 			<string>PHP: Embedded</string>
@@ -951,7 +983,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1000,7 +1032,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>PHP: Regexp start/end</string>
+			<string>PHP: Regexp start&#x2f;end</string>
 			<key>scope</key>
 			<string>source.php string.regexp.single-quoted.php punctuation.definition.string.begin.php, source.php string.regexp.single-quoted.php punctuation.definition.string.end.php, source.php string.regexp.double-quoted.php punctuation.definition.string.begin.php, source.php string.regexp.double-quoted.php punctuation.definition.string.end.php</string>
 			<key>settings</key>
@@ -1105,7 +1137,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1160,7 +1192,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1193,7 +1225,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1228,7 +1260,7 @@
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>#53697F</string>
+				<string>#76614D</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1239,7 +1271,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#53697F</string>
+				<string>#76614D</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1265,7 +1297,7 @@
 			</dict>
 		</dict>
 
-		
+		<!-- Ruby -->
 		<dict>
 			<key>name</key>
 			<string>Ruby: Default</string>
@@ -1274,7 +1306,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1323,7 +1355,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Ruby: Regexp start/end</string>
+			<string>Ruby: Regexp start&#x2f;end</string>
 			<key>scope</key>
 			<string>source.ruby string.regexp.classic.ruby punctuation.definition.string.ruby</string>
 			<key>settings</key>
@@ -1461,7 +1493,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1483,7 +1515,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1520,7 +1552,7 @@
 			</dict>
 		</dict>
 
-		
+		<!-- C -->
 		<dict>
 			<key>name</key>
 			<string>C: Default</string>
@@ -1529,7 +1561,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1675,7 +1707,7 @@
 				<string>#EDA45C</string>
 			</dict>
 		</dict>
-		
+		<!-- C++ -->
 		<dict>
 			<key>name</key>
 			<string>C++: Default</string>
@@ -1684,7 +1716,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1831,7 +1863,7 @@
 			</dict>
 		</dict>
 
-		
+		<!-- Java -->
 		<dict>
 			<key>name</key>
 			<string>Java: Default</string>
@@ -1840,7 +1872,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -1906,7 +1938,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -2016,7 +2048,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#53697F</string>
+				<string>#76614D</string>
 			</dict>
 		</dict>
 		<dict>
@@ -2029,11 +2061,11 @@
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>#53697F</string>
+				<string>#76614D</string>
 			</dict>
 		</dict>
 
-		
+		<!-- Python -->
 		<dict>
 			<key>name</key>
 			<string>Python: Default</string>
@@ -2042,7 +2074,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -2284,7 +2316,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -2299,7 +2331,7 @@
 			</dict>
 		</dict>
 
-		
+		<!-- Shell -->
 		<dict>
 			<key>name</key>
 			<string>Shell: Default</string>
@@ -2308,7 +2340,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A6B5C5</string>
+				<string>#C0AF9F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -2345,7 +2377,7 @@
 			</dict>
 		</dict>
 
-		
+		<!-- Diff -->
 		<dict>
 			<key>name</key>
 			<string>Diff: Header</string>
@@ -2391,7 +2423,7 @@
 			</dict>
 		</dict>
 
-		
+		<!-- GitGutter -->
 		<dict>
 			<key>name</key>
 			<string>GitGutter: Deleted</string>
@@ -2425,53 +2457,23 @@
 				<string>#5DA813</string>
 			</dict>
 		</dict>
-	<dict>
-            <key>name</key>
-            <string>SublimeLinter Warning</string>
-            <key>scope</key>
-            <string>sublimelinter.mark.warning</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#DDB700</string>
-            </dict>
-        </dict><dict>
-            <key>name</key>
-            <string>SublimeLinter Gutter Mark</string>
-            <key>scope</key>
-            <string>sublimelinter.gutter-mark</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#FFFFFF</string>
-            </dict>
-        </dict><dict>
-            <key>name</key>
-            <string>SublimeLinter Error</string>
-            <key>scope</key>
-            <string>sublimelinter.mark.error</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#D02000</string>
-            </dict>
-        </dict></array>
+	</array>
 	<key>uuid</key>
-	<string>B470FCA3-62EA-433D-AA89-B71E3852CF19</string>
+	<string>C317139E-BBA3-4E53-BD70-BA73959EAD95</string>
 	<key>license</key>
 	<string>
-	Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+	Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and&#x2f;or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
 	The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+	THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 	</string>
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>semanticClass</key>
 	<string>theme.atomic</string>
 	<key>comment</key>
-	<string>https://github.com/gerardbm/Sublime-Atomic-Scheme</string>
+	<string>https:&#x2f;&#x2f;github.com&#x2f;gerardbm&#x2f;Sublime-Atomic-Scheme</string>
 	<key>author</key>
 	<string>Gerard Bajona</string>
 </dict>
