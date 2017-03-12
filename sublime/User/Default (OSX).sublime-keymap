@@ -17,6 +17,7 @@
   { "keys": ["super+ctrl+right"], "command": "focus_neighboring_group" },
   { "keys": ["super+shift+ctrl+left"], "command": "move_to_neighboring_group", "args": {"forward": false} },
   { "keys": ["super+shift+ctrl+right"], "command": "move_to_neighboring_group" },
+  { "keys": ["super+shift+r"], "command": "goto_symbol_in_project" },
   { "keys": ["ctrl+minus"], "command": "jump_back" },
   { "keys": ["ctrl+shift+minus"], "command": "jump_forward" },
 ]

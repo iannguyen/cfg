@@ -59,3 +59,4 @@ alias revive="bundle exec rake db:drop db:create db:structure:load db:migrate db
 
 # npm
 alias nrd="npm run dev"
+alias nrd="npm run prod"

@@ -8,4 +8,8 @@
     "sass",
 	],
   "color_scheme": "Packages/Atomic Color Scheme/Mein-Atomic.tmTheme",
+  "rulers":
+  [
+    100
+  ],
 }
