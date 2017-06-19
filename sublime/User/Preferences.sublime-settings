@@ -39,7 +39,8 @@
 		"*.pdf",
 		"*.swf",
 		"*.jar",
-		"*.zip"
+		"*.zip",
+		"node_modules/"
 	],
 	"bold_folder_labels": true,
 	"caret_extra_bottom": 0,

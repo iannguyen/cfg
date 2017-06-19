@@ -12,15 +12,15 @@
 <key>name</key>
 <string>mon_color</string>
 <key>scope</key>
-<string>mcol_FF0000FF</string>
+<string>mcol_90EE90FF</string>
 <key>settings</key>
 <dict>
 <key>background</key>
-<string>#FF0000FF</string>
+<string>#90EE90FF</string>
 <key>foreground</key>
-<string>#4C0000FF</string>
+<string>#106F10FF</string>
 <key>caret</key>
-<string>#4C0000FF</string>
+<string>#106F10FF</string>
 </dict>
 </dict>
 
@@ -28,143 +28,15 @@
 <key>name</key>
 <string>mon_text_color</string>
 <key>scope</key>
-<string>mcol_text_FF0000FF</string>
+<string>mcol_text_90EE90FF</string>
 <key>settings</key>
 <dict>
 <key>background</key>
 <string>#0C1022FF</string>
 <key>foreground</key>
-<string>#FF0000FF</string>
+<string>#90EE90FF</string>
 <key>caret</key>
-<string>#4C0000FF</string>
-</dict>
-</dict>
-
-<dict>
-<key>name</key>
-<string>mon_color</string>
-<key>scope</key>
-<string>mcol_FFFFFFFF</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#FFFFFFFF</string>
-<key>foreground</key>
-<string>#000000FF</string>
-<key>caret</key>
-<string>#000000FF</string>
-</dict>
-</dict>
-
-<dict>
-<key>name</key>
-<string>mon_text_color</string>
-<key>scope</key>
-<string>mcol_text_FFFFFFFF</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#0C1022FF</string>
-<key>foreground</key>
-<string>#FFFFFFFF</string>
-<key>caret</key>
-<string>#000000FF</string>
-</dict>
-</dict>
-
-<dict>
-<key>name</key>
-<string>mon_color</string>
-<key>scope</key>
-<string>mcol_FCFCFC80</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#FCFCFC80</string>
-<key>foreground</key>
-<string>#020202FF</string>
-<key>caret</key>
-<string>#020202FF</string>
-</dict>
-</dict>
-
-<dict>
-<key>name</key>
-<string>mon_text_color</string>
-<key>scope</key>
-<string>mcol_text_FCFCFC80</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#0C1022FF</string>
-<key>foreground</key>
-<string>#FCFCFC80</string>
-<key>caret</key>
-<string>#020202FF</string>
-</dict>
-</dict>
-
-<dict>
-<key>name</key>
-<string>mon_color</string>
-<key>scope</key>
-<string>mcol_808080FF</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#808080FF</string>
-<key>foreground</key>
-<string>#262626FF</string>
-<key>caret</key>
-<string>#262626FF</string>
-</dict>
-</dict>
-
-<dict>
-<key>name</key>
-<string>mon_text_color</string>
-<key>scope</key>
-<string>mcol_text_808080FF</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#0C1022FF</string>
-<key>foreground</key>
-<string>#808080FF</string>
-<key>caret</key>
-<string>#262626FF</string>
-</dict>
-</dict>
-
-<dict>
-<key>name</key>
-<string>mon_color</string>
-<key>scope</key>
-<string>mcol_FFA500FF</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#FFA500FF</string>
-<key>foreground</key>
-<string>#4C3100FF</string>
-<key>caret</key>
-<string>#4C3100FF</string>
-</dict>
-</dict>
-
-<dict>
-<key>name</key>
-<string>mon_text_color</string>
-<key>scope</key>
-<string>mcol_text_FFA500FF</string>
-<key>settings</key>
-<dict>
-<key>background</key>
-<string>#0C1022FF</string>
-<key>foreground</key>
-<string>#FFA500FF</string>
-<key>caret</key>
-<string>#4C3100FF</string>
+<string>#106F10FF</string>
 </dict>
 </dict>
 
@@ -505,16 +377,6 @@
 		</dict>
 	<dict>
             <key>name</key>
-            <string>SublimeLinter Warning</string>
-            <key>scope</key>
-            <string>sublimelinter.mark.warning</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#DDB700</string>
-            </dict>
-        </dict><dict>
-            <key>name</key>
             <string>SublimeLinter Error</string>
             <key>scope</key>
             <string>sublimelinter.mark.error</string>
@@ -532,6 +394,16 @@
             <dict>
                 <key>foreground</key>
                 <string>#FFFFFF</string>
+            </dict>
+        </dict><dict>
+            <key>name</key>
+            <string>SublimeLinter Warning</string>
+            <key>scope</key>
+            <string>sublimelinter.mark.warning</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#DDB700</string>
             </dict>
         </dict></array>
 	<key>uuid</key>

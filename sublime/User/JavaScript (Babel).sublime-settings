@@ -1,15 +1,16 @@
 {
+	"color_scheme": "Packages/Atomic Color Scheme/Mein-Atomic.tmTheme",
 	"extensions":
 	[
 		"jsx",
-    "js",
-    "scss",
-    "css",
-    "sass",
+		"js",
+		"scss",
+		"css",
+		"sass",
+		"scss"
 	],
-  "color_scheme": "Packages/Atomic Color Scheme/Mein-Atomic.tmTheme",
-  "rulers":
-  [
-    100
-  ],
+	"rulers":
+	[
+		100
+	]
 }
