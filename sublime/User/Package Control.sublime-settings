@@ -57,6 +57,7 @@
 		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-rubocop",
 		"Themr",
-		"Trimmer"
+		"Trimmer",
+		"Vintageous"
 	]
 }
