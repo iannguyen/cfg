@@ -109,7 +109,9 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Boron Color Scheme",
 		"MarkdownEditing",
+		"Monokai Extended",
 		"RuboCop",
 		"Vintage"
 	],
