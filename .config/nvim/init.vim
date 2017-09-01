@@ -61,6 +61,9 @@ filetype plugin indent on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" FZF
+let g:fzf_layout = { 'up': '~40%' }
+
 " Silversearcher
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
@@ -90,6 +93,9 @@ let g:NERDSpaceDelims = 1
 let g:NERDTreeWinSize = 35
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Jump to the main window.
+autocmd VimEnter * wincmd p
 
 " SuperTAB
 let g:SuperTabDefaultCompletionType = "<c-n>"
@@ -321,8 +327,8 @@ nnoremap <leader>k :tabprevious<CR>
 nnoremap <leader>j :tabnext<CR>
 
 " Pane management
-nnoremap <leader>s :new<CR>
-nnoremap <leader>v :vnew<CR>
+nnoremap <leader>s :split<CR>
+nnoremap <leader>v :vsplit<CR>
 nnoremap <C-B> :buffers<CR>:buffer<Space>
 
 " Let 'tl' toggle between this and the last accessed tab
@@ -432,7 +438,7 @@ map <leader>pp :setlocal paste!<cr>
 nmap <leader>r :TagbarToggle<CR>
 
 " FzF
-nmap <C-P> :FZ<CR>
+nmap <C-P> :FZ --reverse<CR>
 
 " Silversearcher
 nmap <leader><leader> :Ag<space>
