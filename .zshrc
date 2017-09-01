@@ -8,7 +8,6 @@ export ZSH="/Users/aiun-mbp/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
 ##### Exports #####
-
 if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
   . $LUNCHY_DIR/lunchy-completion.zsh
 fi
@@ -25,7 +24,9 @@ export NVM_DIR="/Users/aiun-mbp/.nvm"
 export PATH="$PATH:$HOME/.rbenv/bin:$HOME/.rbenv/shims:$HOME/usr/local/bin:$HOME/usr/bin:$HOME/bin"
 eval "$(rbenv init -)"
 
-# Use sublime as visual editor
+# Run script to enable right gruvbox colors
+source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
+# Use vim as visual editor
 export VISUAL='nvim'
 export EDITOR=$VISUAL
 export DISABLE_AUTO_TITLE=true

@@ -221,7 +221,7 @@ endif
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable true colors support
-set termguicolors
+" set termguicolors
 
 " Enable syntax highlighting
 syntax enable
