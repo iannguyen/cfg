@@ -55,6 +55,7 @@ Plugin 'raimondi/delimitmate'
 Plugin 'jeetsukumaran/vim-indentwise'
 Plugin 'yggdroot/indentline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'roosta/srcery'
 
 call vundle#end()
 filetype plugin indent on
@@ -220,11 +221,14 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Enable true colors support
-" set termguicolors
 
 " Enable syntax highlighting
 syntax enable
+
+" Enable true colors support
+if has("termguicolors")
+  " set termguicolors
+endif
 
 " Enable 256 colors palette in Gnome Terminal
 if $COLORTERM == 'gnome-terminal'
@@ -232,12 +236,12 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme gruvbox
+    colorscheme srcery
 catch
 endtry
 
-let g:gruvbox_contrast_dark='hard'
-set background=dark
+" let g:gruvbox_contrast_dark='hard'
+" set background=dark
 
 " Airline theme
 let g:airline_powerline_fonts = 1
