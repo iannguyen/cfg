@@ -105,8 +105,11 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:jsx_ext_required = 0
 
 " IndentLine
-let g:indentLine_color_term = 239
+let g:indentLine_setColors = 0
 let g:indentLine_char = '|'
+
+" Fugitive
+set diffopt+=vertical
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -217,6 +220,9 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable true colors support
+set termguicolors
+
 " Enable syntax highlighting
 syntax enable
 
@@ -235,6 +241,7 @@ set background=dark
 
 " Airline theme
 let g:airline_powerline_fonts = 1
+" let g:airline_theme='gruvbox'
 let g:airline_theme='powerlineish'
 
 " Set extra options when running in GUI mode
