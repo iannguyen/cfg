@@ -1,5 +1,11 @@
-##### ZSH #####
+##### Colors #####
+# Set CLICOLOR if you want Ansi Colors in iTerm2
+export CLICOLOR=1
 
+# Set colors to match iTerm2 Terminal Colors
+export TERM=xterm-256color
+
+##### ZSH #####
 ZSH_THEME="mein"
 plugins=(git)
 # Path to your oh-my-zsh installation.
@@ -26,6 +32,7 @@ eval "$(rbenv init -)"
 
 # Run script to enable right gruvbox colors
 source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
+
 # Use vim as visual editor
 export VISUAL='nvim'
 export EDITOR=$VISUAL
