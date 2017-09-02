@@ -841,7 +841,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>2960 211 606 456 2560 0 2560 1418 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>895 672 937 464 0 0 1920 1178 </string>
+	<string>895 764 918 381 0 0 1920 1178 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>2047 541 592 584 1920 97 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -1149,13 +1149,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73299998044967651</real>
+				<real>0.39640575647354126</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.73299998044967651</real>
+				<real>1</real>
 				<key>Red Component</key>
-				<real>0.73299998044967651</real>
+				<real>0.42020192742347717</real>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
@@ -1175,13 +1175,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.0</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.0</real>
 			</dict>
 			<key>Cursor Type</key>
 			<integer>2</integer>
@@ -1599,7 +1599,7 @@
 			<key>Silence Bell</key>
 			<true/>
 			<key>Smart Cursor Color</key>
-			<true/>
+			<false/>
 			<key>Smart Selection Rules</key>
 			<array>
 				<dict>
