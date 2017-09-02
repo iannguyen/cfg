@@ -12,6 +12,9 @@ BULLETTRAIN_PROMPT_ORDER=(
   dir
   git
 )
+BULLETTRAIN_DIR_BG=yellow
+BULLETTRAIN_DIR_FG=black
+BULLETTRAIN_GIT_BG=blue
 BULLETTRAIN_DIR_EXTENDED=2
 plugins=(git)
 # Path to your oh-my-zsh installation.
