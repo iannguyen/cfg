@@ -139,7 +139,7 @@ command W w !sudo tee % > /dev/null
 set showcmd
 
 " Cursor
-set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver50-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
+" set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver50-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
 
 " Set 7 lines to the cursor - when moving vertically using j/k
 set scrolloff=15
@@ -228,7 +228,7 @@ syntax enable
 
 " Enable true colors support
 if has("termguicolors")
-  " set termguicolors
+  set termguicolors
 endif
 
 " Enable 256 colors palette in Gnome Terminal
