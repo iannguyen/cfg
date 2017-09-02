@@ -249,6 +249,7 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme='powerlineish'
 " let g:airline_theme='papercolor'
 " let g:airline_theme='gruvbox'
+let g:airline#extensions#tabline#enabled = 1
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -457,6 +458,7 @@ nmap <leader>r :TagbarToggle<CR>
 
 " FzF
 nmap <C-P> :FZ --reverse<CR>
+nmap <C-B> :Buffers<CR>
 
 " Silversearcher
 nmap <leader><leader> :Ag<space>
