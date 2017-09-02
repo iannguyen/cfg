@@ -822,9 +822,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>530 494 620 392 0 0 1680 1050 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>441 591 918 381 0 0 1680 1028 </string>
+	<string>561 715 918 381 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1680 1050 0 0 1680 1028 </string>
+	<string>0 0 1920 1200 0 0 1920 1178 </string>
 	<key>NeverWarnAboutShortLivedSessions_A79A78D6-0857-4856-9B2F-2A6318C25688</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -1126,13 +1126,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.73299998044967651</real>
+				<real>0.39640575647354126</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.73299998044967651</real>
+				<real>1</real>
 				<key>Red Component</key>
-				<real>0.73299998044967651</real>
+				<real>0.42020192742347717</real>
 			</dict>
 			<key>Cursor Guide Color</key>
 			<dict>
@@ -1152,13 +1152,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>1</real>
+				<real>0.0</real>
 				<key>Color Space</key>
 				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>1</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<real>0.0</real>
 			</dict>
 			<key>Cursor Type</key>
 			<integer>2</integer>
@@ -1511,7 +1511,7 @@
 			<key>Name</key>
 			<string>Mein</string>
 			<key>Non Ascii Font</key>
-			<string>UbuntuMonoDerivativePowerline-Regular 16</string>
+			<string>UbuntuMonoDerivativePowerline-Regular 15</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
@@ -1576,7 +1576,7 @@
 			<key>Silence Bell</key>
 			<true/>
 			<key>Smart Cursor Color</key>
-			<true/>
+			<false/>
 			<key>Smart Selection Rules</key>
 			<array>
 				<dict>
@@ -2585,7 +2585,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-09-01T01:56:54Z</date>
+	<date>2017-09-02T01:56:54Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
