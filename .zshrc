@@ -18,7 +18,7 @@ BULLETTRAIN_GIT_BG=blue
 BULLETTRAIN_DIR_EXTENDED=2
 plugins=(git)
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/aiun-mbp/.oh-my-zsh"
+export ZSH="/Users/iannguyen/.oh-my-zsh"
 # User configuration
 source $ZSH/oh-my-zsh.sh
 
@@ -32,7 +32,7 @@ export FZF_DEFAULT_COMMAND='ag -U --hidden --ignore .git -g ""'
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 
 # NVM
-export NVM_DIR="/Users/aiun-mbp/.nvm"
+export NVM_DIR="/Users/iannguyen/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # RBENV
