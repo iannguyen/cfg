@@ -36,9 +36,6 @@ export NVM_DIR="/Users/aiun-mbp/.nvm"
 export PATH="$PATH:$HOME/.rbenv/bin:$HOME/.rbenv/shims:$HOME/usr/local/bin:$HOME/usr/bin:$HOME/bin"
 eval "$(rbenv init -)"
 
-# Run script to enable right gruvbox colors
-source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
-
 # Use vim as visual editor
 export VISUAL='nvim'
 export EDITOR=$VISUAL
