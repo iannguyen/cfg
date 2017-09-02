@@ -6,7 +6,13 @@ export CLICOLOR=1
 export TERM=xterm-256color
 
 ##### ZSH #####
-ZSH_THEME="mein"
+ZSH_THEME="bullet-train/bullet-train"
+BULLETTRAIN_PROMPT_ORDER=(
+  status
+  dir
+  git
+)
+BULLETTRAIN_DIR_EXTENDED=2
 plugins=(git)
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/aiun-mbp/.oh-my-zsh"
