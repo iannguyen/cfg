@@ -55,8 +55,9 @@ Plugin 'raimondi/delimitmate'
 Plugin 'jeetsukumaran/vim-indentwise'
 Plugin 'yggdroot/indentline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'roosta/srcery'
-
+Plugin 'NLKNguyen/papercolor-theme'
+" Plugin 'roosta/srcery'
+"
 call vundle#end()
 filetype plugin indent on
 
@@ -236,17 +237,18 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme srcery
+    colorscheme gruvbox
 catch
 endtry
 
-" let g:gruvbox_contrast_dark='hard'
-" set background=dark
+let g:gruvbox_contrast_dark='hard'
+set background=dark
 
 " Airline theme
 let g:airline_powerline_fonts = 1
-" let g:airline_theme='gruvbox'
 let g:airline_theme='powerlineish'
+" let g:airline_theme='papercolor'
+" let g:airline_theme='gruvbox'
 
 " Set extra options when running in GUI mode
 if has("gui_running")
