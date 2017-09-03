@@ -250,6 +250,8 @@ let g:airline_theme='powerlineish'
 " let g:airline_theme='papercolor'
 " let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_splits = 1
+let g:airline#extensions#tabline#fnamemod = ":t"
 
 " Set extra options when running in GUI mode
 if has("gui_running")
