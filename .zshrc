@@ -30,7 +30,10 @@ fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='ag -U --hidden --ignore .git -g ""'
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
-
+export FZF_DEFAULT_OPTS='
+  --color fg:-1,bg:-1,hl:230,fg+:3,bg+:233,hl+:229
+  --color info:150,prompt:110,spinner:150,pointer:167,marker:174
+'
 # NVM
 export NVM_DIR="/Users/iannguyen/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
