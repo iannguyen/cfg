@@ -67,8 +67,11 @@ filetype plugin indent on
 " FZF
 let g:fzf_layout = { 'up': '~40%' }
 
-" Silversearcher
-let g:ackprg = 'ag --nogroup --nocolor --column'
+" Silversearcher & Ack
+let g:ackprg = 'ag --vimgrep --nogroup --nocolor --column'
+let g:ackhighlight = 1
+let g:ack_qhandler = "botright copen 20"
+let g:ack_apply_qmappings = 1
 
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
@@ -453,9 +456,11 @@ nmap <leader>r :TagbarToggle<CR>
 " FzF
 nmap <C-P> :FZ --reverse<CR>
 nmap <C-B> :Buffers<CR>
+nmap <C-T> :Tags<CR>
 
 " Silversearcher
-nmap <leader><leader> :Ag<space>
+nmap <leader><leader> :Ack!<space>
+" nmap <leader><leader> :Ag<space>
 
 " NERDTree
 nmap ,n :NERDTreeFind<CR>
