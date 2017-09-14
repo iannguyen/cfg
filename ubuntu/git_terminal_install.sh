@@ -29,5 +29,6 @@ echo "============================================================"
 echo "CLONING IANNGUYEN/CFG"
 echo "============================================================"
 git clone https://github.com/iannguyen/cfg.git ~/Desktop/cfg
-ln -s ~/Desktop/cfg/.oh-my-zsh/custom/themes/mein.zsh-theme .oh-my-zsh/custom/themes
+mkdir ~/.oh-my-zsh/custom/themes
+ln -s ~/Desktop/cfg/.oh-my-zsh/custom/themes/mein.zsh-theme .oh-my-zsh/custom/themes/mein.zsh-theme
 ln -sf ~/Desktop/cfg/.zshrc
