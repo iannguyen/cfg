@@ -56,6 +56,14 @@ sudo -u postgres createuser $(whoami)
 sudo -u postgres createdb $(whoami)
 
 echo "============================================================"
+echo "INSTALLING NVM"
+echo "============================================================"
+sudo apt-get install build-essential libssl-dev
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
+nvm install node
+nvm use node
+
+echo "============================================================"
 echo "RUNNING APT AUTOREMOVE"
 echo "============================================================"
 sudo apt autoremove -y
