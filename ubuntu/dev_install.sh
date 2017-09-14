@@ -31,13 +31,6 @@ echo "============================================================"
 sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev -y
 
 echo "============================================================"
-echo "CLONING IANNGUYEN/CFG"
-echo "============================================================"
-git clone https://github.com/iannguyen/cfg.git ~/Desktop/cfg
-ln -s ~/Desktop/cfg/.oh-my-zsh/custom/themes/mein.zsh-theme .oh-my-zsh/custom/themes
-ln -sf ~/Desktop/cfg/.zshrc
-
-echo "============================================================"
 echo "INSTALLING RBENV"
 echo "============================================================"
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
