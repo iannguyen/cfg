@@ -37,6 +37,11 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
 echo "============================================================"
+echo "INSTALLING SILVERSEARCHER"
+echo "============================================================"
+aptinstall silversearcher-ag
+
+echo "============================================================"
 echo "RUNNING APT AUTOREMOVE"
 echo "============================================================"
 sudo apt autoremove -y
