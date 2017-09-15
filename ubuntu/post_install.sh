@@ -42,9 +42,9 @@ echo "============================================================"
 sudo apt install gnome-tweak-tool -y
 
 echo "============================================================"
-echo "INSTALLING TERMINATOR"
+echo "INSTALLING GUAKE"
 echo "============================================================"
-sudo apt install terminator
+sudo apt install guake
 
 echo "============================================================"
 echo "RUNNING APT AUTOREMOVE"
