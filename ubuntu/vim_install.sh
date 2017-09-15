@@ -31,6 +31,11 @@ mkdir .config/nvim
 ln -sf ~/Desktop/cfg/.config/nvim/init.vim .config/nvim/init.vim
 
 echo "============================================================"
+echo "INSTALLING FZF"
+echo "============================================================"
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+
+echo "============================================================"
 echo "RUNNING APT AUTOREMOVE"
 echo "============================================================"
 sudo apt autoremove -y
