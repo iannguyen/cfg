@@ -20,6 +20,7 @@ sudo add-apt-repository ppa:neovim-ppa/stable -y
 sudo apt install python-dev python-pip python3-dev python3-pip -y
 sudo apt install python3-setuptools -y
 sudo easy_install3 pip
+sudo pip3 install neovim
 
 echo "============================================================"
 echo "INSTALLING NEOVIM"
