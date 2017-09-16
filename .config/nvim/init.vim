@@ -55,8 +55,7 @@ Plugin 'raimondi/delimitmate'
 Plugin 'jeetsukumaran/vim-indentwise'
 Plugin 'yggdroot/indentline'
 Plugin 'vim-airline/vim-airline-themes'
-" Plugin 'NLKNguyen/papercolor-theme'
-" Plugin 'roosta/srcery'
+Plugin 'roosta/srcery'
 "
 call vundle#end()
 filetype plugin indent on
@@ -240,7 +239,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme gruvbox
+    colorscheme srcery
 catch
 endtry
 
