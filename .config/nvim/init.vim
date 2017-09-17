@@ -239,7 +239,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-  colorscheme srcery
+  colorscheme gruvbox
 catch
 endtry
 
@@ -456,6 +456,7 @@ nmap <leader>r :TagbarToggle<CR>
 nmap <C-P> :FZ --reverse<CR>
 nmap <C-B> :Buffers<CR>
 nmap <C-T> :Tags<CR>
+nmap <C-]> :Tags <C-R><C-W><CR>
 
 " Silversearcher
 nmap <leader><leader> :Ack!<space>
