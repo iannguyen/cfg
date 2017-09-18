@@ -36,6 +36,22 @@ ln -s ~/Desktop/cfg/.oh-my-zsh/custom/themes/mein.zsh-theme ~/.oh-my-zsh/custom/
 ln -sf ~/Desktop/cfg/.zshrc
 
 echo "============================================================"
+echo "INSTALLING SILVER SEARCHER"
+echo "============================================================"
+brew install the_silver_searcher
+
+echo "============================================================"
+echo "INSTALLING SILVER SEARCHER"
+echo "============================================================"
+brew install the_silver_searcher
+
+echo "============================================================"
+echo "INSTALLING FZF"
+echo "============================================================"
+brew install fzf
+$(brew --prefix)/opt/fzf/install
+
+echo "============================================================"
 echo "INSTALLING PYTHON3"
 echo "============================================================"
 brew install python3
