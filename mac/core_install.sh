@@ -9,6 +9,8 @@ echo "============================================================"
 echo "INSTALLING HOMEBREW"
 echo "============================================================"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew update
+brew doctor
 
 echo "============================================================"
 echo "INSTALLING GIT"
@@ -18,7 +20,7 @@ brew install git
 echo "============================================================"
 echo "INSTALLING ZSH"
 echo "============================================================"
-sudo apt install zsh -y
+brew install zsh -y
 
 echo "============================================================"
 echo "INSTALLING OH-MY-ZSH"
@@ -32,3 +34,15 @@ git clone https://github.com/iannguyen/cfg.git ~/Desktop/cfg
 mkdir ~/.oh-my-zsh/custom/themes
 ln -s ~/Desktop/cfg/.oh-my-zsh/custom/themes/mein.zsh-theme ~/.oh-my-zsh/custom/themes/mein.zsh-theme
 ln -sf ~/Desktop/cfg/.zshrc
+
+echo "============================================================"
+echo "INSTALLING PYTHON3"
+echo "============================================================"
+brew install python3
+
+echo "============================================================"
+echo "INSTALLING NEOVIM"
+echo "============================================================"
+brew install neovim
+pip install neovim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
