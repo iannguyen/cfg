@@ -60,7 +60,7 @@ echo "============================================================"
 echo "INSTALLING NEOVIM"
 echo "============================================================"
 brew install neovim
-pip install neovim
+pip3 install neovim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 mkdir .config
 mkdir .config/nvim
