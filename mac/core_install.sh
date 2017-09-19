@@ -16,6 +16,12 @@ echo "============================================================"
 echo "INSTALLING GIT"
 echo "============================================================"
 brew install git
+echo "GIT GLOBAL USER NAME"
+read user_name
+git config --global user.name $user_name
+echo "GIT GLOBAL EMAIL"
+read user_email
+git config --global user.name $user_email
 
 echo "============================================================"
 echo "INSTALLING ZSH"
