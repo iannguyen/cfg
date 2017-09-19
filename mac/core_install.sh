@@ -32,7 +32,7 @@ echo "CLONING IANNGUYEN/CFG"
 echo "============================================================"
 git clone https://github.com/iannguyen/cfg.git ~/Desktop/cfg
 mkdir ~/.oh-my-zsh/custom/themes
-ln -s ~/Desktop/cfg/.oh-my-zsh/custom/themes/mein.zsh-theme ~/.oh-my-zsh/custom/themes/mein.zsh-theme
+ln -sf ~/Desktop/cfg/.oh-my-zsh/custom/themes/mein.zsh-theme ~/.oh-my-zsh/custom/themes/mein.zsh-theme
 ln -sf ~/Desktop/cfg/.zshrc
 
 echo "============================================================"
@@ -62,3 +62,6 @@ echo "============================================================"
 brew install neovim
 pip install neovim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+mkdir .config
+mkdir .config/nvim
+ln -sf ~/Desktop/cfg/.config/nvim/init.vim .config/nvim/init.vim
