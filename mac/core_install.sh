@@ -65,3 +65,8 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 mkdir .config
 mkdir .config/nvim
 ln -sf ~/Desktop/cfg/.config/nvim/init.vim .config/nvim/init.vim
+
+echo "============================================================"
+echo "SYMLINKING ITERM2"
+echo "============================================================"
+ln -s ~/Desktop/cfg/iterm/com.googlecode.iterm2.plist ~/Library/Preferences
