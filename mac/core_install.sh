@@ -25,7 +25,7 @@ brew install zsh -y
 echo "============================================================"
 echo "INSTALLING OH-MY-ZSH"
 echo "============================================================"
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sh -c "$(curl https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 echo "============================================================"
 echo "CLONING IANNGUYEN/CFG"
