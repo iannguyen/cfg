@@ -20,8 +20,8 @@ echo "INSTALLING POSTGRES"
 echo "============================================================"
 brew install postgresql
 brew services start postgresql
-createdb `whoami`
-createuser `whoami`
+createdb
+createuser
 
 echo "============================================================"
 echo "INSTALLING NVM"
