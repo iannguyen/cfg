@@ -11,6 +11,7 @@ echo "INSTALLING RUBY"
 echo "============================================================"
 rbenv install 2.4.2 --verbose
 rbenv global 2.4.2
+source ~/.zshrc
 rbenv rehash
 gem install bundler
 gem install pry
@@ -27,5 +28,6 @@ echo "============================================================"
 echo "INSTALLING NVM"
 echo "============================================================"
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
+source ~/.zshrc
 nvm install node
 nvm use node
