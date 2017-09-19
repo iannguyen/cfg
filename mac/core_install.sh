@@ -26,7 +26,7 @@ git config --global user.name $user_email
 echo "============================================================"
 echo "INSTALLING ZSH"
 echo "============================================================"
-brew install zsh -y
+brew install zsh
 
 echo "============================================================"
 echo "INSTALLING OH-MY-ZSH"
