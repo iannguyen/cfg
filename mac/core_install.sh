@@ -70,3 +70,12 @@ echo "============================================================"
 echo "SYMLINKING ITERM2"
 echo "============================================================"
 ln -s ~/Desktop/cfg/iterm/com.googlecode.iterm2.plist ~/Library/Preferences
+
+echo "============================================================"
+echo "INSTALLING POWERLINE FONTS"
+echo "============================================================"
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
