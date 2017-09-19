@@ -73,6 +73,11 @@ mkdir .config/nvim
 ln -sf ~/Desktop/cfg/.config/nvim/init.vim .config/nvim/init.vim
 
 echo "============================================================"
+echo "INSTALLING CTAGS"
+echo "============================================================"
+brew install ctags
+
+echo "============================================================"
 echo "SYMLINKING ITERM2"
 echo "============================================================"
 ln -s ~/Desktop/cfg/iterm/com.googlecode.iterm2.plist ~/Library/Preferences
