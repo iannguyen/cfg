@@ -31,3 +31,4 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | b
 source ~/.zshrc
 nvm install node
 nvm use node
+source ~/.zshrc
