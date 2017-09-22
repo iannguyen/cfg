@@ -453,10 +453,14 @@ map <leader>pp :setlocal paste!<cr>
 nmap <leader>r :TagbarToggle<CR>
 
 " FzF
-nmap <C-P> :FZ --reverse<CR>
+nmap <C-P> :Files<CR>
 nmap <C-B> :Buffers<CR>
 nmap <C-T> :Tags<CR>
 nmap <C-]> :Tags <C-R><C-W><CR>
+
+" Files command with preview window
+command! -bang -nargs=? -complete=dir Files
+  \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
 " Silversearcher
 nmap <leader><leader> :Ack!<space>
