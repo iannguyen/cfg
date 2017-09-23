@@ -101,7 +101,7 @@
 	"font_options":
 	[
 	],
-	"font_size": 14,
+	"font_size": 16,
 	"gpu_window_buffer": true,
 	"gutter": true,
 	"highlight_line": true,
