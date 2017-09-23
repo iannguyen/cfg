@@ -332,8 +332,8 @@ map <leader>bd :Bclose<cr>:tabclose<cr>gT
 " Close all the buffers
 map <leader>ba :bufdo bd<cr>
 
-map <leader>l :bnext<cr>
-map <leader>h :bprevious<cr>
+map <Right> :bnext<cr>
+map <Left> :bprevious<cr>
 
 " Useful mappings for managing tabs
 map <leader>tn :tabnew<cr>
@@ -342,8 +342,8 @@ map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
 
 " Switch between tabs
-nnoremap <leader>k :tabprevious<CR>
-nnoremap <leader>j :tabnext<CR>
+nnoremap <Up> :tabprevious<CR>
+nnoremap <Down> :tabnext<CR>
 
 " Pane management
 nnoremap <leader>s :split<CR>
