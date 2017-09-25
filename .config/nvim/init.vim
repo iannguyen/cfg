@@ -118,6 +118,7 @@ set diffopt+=vertical
 
 " Emmet
 let g:user_emmet_leader_key='<C-E>'
+let g:emmet_html5 = 0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
