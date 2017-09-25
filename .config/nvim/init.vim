@@ -50,13 +50,14 @@ Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'mattn/emmet-vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'raimondi/delimitmate'
 Plugin 'jeetsukumaran/vim-indentwise'
 Plugin 'yggdroot/indentline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'roosta/srcery'
-"
+
 call vundle#end()
 filetype plugin indent on
 
@@ -114,6 +115,9 @@ let g:indentLine_char = '|'
 
 " Fugitive
 set diffopt+=vertical
+
+" Emmet
+let g:user_emmet_leader_key='<C-E>'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
