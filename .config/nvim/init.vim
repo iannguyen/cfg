@@ -140,6 +140,9 @@ command W w !sudo tee % > /dev/null
 " Show Commands
 set showcmd
 
+" Make help windows appear vertical split
+autocmd FileType help wincmd L
+
 " Cursor
 " set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver50-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
 
@@ -149,9 +152,12 @@ set scrolloff=15
 " Highlight current line
 set cursorline
 
-" show current line number and relative numbers
+" Show current line number and relative numbers
 set number
 set relativenumber
+
+" Don't conceal strings and other formatting in json, markdown, etc files
+set conceallevel=0
 
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en'
