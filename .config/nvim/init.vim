@@ -110,6 +110,8 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 let g:jsx_ext_required = 0
 
 " IndentLine
+let g:indentLine_enabled = 0
+" let g:indentLine_setConceal = 0
 let g:indentLine_setColors = 0
 let g:indentLine_char = '|'
 
@@ -162,7 +164,7 @@ set number
 set relativenumber
 
 " Don't conceal strings and other formatting in json, markdown, etc files
-set conceallevel=0
+" set conceallevel=0
 
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en'
