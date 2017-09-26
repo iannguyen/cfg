@@ -30,6 +30,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
+Plugin 'easymotion/vim-easymotion'
 Plugin 'morhetz/gruvbox'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
@@ -121,6 +122,10 @@ set diffopt+=vertical
 " Emmet
 let g:user_emmet_leader_key='<C-E>'
 let g:emmet_html5 = 0
+
+" GitGutter
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -261,7 +266,7 @@ set background=dark
 
 " Airline theme
 let g:airline_powerline_fonts = 1
-let g:airline_theme='powerlineish'
+let g:airline_theme='gruvbox'
 " let g:airline_theme='papercolor'
 " let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#enabled = 1
@@ -476,7 +481,7 @@ command! -bang -nargs=? -complete=dir Files
   \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
 " Silversearcher
-nmap <leader><leader> :Ack!<space>
+nmap <leader>f :Ack!<space>
 " nmap <leader><leader> :Ag<space>
 
 " NERDTree
