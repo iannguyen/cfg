@@ -55,6 +55,37 @@ ln -s ~/Desktop/cfg/.oh-my-zsh/custom/themes/mein.zsh-theme .oh-my-zsh/custom/th
 ln -sf ~/Desktop/cfg/.zshrc
 
 echo "============================================================"
+echo "INSTALLING SILVERSEARCHER"
+echo "============================================================"
+sudo apt install silversearcher-ag
+
+echo "============================================================"
+echo "INSTALLING FZF"
+echo "============================================================"
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
+echo "============================================================"
+echo "INSTALLING SOFTWARE-PROPERTIES-COMMON"
+echo "============================================================"
+sudo apt install software-properties-common -y
+sudo apt install python-properties-common -y
+sudo add-apt-repository ppa:neovim-ppa/stable -y
+sudo apt install python-dev python-pip python3-dev python3-pip -y
+sudo apt install python3-setuptools -y
+sudo easy_install3 pip
+sudo pip3 install neovim
+
+echo "============================================================"
+echo "INSTALLING NEOVIM"
+echo "============================================================"
+sudo apt install neovim -y
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+mkdir .config
+mkdir .config/nvim
+ln -sf ~/Desktop/cfg/.config/nvim/init.vim .config/nvim/init.vim
+
+echo "============================================================"
 echo "RUNNING APT AUTOREMOVE"
 echo "============================================================"
 sudo apt autoremove
