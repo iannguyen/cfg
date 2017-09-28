@@ -21,7 +21,7 @@ read user_name
 git config --global user.name $user_name
 echo "GIT GLOBAL EMAIL"
 read user_email
-git config --global user.name $user_email
+git config --global user.email $user_email
 
 echo "============================================================"
 echo "INSTALLING ZSH"
@@ -40,11 +40,6 @@ git clone https://github.com/iannguyen/cfg.git ~/Desktop/cfg
 mkdir ~/.oh-my-zsh/custom/themes
 ln -sf ~/Desktop/cfg/.oh-my-zsh/custom/themes/mein.zsh-theme ~/.oh-my-zsh/custom/themes/mein.zsh-theme
 ln -sf ~/Desktop/cfg/.zshrc
-
-echo "============================================================"
-echo "INSTALLING SILVER SEARCHER"
-echo "============================================================"
-brew install the_silver_searcher
 
 echo "============================================================"
 echo "INSTALLING SILVER SEARCHER"

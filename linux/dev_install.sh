@@ -2,58 +2,51 @@
 clear
 
 echo "============================================================"
-echo "Setting Up The Things"
+echo "INSTALLING DEPENDENCIES"
 echo "============================================================"
+sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev -y
 
 echo "============================================================"
-echo "RUNNING APT UPDATE"
+echo "INSTALLING RBENV"
 echo "============================================================"
-sudo apt-get update -y
-sudo apt update -y
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 
 echo "============================================================"
-echo "RUNNING APT UPGRADE"
+echo "INSTALLING RUBY 2.3.1"
 echo "============================================================"
-sudo apt upgrade -y
+rbenv install 2.3.1 --verbose
+rbenv rehash
+rbenv global 2.3.1
 
 echo "============================================================"
-echo "RUNNING APT DIST-UPGRADE"
+echo "INSTALLING BUNDLER"
 echo "============================================================"
-sudo apt dist-upgrade -y
+gem install bundler
 
 echo "============================================================"
-echo "INSTALLING GDEBI"
+echo "INSTALLING POSTGRES"
 echo "============================================================"
-sudo apt install gdebi -y
+sudo apt install postgresql postgresql-contrib -y
+source ~/.zshrc
+sudo -u postgres createuser $(whoami)
+sudo -u postgres createdb $(whoami)
 
 echo "============================================================"
-echo "INSTALLING VLC"
+echo "INSTALLING NVM"
 echo "============================================================"
-sudo apt install vlc -y
-
-echo "============================================================"
-echo "INSTALLING UNITY-TWEAK-TOOL"
-echo "============================================================"
-sudo apt install unity-tweak-tool -y
-
-echo "============================================================"
-echo "INSTALLING GNOME-TWEAK-TOOL"
-echo "============================================================"
-sudo apt install gnome-tweak-tool -y
-
-echo "============================================================"
-echo "INSTALLING GUAKE"
-echo "============================================================"
-sudo apt install guake
+sudo apt-get install build-essential libssl-dev
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
+source ~/.zshrc
+nvm install node
+nvm use node
 
 echo "============================================================"
 echo "RUNNING APT AUTOREMOVE"
 echo "============================================================"
-sudo apt autoremove
+sudo apt autoremove -y
 
 echo "============================================================"
 echo "RUNNING APT CLEAN"
 echo "============================================================"
-sudo apt clean
-
-
+sudo apt clean -y

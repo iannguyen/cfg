@@ -12,24 +12,31 @@ sudo apt-get update -y
 sudo apt update -y
 
 echo "============================================================"
-echo "INSTALLING GIT"
+echo "RUNNING APT UPGRADE"
 echo "============================================================"
-sudo apt install git -y
+sudo apt upgrade -y
 
 echo "============================================================"
-echo "INSTALLING ZSH"
+echo "RUNNING APT DIST-UPGRADE"
 echo "============================================================"
-sudo apt install zsh -y
+sudo apt dist-upgrade -y
 
 echo "============================================================"
-echo "INSTALLING OH-MY-ZSH"
+echo "INSTALLING GDEBI"
 echo "============================================================"
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sudo apt install gdebi -y
 
 echo "============================================================"
-echo "CLONING IANNGUYEN/CFG"
+echo "INSTALLING VLC"
 echo "============================================================"
-git clone https://github.com/iannguyen/cfg.git ~/Desktop/cfg
-mkdir ~/.oh-my-zsh/custom/themes
-ln -s ~/Desktop/cfg/.oh-my-zsh/custom/themes/mein.zsh-theme .oh-my-zsh/custom/themes/mein.zsh-theme
-ln -sf ~/Desktop/cfg/.zshrc
+sudo apt install vlc -y
+
+echo "============================================================"
+echo "RUNNING APT AUTOREMOVE"
+echo "============================================================"
+sudo apt autoremove
+
+echo "============================================================"
+echo "RUNNING APT CLEAN"
+echo "============================================================"
+sudo apt clean
