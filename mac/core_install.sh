@@ -21,7 +21,7 @@ read user_name
 git config --global user.name $user_name
 echo "GIT GLOBAL EMAIL"
 read user_email
-git config --global user.name $user_email
+git config --global user.email $user_email
 
 echo "============================================================"
 echo "INSTALLING ZSH"
