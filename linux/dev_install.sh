@@ -28,6 +28,7 @@ echo "============================================================"
 echo "INSTALLING POSTGRES"
 echo "============================================================"
 sudo apt install postgresql postgresql-contrib -y
+source ~/.zshrc
 sudo -u postgres createuser $(whoami)
 sudo -u postgres createdb $(whoami)
 
@@ -36,6 +37,7 @@ echo "INSTALLING NVM"
 echo "============================================================"
 sudo apt-get install build-essential libssl-dev
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
+source ~/.zshrc
 nvm install node
 nvm use node
 
