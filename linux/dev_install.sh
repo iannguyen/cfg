@@ -29,7 +29,7 @@ echo "INSTALLING POSTGRES"
 echo "============================================================"
 sudo apt install postgresql postgresql-contrib -y
 source ~/.zshrc
-sudo -u postgres createuser $(whoami)
+sudo -u postgres createuser $(whoami) -s
 sudo -u postgres createdb $(whoami)
 
 echo "============================================================"
