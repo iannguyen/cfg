@@ -2,31 +2,6 @@
 clear
 
 echo "============================================================"
-echo "Setting Up The Things"
-echo "============================================================"
-
-echo "============================================================"
-echo "RUNNING APT UPDATE"
-echo "============================================================"
-sudo apt-get update -y
-sudo apt update -y
-
-echo "============================================================"
-echo "INSTALLING GIT"
-echo "============================================================"
-sudo apt install git -y
-
-echo "============================================================"
-echo "INSTALLING ZSH"
-echo "============================================================"
-sudo apt install zsh -y
-
-echo "============================================================"
-echo "INSTALLING OH-MY-ZSH"
-echo "============================================================"
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-
-echo "============================================================"
 echo "INSTALLING DEPENDENCIES"
 echo "============================================================"
 sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev -y
