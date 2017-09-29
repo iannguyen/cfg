@@ -29,7 +29,7 @@ if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_COMMAND='ag -U --hidden --ignore .git -g ""'
+export FZF_DEFAULT_COMMAND="ag -U --hidden --ignore .git -g ''"
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 export FZF_DEFAULT_OPTS="
   --reverse
