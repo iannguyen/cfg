@@ -58,6 +58,7 @@ Plugin 'jeetsukumaran/vim-indentwise'
 Plugin 'yggdroot/indentline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'roosta/srcery'
+Plugin 'ayu-theme/ayu-vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -266,18 +267,18 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-  colorscheme gruvbox
+  colorscheme ayu
 catch
 endtry
+
+let ayucolor="dark"
 
 let g:gruvbox_contrast_dark='hard'
 set background=dark
 
 " Airline theme
 let g:airline_powerline_fonts = 1
-let g:airline_theme='gruvbox'
-" let g:airline_theme='papercolor'
-" let g:airline_theme='gruvbox'
+let g:airline_theme='ayu'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_splits = 1
 " let g:airline#extensions#tabline#fnamemod = ":t"
