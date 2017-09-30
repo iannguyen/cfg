@@ -32,6 +32,23 @@ echo "============================================================"
 sudo apt install vlc -y
 
 echo "============================================================"
+echo "INSTALLING GNOME TERMINAL"
+echo "============================================================"
+sudo apt install gnome-terminal -y
+
+echo "============================================================"
+echo "INSTALLING POWERLINE FONTS"
+echo "============================================================"
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+
+echo "============================================================"
 echo "INSTALLING GIT"
 echo "============================================================"
 sudo apt install git -y
