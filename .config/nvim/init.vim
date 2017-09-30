@@ -89,12 +89,12 @@ let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 
 " Multiple-cursors/Deoplete
 function! Multiple_cursors_before()
-    let b:deoplete_disable_auto_complete = 1
+  let b:deoplete_disable_auto_complete = 1
 endfunction
 
 function! Multiple_cursors_after()
-    let b:deoplete_disable_auto_complete = 0
-  endfunction
+  let b:deoplete_disable_auto_complete = 0
+endfunction
 
 " Plugin key-mappings.
 " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
@@ -488,7 +488,7 @@ nmap <C-]> :Tags <C-R><C-W><CR>
 
 " Files command with preview window
 command! -bang -nargs=? -complete=dir Files
-  \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+      \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
 " Silversearcher
 nmap <leader>f :Ack!<space>
