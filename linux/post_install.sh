@@ -32,11 +32,40 @@ echo "============================================================"
 sudo apt install vlc -y
 
 echo "============================================================"
-echo "RUNNING APT AUTOREMOVE"
+echo "INSTALLING GNOME TERMINAL"
 echo "============================================================"
-sudo apt autoremove
+sudo apt install gnome-terminal -y
 
 echo "============================================================"
-echo "RUNNING APT CLEAN"
+echo "INSTALLING POWERLINE FONTS"
 echo "============================================================"
-sudo apt clean
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+
+echo "============================================================"
+echo "INSTALLING GIT"
+echo "============================================================"
+sudo apt install git -y
+echo "GIT GLOBAL USER NAME"
+read user_name
+git config --global user.name $user_name
+echo "GIT GLOBAL EMAIL"
+read user_email
+git config --global user.email $user_email
+
+echo "============================================================"
+echo "INSTALLING ZSH"
+echo "============================================================"
+sudo apt install zsh -y
+
+echo "============================================================"
+echo "INSTALLING OH-MY-ZSH"
+echo "============================================================"
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+source ~/.zshrc
