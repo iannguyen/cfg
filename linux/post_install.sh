@@ -44,6 +44,17 @@ echo "============================================================"
 sudo apt install gnome-terminal -y
 
 echo "============================================================"
+echo "INSTALLING GIT"
+echo "============================================================"
+sudo apt install git -y
+echo "GIT GLOBAL USER NAME"
+read user_name
+git config --global user.name $user_name
+echo "GIT GLOBAL EMAIL"
+read user_email
+git config --global user.email $user_email
+
+echo "============================================================"
 echo "INSTALLING POWERLINE FONTS"
 echo "============================================================"
 # clone
@@ -54,17 +65,6 @@ cd fonts
 # clean-up a bit
 cd ..
 rm -rf fonts
-
-echo "============================================================"
-echo "INSTALLING GIT"
-echo "============================================================"
-sudo apt install git -y
-echo "GIT GLOBAL USER NAME"
-read user_name
-git config --global user.name $user_name
-echo "GIT GLOBAL EMAIL"
-read user_email
-git config --global user.email $user_email
 
 echo "============================================================"
 echo "INSTALLING ZSH"
