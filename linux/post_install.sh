@@ -22,6 +22,13 @@ echo "============================================================"
 sudo apt dist-upgrade -y
 
 echo "============================================================"
+echo "INSTALLING GRUB CUSTOMIZER"
+echo "============================================================"
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo apt-get update
+sudo apt-get install grub-customizer
+
+echo "============================================================"
 echo "INSTALLING GDEBI"
 echo "============================================================"
 sudo apt install gdebi -y
