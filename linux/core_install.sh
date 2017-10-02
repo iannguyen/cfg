@@ -33,8 +33,8 @@ echo "============================================================"
 sudo apt install software-properties-common -y
 sudo add-apt-repository ppa:neovim-ppa/stable -y
 sudo apt install python-dev python-pip python3-dev python3-pip -y
-sudo pip3 install neovim
 source ~/.zshrc
+sudo pip3 install neovim
 
 echo "============================================================"
 echo "INSTALLING NEOVIM"

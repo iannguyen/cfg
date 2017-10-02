@@ -33,13 +33,14 @@ sudo -u postgres createuser $(whoami) -s
 sudo -u postgres createdb $(whoami)
 
 echo "============================================================"
-echo "INSTALLING NVM"
+echo "INSTALLING NVM & YARN"
 echo "============================================================"
 sudo apt-get install build-essential libssl-dev
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
 source ~/.zshrc
 nvm install node
 nvm use node
+npm install -g yarn
 
 echo "============================================================"
 echo "RUNNING APT AUTOREMOVE"
