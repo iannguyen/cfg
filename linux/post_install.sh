@@ -29,6 +29,11 @@ sudo apt-get update
 sudo apt-get install grub-customizer -y
 
 echo "============================================================"
+echo "INSTALLING XCLIP"
+echo "============================================================"
+sudo apt install xclip -y
+
+echo "============================================================"
 echo "INSTALLING GDEBI"
 echo "============================================================"
 sudo apt install gdebi -y
