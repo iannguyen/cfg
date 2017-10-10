@@ -57,8 +57,7 @@ Plugin 'raimondi/delimitmate'
 Plugin 'jeetsukumaran/vim-indentwise'
 Plugin 'yggdroot/indentline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'roosta/srcery'
-Plugin 'ayu-theme/ayu-vim'
+Plugin 'w0ng/vim-hybrid'
 
 call vundle#end()
 filetype plugin indent on
@@ -267,7 +266,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-  colorscheme gruvbox
+  colorscheme hybrid
 catch
 endtry
 
@@ -278,7 +277,7 @@ set background=dark
 
 " Airline theme
 let g:airline_powerline_fonts = 1
-let g:airline_theme='gruvbox'
+let g:airline_theme='hybrid'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_splits = 1
 " let g:airline#extensions#tabline#fnamemod = ":t"
