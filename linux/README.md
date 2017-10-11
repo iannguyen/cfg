@@ -1,23 +1,31 @@
 ### Dev Environment Setup Instructions
 
 ##### Update Packages
+
 `sudo apt-get update -y && sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y`
 
 ##### Update Latest Terminal
+
 `sudo apt install gnome-terminal -y`
 
 ##### Update Latest Terminal
+
 `sudo apt install gnome-terminal -y`
 
 ##### Install GDebi Package Installer
+
 `sudo apt install gdebi -y`
 
 ##### Install Git
+
 `sudo apt install git -y`
 `git config --global user.name write_your_user_name`
 `git config --global user.email write_your_email_address`
 
 ##### Install ZSH
+
+- Source: https://github.com/robbyrussell/oh-my-zsh
+
 `sudo apt install zsh -y`
 `sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"`
 `source ~/.zshrc`
@@ -25,6 +33,8 @@
 - Restart your computer
 
 ##### Install Ruby
+
+- Source: https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-with-rbenv-on-ubuntu-16-04
 
 - Install dependencies
 
@@ -49,6 +59,9 @@
 `gem install bundler`
 
 ##### Installing POSTGRESQL
+
+- Source: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04
+
 `sudo apt install postgresql postgresql-contrib -y`
 `source ~/.zshrc`
 `sudo -u postgres createuser $(whoami) -s`
