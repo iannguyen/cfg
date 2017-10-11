@@ -26,9 +26,11 @@
 
 - Source: https://github.com/robbyrussell/oh-my-zsh
 
+```
 `sudo apt install zsh -y`
 `sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"`
 `source ~/.zshrc`
+```
 
 - Restart your computer
 
