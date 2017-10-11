@@ -12,12 +12,6 @@ sudo apt-get update -y && sudo apt update -y && sudo apt upgrade -y && sudo apt 
 sudo apt install gnome-terminal -y
 ```
 
-### Update Latest Terminal
-
-```
-sudo apt install gnome-terminal -y
-```
-
 ### Install GDebi Package Installer
 
 ```
