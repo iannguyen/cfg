@@ -1,43 +1,55 @@
-# Ubuntu Post-Install Things
+### Dev Environment Setup Instructions
 
-### Sources
-https://www.linux.com/learn/get-started-ubuntu-1604
+##### Update Packages
+`sudo apt-get update -y && sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y`
 
-https://code.tutsplus.com/tutorials/a-linux-developers-setup--cms-22138
+##### Update Latest Terminal
+`sudo apt install gnome-terminal -y`
 
-https://www.youtube.com/watch?v=ZMUeqpUy-xI
+##### Update Latest Terminal
+`sudo apt install gnome-terminal -y`
 
-### TLDR
-- `chmod +x ./post_install.sh`
-- `./post_install.sh`
+##### Install GDebi Package Installer
+`sudo apt install gdebi -y`
 
-### Change Appearance Via:
-- System Settings > Appearance
-- Unity Tweak Tool
+##### Install Git
+`sudo apt install git -y`
+`git config --global user.name write_your_user_name`
+`git config --global user.email write_your_email_address`
 
-### Enable All Repos
-- Dash search Software and Updates
-- Enable all repos (universe, source code, etc)
+##### Install ZSH
+`sudo apt install zsh -y`
+`sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"`
+`source ~/.zshrc`
 
-### Gdebi Package Manager
-- set as default:
-  - right-click .deb file > properties
+- Restart your computer
 
-### Additional Drivers
-- Dash search Additional Drivers
+##### Install Ruby
 
-### Adjust Sound
-`alsamixer`
+- Install dependencies
 
-### MISC
-- Chrome
-  - Download Chrome from web
-  - `sudo dpkg -i /path/to/chrome.deb`
-  - For missing dependencies: `sudo apt-get install -f`
+`sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev libpq-dev -y`
 
-### Clean Up
-- remove unneeded packages
-  - `sudo apt-get autoremove`
-- clear package cache
-  - `sudo apt-get clean`
+- Install RBENV
 
+`git clone https://github.com/rbenv/rbenv.git ~/.rbenv`
+`git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build`
+`echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc`
+`echo 'eval "$(rbenv init -)"' >> ~/.zshrc`
+`source ~/.zshrc`
+
+- Install ruby version
+
+`rbenv install 2.4.2 --verbose`
+`rbenv rehash`
+`rbenv global 2.4.2`
+
+- Install Bundler
+
+`gem install bundler`
+
+##### Installing POSTGRESQL
+`sudo apt install postgresql postgresql-contrib -y`
+`source ~/.zshrc`
+`sudo -u postgres createuser $(whoami) -s`
+`sudo -u postgres createdb $(whoami)`
