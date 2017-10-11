@@ -266,7 +266,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-  colorscheme hybrid
+  colorscheme gruvbox
 catch
 endtry
 
@@ -277,7 +277,7 @@ set background=dark
 
 " Airline theme
 let g:airline_powerline_fonts = 1
-let g:airline_theme='hybrid'
+let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_splits = 1
 " let g:airline#extensions#tabline#fnamemod = ":t"
