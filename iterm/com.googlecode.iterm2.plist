@@ -1265,7 +1265,7 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>2960 223 606 469 2560 0 2560 1418 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>3442 961 918 381 2560 0 2560 1418 </string>
+	<string>3442 878 937 464 2560 0 2560 1418 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>2047 541 592 584 1920 97 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -3050,7 +3050,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-11T16:54:48Z</date>
+	<date>2017-10-17T15:58:01Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -3105,7 +3105,7 @@
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>1200</real>
+				<real>1440</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -3113,17 +3113,17 @@
 				<key>Is Hotkey Window</key>
 				<false/>
 				<key>Old Height</key>
-				<real>1408</real>
+				<real>850</real>
 				<key>Old Width</key>
-				<real>1714</real>
+				<real>2010</real>
 				<key>Old X Origin</key>
-				<real>3</real>
+				<real>2835</real>
 				<key>Old Y Origin</key>
-				<real>7</real>
+				<real>284</real>
 				<key>Saved Window Type</key>
 				<integer>4</integer>
 				<key>Screen</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>Selected Tab Index</key>
 				<integer>0</integer>
 				<key>Tabs</key>
@@ -3142,6 +3142,8 @@
 										<dict>
 											<key>ASCII Anti Aliased</key>
 											<true/>
+											<key>ASCII Ligatures</key>
+											<false/>
 											<key>AWDS Pane Directory</key>
 											<string></string>
 											<key>AWDS Pane Option</key>
@@ -3431,18 +3433,20 @@
 											<integer>250</integer>
 											<key>Command</key>
 											<string></string>
+											<key>Cursor Boost</key>
+											<real>0.084414556962025322</real>
 											<key>Cursor Color</key>
 											<dict>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.73299998044967651</real>
+												<real>0.49019607843137253</real>
 												<key>Color Space</key>
-												<string>Calibrated</string>
+												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.73299998044967651</real>
+												<real>1</real>
 												<key>Red Component</key>
-												<real>0.73299998044967651</real>
+												<real>0.48627450980392156</real>
 											</dict>
 											<key>Cursor Guide Color</key>
 											<dict>
@@ -3462,13 +3466,13 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.0</real>
 												<key>Color Space</key>
-												<string>Calibrated</string>
+												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.0</real>
 												<key>Red Component</key>
-												<real>1</real>
+												<real>0.0</real>
 											</dict>
 											<key>Cursor Type</key>
 											<integer>2</integer>
@@ -3886,7 +3890,7 @@
 											<key>Silence Bell</key>
 											<true/>
 											<key>Smart Cursor Color</key>
-											<true/>
+											<false/>
 											<key>Smart Selection Rules</key>
 											<array>
 												<dict>
@@ -4018,7 +4022,7 @@
 										<key>Bookmark Name</key>
 										<string>Mein</string>
 										<key>Columns</key>
-										<integer>238</integer>
+										<integer>318</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -4026,7 +4030,7 @@
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/aiun-mbp/Desktop</string>
+											<string>/Users/iannguyen/Desktop/procore-home</string>
 										</dict>
 										<key>Hosts</key>
 										<array/>
@@ -4038,9 +4042,7 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>73</integer>
-										<key>Server PID</key>
-										<integer>79214</integer>
+										<integer>88</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -4053,8 +4055,6 @@
 										<false/>
 										<key>Substitutions</key>
 										<dict/>
-										<key>TTY</key>
-										<string>/dev/ttys000</string>
 										<key>Working Directory</key>
 										<string>/Users/iannguyen/Desktop/procore-home</string>
 									</dict>
@@ -4063,9 +4063,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1178</real>
+										<real>1416</real>
 										<key>width</key>
-										<real>1920</real>
+										<real>2560</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -4078,9 +4078,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>1178</real>
+								<real>1416</real>
 								<key>width</key>
-								<real>1920</real>
+								<real>2560</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -4104,6 +4104,8 @@
 										<dict>
 											<key>ASCII Anti Aliased</key>
 											<true/>
+											<key>ASCII Ligatures</key>
+											<false/>
 											<key>AWDS Pane Directory</key>
 											<string></string>
 											<key>AWDS Pane Option</key>
@@ -4393,18 +4395,20 @@
 											<integer>250</integer>
 											<key>Command</key>
 											<string></string>
+											<key>Cursor Boost</key>
+											<real>0.084414556962025322</real>
 											<key>Cursor Color</key>
 											<dict>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.73299998044967651</real>
+												<real>0.49019607843137253</real>
 												<key>Color Space</key>
-												<string>Calibrated</string>
+												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.73299998044967651</real>
+												<real>1</real>
 												<key>Red Component</key>
-												<real>0.73299998044967651</real>
+												<real>0.48627450980392156</real>
 											</dict>
 											<key>Cursor Guide Color</key>
 											<dict>
@@ -4424,13 +4428,13 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.0</real>
 												<key>Color Space</key>
-												<string>Calibrated</string>
+												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.0</real>
 												<key>Red Component</key>
-												<real>1</real>
+												<real>0.0</real>
 											</dict>
 											<key>Cursor Type</key>
 											<integer>2</integer>
@@ -4848,7 +4852,7 @@
 											<key>Silence Bell</key>
 											<true/>
 											<key>Smart Cursor Color</key>
-											<true/>
+											<false/>
 											<key>Smart Selection Rules</key>
 											<array>
 												<dict>
@@ -4980,7 +4984,7 @@
 										<key>Bookmark Name</key>
 										<string>Mein</string>
 										<key>Columns</key>
-										<integer>238</integer>
+										<integer>318</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -4988,7 +4992,7 @@
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/iannguyen/Desktop/procore-home</string>
+											<string>/Users/iannguyen/Desktop/procore-home/procore</string>
 										</dict>
 										<key>Hosts</key>
 										<array/>
@@ -5000,9 +5004,7 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>73</integer>
-										<key>Server PID</key>
-										<integer>79732</integer>
+										<integer>88</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -5015,8 +5017,6 @@
 										<false/>
 										<key>Substitutions</key>
 										<dict/>
-										<key>TTY</key>
-										<string>/dev/ttys001</string>
 										<key>Working Directory</key>
 										<string>/Users/iannguyen/Desktop/procore-home/procore</string>
 									</dict>
@@ -5025,9 +5025,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1178</real>
+										<real>1416</real>
 										<key>width</key>
-										<real>1920</real>
+										<real>2560</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -5040,9 +5040,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>1178</real>
+								<real>1416</real>
 								<key>width</key>
-								<real>1920</real>
+								<real>2560</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -5066,6 +5066,8 @@
 										<dict>
 											<key>ASCII Anti Aliased</key>
 											<true/>
+											<key>ASCII Ligatures</key>
+											<false/>
 											<key>AWDS Pane Directory</key>
 											<string></string>
 											<key>AWDS Pane Option</key>
@@ -5355,18 +5357,20 @@
 											<integer>250</integer>
 											<key>Command</key>
 											<string></string>
+											<key>Cursor Boost</key>
+											<real>0.084414556962025322</real>
 											<key>Cursor Color</key>
 											<dict>
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>0.73299998044967651</real>
+												<real>0.49019607843137253</real>
 												<key>Color Space</key>
-												<string>Calibrated</string>
+												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>0.73299998044967651</real>
+												<real>1</real>
 												<key>Red Component</key>
-												<real>0.73299998044967651</real>
+												<real>0.48627450980392156</real>
 											</dict>
 											<key>Cursor Guide Color</key>
 											<dict>
@@ -5386,13 +5390,13 @@
 												<key>Alpha Component</key>
 												<real>1</real>
 												<key>Blue Component</key>
-												<real>1</real>
+												<real>0.0</real>
 												<key>Color Space</key>
-												<string>Calibrated</string>
+												<string>sRGB</string>
 												<key>Green Component</key>
-												<real>1</real>
+												<real>0.0</real>
 												<key>Red Component</key>
-												<real>1</real>
+												<real>0.0</real>
 											</dict>
 											<key>Cursor Type</key>
 											<integer>2</integer>
@@ -5810,7 +5814,7 @@
 											<key>Silence Bell</key>
 											<true/>
 											<key>Smart Cursor Color</key>
-											<true/>
+											<false/>
 											<key>Smart Selection Rules</key>
 											<array>
 												<dict>
@@ -5942,7 +5946,7 @@
 										<key>Bookmark Name</key>
 										<string>Mein</string>
 										<key>Columns</key>
-										<integer>238</integer>
+										<integer>318</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -5950,7 +5954,7 @@
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/iannguyen/Desktop/procore-home/procore</string>
+											<string>/Users/iannguyen/Desktop/procore-home/liftoff</string>
 										</dict>
 										<key>Hosts</key>
 										<array/>
@@ -5962,9 +5966,7 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>73</integer>
-										<key>Server PID</key>
-										<integer>80250</integer>
+										<integer>88</integer>
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
@@ -5977,8 +5979,6 @@
 										<false/>
 										<key>Substitutions</key>
 										<dict/>
-										<key>TTY</key>
-										<string>/dev/ttys002</string>
 										<key>Working Directory</key>
 										<string>/Users/iannguyen/Desktop/procore-home/liftoff</string>
 									</dict>
@@ -5987,9 +5987,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1178</real>
+										<real>1416</real>
 										<key>width</key>
-										<real>1920</real>
+										<real>2560</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -6002,9 +6002,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>1178</real>
+								<real>1416</real>
 								<key>width</key>
-								<real>1920</real>
+								<real>2560</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -6018,11 +6018,11 @@
 				<key>TerminalGuid</key>
 				<string>pty-F5629C51-62FC-4117-B6B8-71BAF50F72E3</string>
 				<key>Width</key>
-				<real>1920</real>
+				<real>2560</real>
 				<key>Window Type</key>
 				<integer>1</integer>
 				<key>X Origin</key>
-				<real>0.0</real>
+				<real>2560</real>
 				<key>Y Origin</key>
 				<real>0.0</real>
 			</dict>
