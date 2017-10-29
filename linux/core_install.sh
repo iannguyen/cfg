@@ -47,6 +47,11 @@ ln -sf ~/Desktop/cfg/.config/nvim/init.vim .config/nvim/init.vim
 source ~/.zshrc
 
 echo "============================================================"
+echo "INSTALLING CTAGS"
+echo "============================================================"
+sudo apt install exuberant-ctags
+
+echo "============================================================"
 echo "RUNNING APT AUTOREMOVE"
 echo "============================================================"
 sudo apt autoremove

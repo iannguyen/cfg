@@ -485,6 +485,7 @@ nmap <C-B> :Buffers<CR>
 nmap <C-T> :Tags<CR>
 nmap <C-]> :Tags <C-R><C-W><CR>
 nmap <C-Y> :BTags<CR>
+let g:fzf_tags_command = 'ctags -R'
 
 " Files command with preview window
 command! -bang -nargs=? -complete=dir Files
