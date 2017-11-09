@@ -55,6 +55,11 @@ sudo apt install imwheel
 ln -sf ~/Desktop/cfg/.imwheelrc
 
 echo "============================================================"
+echo "INSTALLING XDOTOOLS"
+echo "============================================================"
+sudo apt install xdotool
+
+echo "============================================================"
 echo "INSTALLING GIT"
 echo "============================================================"
 sudo apt install git -y
