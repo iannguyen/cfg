@@ -49,6 +49,12 @@ echo "============================================================"
 sudo apt install gnome-terminal -y
 
 echo "============================================================"
+echo "INSTALLING IMWHEELRC"
+echo "============================================================"
+sudo apt install imwheel
+ln -sf ~/Desktop/cfg/.imwheelrc
+
+echo "============================================================"
 echo "INSTALLING GIT"
 echo "============================================================"
 sudo apt install git -y
