@@ -58,6 +58,7 @@ Plugin 'jeetsukumaran/vim-indentwise'
 Plugin 'yggdroot/indentline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'w0ng/vim-hybrid'
+Plugin 'junegunn/seoul256.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -257,7 +258,7 @@ syntax enable
 
 " Enable true colors support
 if has("termguicolors")
-  set termguicolors
+  " set termguicolors
 endif
 
 " Enable 256 colors palette in Gnome Terminal
@@ -266,7 +267,8 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-  colorscheme gruvbox
+  let g:seoul256_background = 233
+  colorscheme seoul256
 catch
 endtry
 
@@ -277,7 +279,7 @@ set background=dark
 
 " Airline theme
 let g:airline_powerline_fonts = 1
-let g:airline_theme='gruvbox'
+let g:airline_theme='powerlineish'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_splits = 1
 " let g:airline#extensions#tabline#fnamemod = ":t"

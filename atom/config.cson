@@ -52,11 +52,7 @@
   "atom-jshint": {}
   "atom-material-ui":
     colors:
-      abaseColor:
-        red: 96
-        green: 125
-        blue: 139
-        alpha: 1
+      abaseColor: "#607d8b"
       predefinedColor: "Blue Grey"
     fonts:
       fontSize: 15
