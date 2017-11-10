@@ -258,7 +258,7 @@ syntax enable
 
 " Enable true colors support
 if has("termguicolors")
-  " set termguicolors
+  set termguicolors
 endif
 
 " Enable 256 colors palette in Gnome Terminal
