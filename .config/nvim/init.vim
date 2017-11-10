@@ -267,7 +267,7 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-  let g:seoul256_background = 233
+  let g:seoul256_background = 234
   colorscheme seoul256
 catch
 endtry
