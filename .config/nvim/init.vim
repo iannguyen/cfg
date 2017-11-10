@@ -266,16 +266,16 @@ if $COLORTERM == 'gnome-terminal'
   set t_Co=256
 endif
 
-try
-  let g:seoul256_background = 233
-  colorscheme seoul256
-catch
-endtry
-
 let ayucolor="dark"
 
+let g:seoul256_background = 233
 let g:gruvbox_contrast_dark='hard'
 set background=dark
+
+try
+  colorscheme gruvbox
+catch
+endtry
 
 " Airline theme
 let g:airline_powerline_fonts = 1
