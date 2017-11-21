@@ -275,13 +275,13 @@ let g:gruvbox_contrast_dark='hard'
 set background=dark
 
 try
-  colorscheme papercolor
+  colorscheme gruvbox
 catch
 endtry
 
 " Airline theme
 let g:airline_powerline_fonts = 1
-let g:airline_theme='papercolor'
+let g:airline_theme='powerlineish'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_splits = 1
 " let g:airline#extensions#tabline#fnamemod = ":t"
