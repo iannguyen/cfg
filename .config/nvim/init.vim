@@ -60,6 +60,7 @@ Plugin 'yggdroot/indentline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'junegunn/seoul256.vim'
+Plugin 'NLKNguyen/papercolor-theme'
 
 call vundle#end()
 filetype plugin indent on
@@ -274,13 +275,13 @@ let g:gruvbox_contrast_dark='hard'
 set background=dark
 
 try
-  colorscheme gruvbox
+  colorscheme papercolor
 catch
 endtry
 
 " Airline theme
 let g:airline_powerline_fonts = 1
-let g:airline_theme='powerlineish'
+let g:airline_theme='papercolor'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_splits = 1
 " let g:airline#extensions#tabline#fnamemod = ":t"
