@@ -15,14 +15,12 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo "============================================================"
 echo "INSTALLING RUBY 2.3.1"
 echo "============================================================"
-rbenv install 2.3.1 --verbose
+rbenv install 2.4.2 --verbose
 rbenv rehash
-rbenv global 2.3.1
-
-echo "============================================================"
-echo "INSTALLING BUNDLER"
-echo "============================================================"
+rbenv global 2.4.2
+source ~/.zshrc
 gem install bundler
+gem install pry
 
 echo "============================================================"
 echo "INSTALLING POSTGRES"
@@ -41,6 +39,7 @@ source ~/.zshrc
 nvm install node
 nvm use node
 npm install -g yarn
+source ~/.zshrc
 
 echo "============================================================"
 echo "RUNNING APT AUTOREMOVE"
