@@ -10,14 +10,14 @@ echo "CLONING IANNGUYEN/CFG"
 echo "============================================================"
 git clone https://github.com/iannguyen/cfg.git ~/Desktop/cfg
 mkdir ~/.oh-my-zsh/custom/themes
-ln -s ~/Desktop/cfg/.oh-my-zsh/custom/themes/mein.zsh-theme .oh-my-zsh/custom/themes/mein.zsh-theme
+ln -sf ~/Desktop/cfg/.oh-my-zsh/custom/themes/mein.zsh-theme .oh-my-zsh/custom/themes/mein.zsh-theme
 ln -sf ~/Desktop/cfg/.zshrc
 source ~/.zshrc
 
 echo "============================================================"
 echo "INSTALLING SILVERSEARCHER"
 echo "============================================================"
-sudo apt install silversearcher-ag
+sudo apt install silversearcher-ag -y
 source ~/.zshrc
 
 echo "============================================================"
@@ -34,7 +34,7 @@ sudo apt install software-properties-common -y
 sudo add-apt-repository ppa:neovim-ppa/stable -y
 sudo apt install python-dev python-pip python3-dev python3-pip -y
 source ~/.zshrc
-sudo pip3 install neovim
+sudo pip3 install neovim -y
 
 echo "============================================================"
 echo "INSTALLING NEOVIM"
@@ -49,7 +49,7 @@ source ~/.zshrc
 echo "============================================================"
 echo "INSTALLING CTAGS"
 echo "============================================================"
-sudo apt install exuberant-ctags
+sudo apt install exuberant-ctags -y
 
 echo "============================================================"
 echo "RUNNING APT AUTOREMOVE"
