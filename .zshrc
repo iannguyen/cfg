@@ -91,7 +91,7 @@ alias sidekiq="bundle exec sidekiq"
 alias resque="QUEUE=* be rake resque:work"
 
 # yarn
-alias nrd="yarn run dev"
+alias yrd="yarn run dev"
 
 # linux
 alias lupdate="sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y"
