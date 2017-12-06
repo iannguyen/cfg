@@ -1,6 +1,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sections:
 "    -> Vundle Settings
+"    -> Plugin Settings
 "    -> General
 "    -> VIM user interface
 "    -> Colors and Fonts
@@ -57,10 +58,12 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'raimondi/delimitmate'
 Plugin 'jeetsukumaran/vim-indentwise'
 Plugin 'yggdroot/indentline'
+Plugin 'FooSoft/vim-argwrap'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'nanotech/jellybeans.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -506,6 +509,9 @@ nmap ,m :NERDTreeToggle<CR>
 " Remove highlight on esc
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
+
+" ArgWrap
+nnoremap <leader>a :ArgWrap<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
