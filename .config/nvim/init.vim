@@ -278,7 +278,7 @@ let g:gruvbox_contrast_dark='hard'
 set background=dark
 
 try
-  colorscheme papercolor
+  colorscheme gruvbox
 catch
 endtry
 
