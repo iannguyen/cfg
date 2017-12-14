@@ -64,6 +64,7 @@ Plugin 'w0ng/vim-hybrid'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'nanotech/jellybeans.vim'
+Plugin 'jacoborus/tender.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -278,13 +279,13 @@ let g:gruvbox_contrast_dark='hard'
 set background=dark
 
 try
-  colorscheme gruvbox
+  colorscheme tender
 catch
 endtry
 
 " Airline theme
 let g:airline_powerline_fonts = 1
-let g:airline_theme='gruvbox'
+let g:airline_theme='tender'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_splits = 1
 " let g:airline#extensions#tabline#fnamemod = ":t"
