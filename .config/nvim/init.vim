@@ -503,7 +503,7 @@ command! -bang -nargs=? -complete=dir Files
       \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
 " Silversearcher
-nmap <leader>f :Ack!<space>
+nmap <leader><C-F> :Ack!<space>
 " nmap <leader><leader> :Ag<space>
 
 " NERDTree
