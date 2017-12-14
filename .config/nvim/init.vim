@@ -489,7 +489,7 @@ nmap <leader>r :TagbarToggle<CR>
 " FzF
 nmap <C-P> :Files<CR>
 nmap <C-B> :Buffers<CR>
-nmap <leader><leader><C-T> :!{ctags}<CR>
+nmap <leader><C-T> :!{ctags}<CR>
 nmap <C-T> :Tags<CR>
 nmap <C-]> :Tags <C-R><C-W><CR>
 nmap <C-Y> :BTags<CR>
