@@ -284,7 +284,7 @@ endtry
 
 " Airline theme
 let g:airline_powerline_fonts = 1
-let g:airline_theme='powerlineish'
+let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_splits = 1
 " let g:airline#extensions#tabline#fnamemod = ":t"
@@ -489,10 +489,14 @@ nmap <leader>r :TagbarToggle<CR>
 " FzF
 nmap <C-P> :Files<CR>
 nmap <C-B> :Buffers<CR>
+nmap <leader><leader><C-T> :!{ctags}<CR>
 nmap <C-T> :Tags<CR>
 nmap <C-]> :Tags <C-R><C-W><CR>
 nmap <C-Y> :BTags<CR>
-let g:fzf_tags_command = 'ctags -R'
+let g:fzf_tags_command = 'ctags'
+
+" Generate Tags on launch
+" autocmd VimEnter * :!{ctags}
 
 " Files command with preview window
 command! -bang -nargs=? -complete=dir Files
