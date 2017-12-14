@@ -1,0 +1,7 @@
+--exclude=.git
+--exclude=assets
+--exclude=node_modules
+--exclude=public
+--exclude=test
+--exclude=vendor
+--recurse=yes

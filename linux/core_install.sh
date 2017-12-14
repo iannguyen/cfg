@@ -50,6 +50,7 @@ echo "============================================================"
 echo "INSTALLING CTAGS"
 echo "============================================================"
 sudo apt install exuberant-ctags -y
+ln -sf ~/Desktop/cfg/.ctags
 
 echo "============================================================"
 echo "RUNNING APT AUTOREMOVE"
