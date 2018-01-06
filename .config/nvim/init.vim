@@ -283,7 +283,7 @@ let g:gruvbox_contrast_dark='hard'
 set background=dark
 
 try
-  colorscheme ayu
+  colorscheme gruvbox
 catch
 endtry
 
