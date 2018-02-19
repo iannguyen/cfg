@@ -39,6 +39,8 @@ sudo pip3 install neovim
 echo "============================================================"
 echo "INSTALLING NEOVIM"
 echo "============================================================"
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
 sudo apt install neovim -y
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 mkdir .config
