@@ -60,12 +60,12 @@ Plugin 'jeetsukumaran/vim-indentwise'
 Plugin 'yggdroot/indentline'
 Plugin 'FooSoft/vim-argwrap'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'w0ng/vim-hybrid'
-Plugin 'junegunn/seoul256.vim'
-Plugin 'NLKNguyen/papercolor-theme'
-Plugin 'nanotech/jellybeans.vim'
 Plugin 'jacoborus/tender.vim'
 Plugin 'ayu-theme/ayu-vim'
+Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'godlygeek/tabular'
+Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'keith/parsec.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -90,6 +90,7 @@ let g:syntastic_ruby_checkers = ['rubocop', 'mri']
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
+" let g:deoplete#max_processes = 1
 
 " Tell Neosnippet about the other snippets
 let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
@@ -243,7 +244,7 @@ set showmatch
 set mat=2
 
 " Ruler
-set colorcolumn=80
+set colorcolumn=120
 
 " No annoying sound on errors
 set noerrorbells
