@@ -1,0 +1,105 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+#	.config/nvim/init.vim	/^vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@\/<CR><CR>$/;"	m
+$LANG	.config/nvim/init.vim	/^let $LANG='en'$/;"	v
+*	.config/nvim/init.vim	/^vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>\/<C-R>=@\/<CR><CR>$/;"	m
+,m	.config/nvim/init.vim	/^nmap ,m :NERDTreeToggle<CR>$/;"	m
+,n	.config/nvim/init.vim	/^nmap ,n :NERDTreeFind<CR>$/;"	m
+0	.config/nvim/init.vim	/^map 0 ^$/;"	m
+<C-B>	.config/nvim/init.vim	/^nmap <C-B> :Buffers<CR>$/;"	m
+<C-B>	.config/nvim/init.vim	/^nnoremap <C-B> :buffers<CR>:buffer<Space>$/;"	m
+<C-P>	.config/nvim/init.vim	/^nmap <C-P> :Files<CR>$/;"	m
+<C-T>	.config/nvim/init.vim	/^nmap <C-T> :Tags<CR>$/;"	m
+<C-Y>	.config/nvim/init.vim	/^nmap <C-Y> :BTags<CR>$/;"	m
+<C-]>	.config/nvim/init.vim	/^nmap <C-]> :Tags <C-R><C-W><CR>$/;"	m
+<C-h>	.config/nvim/init.vim	/^map <C-h> <C-W>h$/;"	m
+<C-j>	.config/nvim/init.vim	/^map <C-j> <C-W>j$/;"	m
+<C-k>	.config/nvim/init.vim	/^imap <C-k>     <Plug>(neosnippet_expand_or_jump)$/;"	m
+<C-k>	.config/nvim/init.vim	/^map <C-k> <C-W>k$/;"	m
+<C-l>	.config/nvim/init.vim	/^map <C-l> <C-W>l$/;"	m
+<D-j>	.config/nvim/init.vim	/^  nmap <D-j> <M-j>$/;"	m
+<D-j>	.config/nvim/init.vim	/^  vmap <D-j> <M-j>$/;"	m
+<D-k>	.config/nvim/init.vim	/^  nmap <D-k> <M-k>$/;"	m
+<D-k>	.config/nvim/init.vim	/^  vmap <D-k> <M-k>$/;"	m
+<Down>	.config/nvim/init.vim	/^nnoremap <Down> :tabnext<CR>$/;"	m
+<Leader>m	.config/nvim/init.vim	/^noremap <Leader>m mmHmt:%s\/<C-V><cr>\/\/ge<cr>'tzt'm$/;"	m
+<Leader>tl	.config/nvim/init.vim	/^nmap <Leader>tl :exe "tabn ".g:lasttab<CR>$/;"	m
+<Left>	.config/nvim/init.vim	/^map <Left> :bprevious<cr>$/;"	m
+<Right>	.config/nvim/init.vim	/^map <Right> :bnext<cr>$/;"	m
+<Up>	.config/nvim/init.vim	/^nnoremap <Up> :tabprevious<CR>$/;"	m
+<esc>	.config/nvim/init.vim	/^nnoremap <esc> :noh<return><esc>$/;"	m
+<esc>^[	.config/nvim/init.vim	/^nnoremap <esc>^[ <esc>^[$/;"	m
+<leader><C-F>	.config/nvim/init.vim	/^nmap <leader><C-F> :Ack!<space>$/;"	m
+<leader><C-T>	.config/nvim/init.vim	/^nmap <leader><C-T> :!{ctags}<CR>$/;"	m
+<leader>a	.config/nvim/init.vim	/^nnoremap <leader>a :ArgWrap<CR>$/;"	m
+<leader>ba	.config/nvim/init.vim	/^map <leader>ba :bufdo bd<cr>$/;"	m
+<leader>bd	.config/nvim/init.vim	/^map <leader>bd :Bclose<cr>:tabclose<cr>gT$/;"	m
+<leader>cd	.config/nvim/init.vim	/^map <leader>cd :cd %:p:h<cr>:pwd<cr>$/;"	m
+<leader>pp	.config/nvim/init.vim	/^map <leader>pp :setlocal paste!<cr>$/;"	m
+<leader>q	.config/nvim/init.vim	/^map <leader>q :e ~\/buffer<cr>$/;"	m
+<leader>r	.config/nvim/init.vim	/^nmap <leader>r :TagbarToggle<CR>$/;"	m
+<leader>s	.config/nvim/init.vim	/^nnoremap <leader>s :split<CR>$/;"	m
+<leader>s?	.config/nvim/init.vim	/^map <leader>s? z=$/;"	m
+<leader>sa	.config/nvim/init.vim	/^map <leader>sa zg$/;"	m
+<leader>sn	.config/nvim/init.vim	/^map <leader>sn ]s$/;"	m
+<leader>sp	.config/nvim/init.vim	/^map <leader>sp [s$/;"	m
+<leader>ss	.config/nvim/init.vim	/^map <leader>ss :setlocal spell!<cr>$/;"	m
+<leader>tc	.config/nvim/init.vim	/^map <leader>tc :tabclose<cr>$/;"	m
+<leader>te	.config/nvim/init.vim	/^map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>\/$/;"	m
+<leader>tm	.config/nvim/init.vim	/^map <leader>tm :tabmove$/;"	m
+<leader>tn	.config/nvim/init.vim	/^map <leader>tn :tabnew<cr>$/;"	m
+<leader>to	.config/nvim/init.vim	/^map <leader>to :tabonly<cr>$/;"	m
+<leader>v	.config/nvim/init.vim	/^nnoremap <leader>v :vsplit<CR>$/;"	m
+<leader>w	.config/nvim/init.vim	/^nmap <leader>w :w!<cr>$/;"	m
+<leader>x	.config/nvim/init.vim	/^map <leader>x :e ~\/buffer.md<cr>$/;"	m
+Bclose	.config/nvim/init.vim	/^command! Bclose call <SID>BufcloseCloseIt()$/;"	c
+BufcloseCloseIt	.config/nvim/init.vim	/^function! <SID>BufcloseCloseIt()$/;"	f
+CleanExtraSpaces	.config/nvim/init.vim	/^fun! CleanExtraSpaces()$/;"	f
+CmdLine	.config/nvim/init.vim	/^function! CmdLine(str)$/;"	f
+Files	.config/nvim/init.vim	/^command! -bang -nargs=? -complete=dir Files$/;"	c
+HasPaste	.config/nvim/init.vim	/^function! HasPaste()$/;"	f
+Multiple_cursors_after	.config/nvim/init.vim	/^function! Multiple_cursors_after()$/;"	f
+Multiple_cursors_before	.config/nvim/init.vim	/^function! Multiple_cursors_before()$/;"	f
+VisualSelection	.config/nvim/init.vim	/^function! VisualSelection(direction, extra_filter) range$/;"	f
+W	.config/nvim/init.vim	/^command W w !sudo tee % > \/dev\/null$/;"	c
+ayucolor	.config/nvim/init.vim	/^let ayucolor="mirage"$/;"	v
+g:NERDSpaceDelims	.config/nvim/init.vim	/^let g:NERDSpaceDelims = 1$/;"	v
+g:NERDTreeWinSize	.config/nvim/init.vim	/^let g:NERDTreeWinSize = 35$/;"	v
+g:SuperTabDefaultCompletionType	.config/nvim/init.vim	/^let g:SuperTabDefaultCompletionType = "<c-n>"$/;"	v
+g:ack_apply_qmappings	.config/nvim/init.vim	/^let g:ack_apply_qmappings = 1$/;"	v
+g:ack_qhandler	.config/nvim/init.vim	/^let g:ack_qhandler = "botright copen 20"$/;"	v
+g:ackhighlight	.config/nvim/init.vim	/^let g:ackhighlight = 1$/;"	v
+g:ackprg	.config/nvim/init.vim	/^let g:ackprg = 'ag --vimgrep --nogroup --nocolor --column'$/;"	v
+g:airline#extensions#tabline#enabled	.config/nvim/init.vim	/^let g:airline#extensions#tabline#enabled = 1$/;"	v
+g:airline#extensions#tabline#show_splits	.config/nvim/init.vim	/^let g:airline#extensions#tabline#show_splits = 1$/;"	v
+g:airline_powerline_fonts	.config/nvim/init.vim	/^let g:airline_powerline_fonts = 1$/;"	v
+g:airline_theme	.config/nvim/init.vim	/^let g:airline_theme='ayu'$/;"	v
+g:deoplete#enable_at_startup	.config/nvim/init.vim	/^let g:deoplete#enable_at_startup = 1$/;"	v
+g:emmet_html5	.config/nvim/init.vim	/^let g:emmet_html5 = 0$/;"	v
+g:fzf_layout	.config/nvim/init.vim	/^let g:fzf_layout = { 'up': '~40%' }$/;"	v
+g:fzf_tags_command	.config/nvim/init.vim	/^let g:fzf_tags_command = 'ctags'$/;"	v
+g:gitgutter_eager	.config/nvim/init.vim	/^let g:gitgutter_eager = 0$/;"	v
+g:gitgutter_realtime	.config/nvim/init.vim	/^let g:gitgutter_realtime = 0$/;"	v
+g:gruvbox_contrast_dark	.config/nvim/init.vim	/^let g:gruvbox_contrast_dark='hard'$/;"	v
+g:indentLine_char	.config/nvim/init.vim	/^let g:indentLine_char = '|'$/;"	v
+g:indentLine_enabled	.config/nvim/init.vim	/^let g:indentLine_enabled = 0$/;"	v
+g:indentLine_setColors	.config/nvim/init.vim	/^let g:indentLine_setColors = 0$/;"	v
+g:jsx_ext_required	.config/nvim/init.vim	/^let g:jsx_ext_required = 0$/;"	v
+g:lasttab	.config/nvim/init.vim	/^let g:lasttab = 1$/;"	v
+g:neosnippet#enable_snipmate_compatibility	.config/nvim/init.vim	/^let g:neosnippet#enable_snipmate_compatibility = 1$/;"	v
+g:neosnippet#snippets_directory	.config/nvim/init.vim	/^let g:neosnippet#snippets_directory='~\/.vim\/bundle\/vim-snippets\/snippets'$/;"	v
+g:seoul256_background	.config/nvim/init.vim	/^let g:seoul256_background = 233$/;"	v
+g:syntastic_always_populate_loc_list	.config/nvim/init.vim	/^let g:syntastic_always_populate_loc_list = 1$/;"	v
+g:syntastic_auto_loc_list	.config/nvim/init.vim	/^let g:syntastic_auto_loc_list = 0$/;"	v
+g:syntastic_check_on_wq	.config/nvim/init.vim	/^let g:syntastic_check_on_wq = 0$/;"	v
+g:syntastic_ruby_checkers	.config/nvim/init.vim	/^let g:syntastic_ruby_checkers = ['rubocop', 'mri']$/;"	v
+g:user_emmet_leader_key	.config/nvim/init.vim	/^let g:user_emmet_leader_key='<C-E>'$/;"	v
+mapleader	.config/nvim/init.vim	/^let mapleader=" "$/;"	v
+˚	.config/nvim/init.vim	/^nmap ˚ mz:m-2<cr>`z$/;"	m
+˚	.config/nvim/init.vim	/^vmap ˚ :m '<-2<cr>`>my`<mzgv`yo`z$/;"	m
+∆	.config/nvim/init.vim	/^nmap ∆ mz:m+<cr>`z$/;"	m
+∆	.config/nvim/init.vim	/^vmap ∆ :m '>+<cr>`<my`>mzgv`yo`z$/;"	m
