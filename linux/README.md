@@ -5,8 +5,10 @@
 - 'core_install.sh'
 - 'dev_install.sh'
 
-##### Misc
+##### Extras
 
+- add `noatime` for SSDs, in `/etc/fstab`, in front of `errors`
+  - i.e `noatime,errors=remote-ro`
 - Grub Customizer
 - Touchpad-Indicator
 - Dash-to-dock extension
