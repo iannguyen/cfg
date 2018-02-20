@@ -431,7 +431,7 @@ set statusline+=%*
 " => Editing mappings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Yanked text get put onto clipboard
-set clipboard+=unnamed
+set clipboard+=unnamedplus
 
 " Remap VIM 0 to first non-blank character
 map 0 ^
