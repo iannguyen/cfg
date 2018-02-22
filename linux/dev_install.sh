@@ -23,12 +23,32 @@ gem install bundler
 gem install pry
 
 echo "============================================================"
+echo "INSTALLING ERLANG"
+echo "============================================================"
+wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo dpkg -i erlang-solutions_1.0_all.deb
+sudo apt update
+sudo apt install esl-erlang
+rm erlang-solutions_1.0_all.deb
+
+echo "============================================================"
+echo "INSTALLING ELIXIR"
+echo "============================================================"
+sudo apt install elixir
+yes | mix local.hex
+
+echo "============================================================"
+echo "INSTALLING PHOENIX"
+echo "============================================================"
+yes | mix archive.install https://github.com/phoenixframework/archives/raw/master/phx_new.ez
+
+echo "============================================================"
 echo "INSTALLING POSTGRES"
 echo "============================================================"
 sudo apt install postgresql postgresql-contrib -y
 source ~/.zshrc
 sudo -u postgres createuser $(whoami) -s
 sudo -u postgres createdb $(whoami)
+sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'postgres';"
 
 echo "============================================================"
 echo "INSTALLING NVM & YARN"
