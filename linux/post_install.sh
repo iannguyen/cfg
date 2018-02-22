@@ -52,7 +52,7 @@ echo "============================================================"
 echo "INSTALLING IMWHEELRC"
 echo "============================================================"
 sudo apt install imwheel -y
-ln -sf ~/Desktop/cfg/.imwheelrc
+ln -sf ~/Desktop/cfg/linux/.imwheelrc
 
 echo "============================================================"
 echo "INSTALLING XDOTOOLS"
