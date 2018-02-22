@@ -10,6 +10,8 @@
 - add `noatime` for SSDs, in `/etc/fstab`, in front of `errors`
   - i.e `noatime,errors=remote-ro`
 - Grub Customizer
+- Unity Tweak Tool
+- Gnome Tweak Tool
 - Touchpad-Indicator
 - Dash-to-dock extension
 - imwheel, copy the .imwheelrc to the root directory

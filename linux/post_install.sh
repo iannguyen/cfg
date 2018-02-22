@@ -22,13 +22,6 @@ echo "============================================================"
 sudo apt dist-upgrade -y
 
 echo "============================================================"
-echo "INSTALLING GRUB CUSTOMIZER"
-echo "============================================================"
-# sudo add-apt-repository ppa:danielrichter2007/grub-customizer
-# sudo apt-get update
-# sudo apt-get install grub-customizer -y
-
-echo "============================================================"
 echo "INSTALLING XCLIP"
 echo "============================================================"
 sudo apt install xclip -y
@@ -42,17 +35,6 @@ echo "============================================================"
 echo "INSTALLING VLC"
 echo "============================================================"
 sudo apt install vlc -y
-
-echo "============================================================"
-echo "INSTALLING GNOME TERMINAL"
-echo "============================================================"
-# sudo apt install gnome-terminal -y
-
-echo "============================================================"
-echo "INSTALLING IMWHEELRC"
-echo "============================================================"
-sudo apt install imwheel -y
-ln -sf ~/Desktop/cfg/linux/.imwheelrc
 
 echo "============================================================"
 echo "INSTALLING XDOTOOLS"
