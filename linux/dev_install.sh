@@ -4,7 +4,7 @@ clear
 echo "============================================================"
 echo "INSTALLING DEPENDENCIES"
 echo "============================================================"
-sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev libpq-dev -y
+sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev libpq-dev inotify-tools -y
 
 echo "============================================================"
 echo "INSTALLING RBENV"
