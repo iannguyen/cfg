@@ -277,7 +277,6 @@ if $COLORTERM == 'gnome-terminal'
   set t_Co=256
 endif
 
-
 let ayucolor="mirage"
 let g:seoul256_background = 233
 let g:gruvbox_contrast_dark='hard'
