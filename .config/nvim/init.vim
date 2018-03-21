@@ -146,6 +146,10 @@ let g:emmet_html5 = 0
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
 
+" ALE
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_text_changed = 'never'
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

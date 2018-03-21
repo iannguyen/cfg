@@ -74,6 +74,7 @@ g:ack_apply_qmappings	.config/nvim/init.vim	/^let g:ack_apply_qmappings = 1$/;"	
 g:ack_qhandler	.config/nvim/init.vim	/^let g:ack_qhandler = "botright copen 20"$/;"	v
 g:ackhighlight	.config/nvim/init.vim	/^let g:ackhighlight = 1$/;"	v
 g:ackprg	.config/nvim/init.vim	/^let g:ackprg = 'ag --vimgrep --nogroup --nocolor --column'$/;"	v
+g:airline#extensions#ale#enabled	.config/nvim/init.vim	/^let g:airline#extensions#ale#enabled = 1$/;"	v
 g:airline#extensions#tabline#enabled	.config/nvim/init.vim	/^let g:airline#extensions#tabline#enabled = 1$/;"	v
 g:airline#extensions#tabline#show_splits	.config/nvim/init.vim	/^let g:airline#extensions#tabline#show_splits = 1$/;"	v
 g:airline_powerline_fonts	.config/nvim/init.vim	/^let g:airline_powerline_fonts = 1$/;"	v
