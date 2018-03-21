@@ -36,7 +36,8 @@ Plugin 'morhetz/gruvbox'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'mileszs/ack.vim'
-Plugin 'scrooloose/syntastic'
+Plugin 'w0rp/ale'
+" Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -82,11 +83,11 @@ let g:ackhighlight = 1
 let g:ack_qhandler = "botright copen 20"
 let g:ack_apply_qmappings = 1
 
-" Syntastic
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_ruby_checkers = ['rubocop', 'mri']
+" " Syntastic
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 0
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_ruby_checkers = ['rubocop', 'mri']
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
@@ -294,6 +295,7 @@ let g:airline_theme='ayu'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_splits = 1
 " let g:airline#extensions#tabline#fnamemod = ":t"
+let g:airline#extensions#ale#enabled = 1
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -424,7 +426,7 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 
 " Statusline
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

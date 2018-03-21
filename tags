@@ -3,7 +3,7 @@
 !_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_PROGRAM_VERSION	5.8	//
 #	.config/nvim/init.vim	/^vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@\/<CR><CR>$/;"	m
 $LANG	.config/nvim/init.vim	/^let $LANG='en'$/;"	v
 *	.config/nvim/init.vim	/^vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>\/<C-R>=@\/<CR><CR>$/;"	m
@@ -93,10 +93,6 @@ g:lasttab	.config/nvim/init.vim	/^let g:lasttab = 1$/;"	v
 g:neosnippet#enable_snipmate_compatibility	.config/nvim/init.vim	/^let g:neosnippet#enable_snipmate_compatibility = 1$/;"	v
 g:neosnippet#snippets_directory	.config/nvim/init.vim	/^let g:neosnippet#snippets_directory='~\/.vim\/bundle\/vim-snippets\/snippets'$/;"	v
 g:seoul256_background	.config/nvim/init.vim	/^let g:seoul256_background = 233$/;"	v
-g:syntastic_always_populate_loc_list	.config/nvim/init.vim	/^let g:syntastic_always_populate_loc_list = 1$/;"	v
-g:syntastic_auto_loc_list	.config/nvim/init.vim	/^let g:syntastic_auto_loc_list = 0$/;"	v
-g:syntastic_check_on_wq	.config/nvim/init.vim	/^let g:syntastic_check_on_wq = 0$/;"	v
-g:syntastic_ruby_checkers	.config/nvim/init.vim	/^let g:syntastic_ruby_checkers = ['rubocop', 'mri']$/;"	v
 g:user_emmet_leader_key	.config/nvim/init.vim	/^let g:user_emmet_leader_key='<C-E>'$/;"	v
 mapleader	.config/nvim/init.vim	/^let mapleader=" "$/;"	v
 ˚	.config/nvim/init.vim	/^nmap ˚ mz:m-2<cr>`z$/;"	m
