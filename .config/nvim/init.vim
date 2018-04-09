@@ -67,6 +67,7 @@ Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'godlygeek/tabular'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'keith/parsec.vim'
+Plugin 'lifepillar/vim-solarized8'
 
 call vundle#end()
 filetype plugin indent on
@@ -288,7 +289,7 @@ let g:gruvbox_contrast_dark='hard'
 set background=dark
 
 try
-  colorscheme gruvbox
+  colorscheme solarized8
 catch
 endtry
 

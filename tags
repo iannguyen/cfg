@@ -79,6 +79,8 @@ g:airline#extensions#tabline#enabled	.config/nvim/init.vim	/^let g:airline#exten
 g:airline#extensions#tabline#show_splits	.config/nvim/init.vim	/^let g:airline#extensions#tabline#show_splits = 1$/;"	v
 g:airline_powerline_fonts	.config/nvim/init.vim	/^let g:airline_powerline_fonts = 1$/;"	v
 g:airline_theme	.config/nvim/init.vim	/^let g:airline_theme='ayu'$/;"	v
+g:ale_lint_on_enter	.config/nvim/init.vim	/^let g:ale_lint_on_enter = 0$/;"	v
+g:ale_lint_on_text_changed	.config/nvim/init.vim	/^let g:ale_lint_on_text_changed = 'never'$/;"	v
 g:deoplete#enable_at_startup	.config/nvim/init.vim	/^let g:deoplete#enable_at_startup = 1$/;"	v
 g:emmet_html5	.config/nvim/init.vim	/^let g:emmet_html5 = 0$/;"	v
 g:fzf_layout	.config/nvim/init.vim	/^let g:fzf_layout = { 'up': '~40%' }$/;"	v
