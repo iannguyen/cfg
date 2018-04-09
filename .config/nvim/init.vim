@@ -37,7 +37,6 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'w0rp/ale'
-" Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
