@@ -67,6 +67,8 @@ Plugin 'godlygeek/tabular'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'keith/parsec.vim'
 Plugin 'lifepillar/vim-solarized8'
+Plugin 'joshdick/onedark.vim'
+Plugin 'rakr/vim-two-firewatch'
 
 call vundle#end()
 filetype plugin indent on
@@ -294,7 +296,9 @@ endtry
 
 " Airline theme
 let g:airline_powerline_fonts = 1
-let g:airline_theme='ayu'
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
+" let g:airline_solarized_dark_text = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_splits = 1
 " let g:airline#extensions#tabline#fnamemod = ":t"
