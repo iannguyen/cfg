@@ -399,6 +399,8 @@ nnoremap <leader>s :split<CR>
 nnoremap <leader>v :vsplit<CR>
 nnoremap <C-B> :buffers<CR>:buffer<Space>
 
+nnoremap <leader>bp :call BreakPointInsert()<CR>
+
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
 nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
@@ -585,4 +587,22 @@ function! VisualSelection(direction, extra_filter) range
 
   let @/ = l:pattern
   let @" = l:saved_reg
+endfunction
+
+function! BreakPointInsert()
+  let g:pry_map = {
+        \ 'ruby' : "require 'pry'; binding.pry",
+        \ 'javascript' : 'debugger;',
+        \ 'javascript.jsx' : 'debugger;',
+        \ 'elixir' : 'require IEx; IEx.pry',
+        \}
+
+  if has_key(g:pry_map, &filetype)
+    let text = get(g:pry_map, &filetype)
+    call feedkeys('O', 'i')
+    call feedkeys(text)
+    call feedkeys("\<Esc>")
+  else
+    echo 'No mapping defined for filetype: ' . &filetype
+  endif
 endfunction
