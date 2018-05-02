@@ -69,6 +69,8 @@ Plugin 'keith/parsec.vim'
 Plugin 'lifepillar/vim-solarized8'
 Plugin 'joshdick/onedark.vim'
 Plugin 'rakr/vim-two-firewatch'
+Plugin 'chriskempson/base16-vim'
+Plugin 'yegappan/greplace'
 
 call vundle#end()
 filetype plugin indent on
@@ -82,7 +84,7 @@ let g:fzf_layout = { 'up': '~40%' }
 " Silversearcher & Ack
 let g:ackprg = 'ag --vimgrep --nogroup --nocolor --column'
 let g:ackhighlight = 1
-let g:ack_qhandler = "botright copen 20"
+let g:ack_qhandler = "botright copen 30"
 let g:ack_apply_qmappings = 1
 
 " " Syntastic
@@ -415,11 +417,11 @@ map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
 " Specify the behavior when switching between buffers
-try
-  set switchbuf=useopen,usetab,newtab
-  set stal=2
-catch
-endtry
+" try
+  " set switchbuf=useopen,usetab,newtab
+  " set stal=2
+" catch
+" endtry
 
 " Return to last edit position when opening files (You want this!)
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
@@ -521,7 +523,10 @@ command! -bang -nargs=? -complete=dir Files
 
 " Silversearcher
 nmap <leader><C-F> :Ack!<space>
-" nmap <leader><leader> :Ag<space>
+
+" Greplace on buffer
+nmap <leader><C-S> :Gqfopen<CR> <C-W>k :q<CR> <C-W>l <C-W>j <C-W>j
+nmap <leader><C-R> :Greplace<CR>
 
 " NERDTree
 nmap ,n :NERDTreeFind<CR>
