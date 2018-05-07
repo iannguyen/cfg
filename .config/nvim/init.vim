@@ -71,6 +71,7 @@ Plugin 'joshdick/onedark.vim'
 Plugin 'rakr/vim-two-firewatch'
 Plugin 'chriskempson/base16-vim'
 Plugin 'yegappan/greplace'
+Plugin 'mhartington/oceanic-next'
 
 call vundle#end()
 filetype plugin indent on
@@ -292,13 +293,13 @@ let g:gruvbox_contrast_dark='hard'
 set background=dark
 
 try
-  colorscheme solarized8
+  colorscheme OceanicNext
 catch
 endtry
 
 " Airline theme
 let g:airline_powerline_fonts = 1
-let g:airline_theme='solarized'
+let g:airline_theme='oceanicnext'
 let g:airline_solarized_bg='dark'
 " let g:airline_solarized_dark_text = 1
 let g:airline#extensions#tabline#enabled = 1
