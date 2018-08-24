@@ -118,6 +118,7 @@ let g:neosnippet#enable_snipmate_compatibility = 1
 " NERDTree
 let g:NERDSpaceDelims = 1
 let g:NERDTreeWinSize = 35
+let g:NERDTreeWinPos = "right"
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -250,7 +251,7 @@ set showmatch
 set mat=2
 
 " Ruler
-set colorcolumn=120
+" set colorcolumn=120
 
 " No annoying sound on errors
 set noerrorbells
@@ -597,6 +598,7 @@ function! BreakPointInsert()
         \ 'javascript' : 'debugger;',
         \ 'javascript.jsx' : 'debugger;',
         \ 'elixir' : 'require IEx; IEx.pry',
+        \ 'eelixir': '<% require IEx; IEx.pry %>'
         \}
 
   if has_key(g:pry_map, &filetype)
