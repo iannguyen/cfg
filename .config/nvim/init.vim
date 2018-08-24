@@ -174,9 +174,6 @@ set showcmd
 " Make help windows appear vertical split
 autocmd FileType help wincmd L
 
-" Cursor
-" set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver50-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
-
 " Set 7 lines to the cursor - when moving vertically using j/k
 set scrolloff=15
 
@@ -186,9 +183,6 @@ set cursorline
 " Show current line number and relative numbers
 set number
 set relativenumber
-
-" Don't conceal strings and other formatting in json, markdown, etc files
-" set conceallevel=0
 
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en'
@@ -257,9 +251,6 @@ set tm=500
 if has("gui_macvim")
   autocmd GUIEnter * set vb t_vb=
 endif
-
-" Add a bit extra margin to the left
-" set foldcolumn=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
