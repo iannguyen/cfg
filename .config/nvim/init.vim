@@ -255,7 +255,6 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " Enable syntax highlighting
 syntax enable
 
@@ -269,9 +268,6 @@ if $COLORTERM == 'gnome-terminal'
   set t_Co=256
 endif
 
-let ayucolor="mirage"
-let g:seoul256_background = 233
-let g:gruvbox_contrast_dark='hard'
 set background=dark
 
 try
@@ -282,11 +278,8 @@ endtry
 " Airline theme
 let g:airline_powerline_fonts = 1
 let g:airline_theme='oceanicnext'
-let g:airline_solarized_bg='dark'
-" let g:airline_solarized_dark_text = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_splits = 1
-" let g:airline#extensions#tabline#fnamemod = ":t"
 let g:airline#extensions#ale#enabled = 1
 
 " Set extra options when running in GUI mode
@@ -343,10 +336,6 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-" map <space> /
-" map <c-space> ?
-
 " Set new windows as current window
 set splitbelow
 set splitright
