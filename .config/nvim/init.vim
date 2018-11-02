@@ -43,7 +43,6 @@ Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'ervandew/supertab'
@@ -62,6 +61,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'godlygeek/tabular'
 Plugin 'yegappan/greplace'
+Plugin 'rrrene/credo'
 
 " Color Schemes
 Plugin 'morhetz/gruvbox'
@@ -239,7 +239,7 @@ set showmatch
 set mat=2
 
 " Ruler
-" set colorcolumn=120
+set colorcolumn=100
 
 " No annoying sound on errors
 set noerrorbells
@@ -471,9 +471,6 @@ map <leader>x :e ~/buffer.md<cr>
 
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
-
-" Toggle Tagbar
-nmap <leader>r :TagbarToggle<CR>
 
 " FzF
 nmap <C-P> :Files<CR>

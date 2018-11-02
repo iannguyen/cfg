@@ -1544,8 +1544,6 @@
 	<string>7</string>
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
-	<key>NSNavLastRootDirectory</key>
-	<string>~/Desktop/cfg/iterm/iTerm2-Colors</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{781, 481}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
@@ -1600,21 +1598,21 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>138 464 819 398 0 0 2560 1418 </string>
+	<string>2824 366 819 639 2560 0 2560 1418 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>613 593 606 456 0 0 1920 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>3530 769 620 392 2560 0 2560 1418 </string>
+	<string>970 786 620 392 0 0 2560 1440 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>400 241 606 469 0 0 2560 1418 </string>
+	<string>268 186 606 469 0 0 1920 1178 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>562 733 918 401 0 0 1920 1178 </string>
+	<string>3442 568 918 423 2560 0 2560 1418 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>2047 541 592 584 1920 97 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1920 1200 0 0 1920 1178 </string>
+	<string>0 0 2560 1440 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>2560 878 1440 850 2560 -810 1440 2538 </string>
+	<string>0 228 1920 950 0 0 1920 1178 </string>
 	<key>NeverWarnAboutShortLivedSessions_A79A78D6-0857-4856-9B2F-2A6318C25688</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -2225,7 +2223,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>UbuntuMonoDerivativePowerline-Regular 16</string>
+			<string>UbuntuMonoDerivativePowerline-Regular 18</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -3303,7 +3301,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-06-20T22:00:54Z</date>
+	<date>2018-10-30T15:44:53Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -4278,7 +4276,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.6</string>
+	<string>3.2.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
