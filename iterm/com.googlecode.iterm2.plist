@@ -1481,7 +1481,7 @@
 		</dict>
 	</dict>
 	<key>Default Arrangement Name</key>
-	<string>Procore-Home</string>
+	<string>Single</string>
 	<key>Default Bookmark Guid</key>
 	<string>A79A78D6-0857-4856-9B2F-2A6318C25688</string>
 	<key>DimBackgroundWindows</key>
@@ -1606,11 +1606,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>268 186 606 469 0 0 1920 1178 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>562 618 796 486 0 0 1920 1200 </string>
+	<string>562 487 937 464 0 0 1920 1177 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>2047 541 592 584 1920 97 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1920 1200 0 0 1920 1178 </string>
+	<string>0 0 1920 1177 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 228 1920 950 0 0 1920 1178 </string>
 	<key>NeverWarnAboutShortLivedSessions_A79A78D6-0857-4856-9B2F-2A6318C25688</key>
@@ -3183,6 +3183,8 @@
 	</array>
 	<key>NoSyncConfirmBeta</key>
 	<true/>
+	<key>NoSyncHaveRequestedFullDiskAccess</key>
+	<true/>
 	<key>NoSyncHaveShownPromoWithId_4</key>
 	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
@@ -3349,7 +3351,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-11-04T22:34:31Z</date>
+	<date>2018-11-04T22:47:38Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -3396,7 +3398,7 @@
 	<string>.AppleSystemUIFont</string>
 	<key>Window Arrangements</key>
 	<dict>
-		<key>Procore-Home</key>
+		<key>Single</key>
 		<array>
 			<dict>
 				<key>Desired Columns</key>
@@ -3406,7 +3408,7 @@
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>1178</real>
+				<real>1177</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -3414,7 +3416,7 @@
 				<key>Is Hotkey Window</key>
 				<false/>
 				<key>Saved Window Type</key>
-				<integer>4</integer>
+				<integer>0</integer>
 				<key>Screen</key>
 				<integer>0</integer>
 				<key>Selected Tab Index</key>
@@ -4229,6 +4231,8 @@
 													<string>\btelnet:([a-z0-9A-Z_]+@)?([a-zA-Z0-9\-]+\.)*[a-zA-Z0-9\-]+\b</string>
 												</dict>
 											</array>
+											<key>Space</key>
+											<integer>0</integer>
 											<key>Sync Title</key>
 											<false/>
 											<key>Tags</key>
@@ -4269,7 +4273,7 @@
 										<key>Bookmark Name</key>
 										<string>Mein</string>
 										<key>Columns</key>
-										<integer>105</integer>
+										<integer>212</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -4277,7 +4281,7 @@
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/iannguyen/Desktop/procore-home</string>
+											<string>~/Desktop/procore-home</string>
 										</dict>
 										<key>Hosts</key>
 										<array/>
@@ -4293,7 +4297,7 @@
 										<key>Session Default Name</key>
 										<string>Mein</string>
 										<key>Session GUID</key>
-										<string>64EA5D41-F62D-4DCD-A0E7-5578D391F744</string>
+										<string>A231B8F0-5B4F-43E3-84CE-8F724F469B1A</string>
 										<key>Session Name</key>
 										<string>Mein</string>
 										<key>Session Window Title</key>
@@ -4301,7 +4305,10 @@
 										<key>Shell Integration Ever Used</key>
 										<false/>
 										<key>Substitutions</key>
-										<dict/>
+										<dict>
+											<key>$$$$</key>
+											<string>$$</string>
+										</dict>
 										<key>Working Directory</key>
 										<string>/Users/iannguyen/Desktop/procore-home</string>
 									</dict>
@@ -4310,9 +4317,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1132</real>
+										<real>1131</real>
 										<key>width</key>
-										<real>955</real>
+										<real>1920</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -4325,27 +4332,27 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>1132</real>
+								<real>1131</real>
 								<key>width</key>
-								<real>955</real>
+								<real>1920</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
 								<real>0.0</real>
 							</dict>
 							<key>isVertical</key>
-							<true/>
+							<false/>
 						</dict>
 					</dict>
 				</array>
 				<key>TerminalGuid</key>
-				<string>pty-F5629C51-62FC-4117-B6B8-71BAF50F72E3</string>
+				<string>pty-8958F989-A82B-4FB5-8112-BB346EF59FB4</string>
 				<key>Width</key>
-				<real>955</real>
+				<real>1920</real>
 				<key>Window Type</key>
-				<integer>4</integer>
+				<integer>0</integer>
 				<key>X Origin</key>
-				<real>2</real>
+				<real>0.0</real>
 				<key>Y Origin</key>
 				<real>0.0</real>
 			</dict>
