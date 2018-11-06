@@ -7,27 +7,16 @@ export TERM=xterm-256color
 
 ##### ZSH #####
 ZSH_THEME="mein"
-# ZSH_THEME="bullet-train/bullet-train"
-BULLETTRAIN_PROMPT_ORDER=(
-  status
-  dir
-  git
-)
-BULLETTRAIN_DIR_BG=yellow
-BULLETTRAIN_DIR_FG=black
-BULLETTRAIN_GIT_BG=blue
-BULLETTRAIN_DIR_EXTENDED=2
 plugins=(git)
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 # User configuration
 source $ZSH/oh-my-zsh.sh
 
 ##### Exports #####
-if [ -f $LUNCHY_DIR/lunchy-completion.zsh ]; then
-  . $LUNCHY_DIR/lunchy-completion.zsh
-fi
 
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND="ag -U --hidden --ignore .git -g ''"
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
@@ -44,6 +33,10 @@ export NVM_DIR="$HOME/.nvm"
 # RBENV
 export PATH="$PATH:$HOME/.rbenv/bin:$HOME/.rbenv/shims:$HOME/usr/local/bin:$HOME/usr/bin:$HOME/bin"
 eval "$(rbenv init -)"
+
+# asdf
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
 
 # Use vim as visual editor
 export VISUAL='nvim'
@@ -95,7 +88,3 @@ alias yrd="yarn run dev"
 
 # linux
 alias lupdate="sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y"
-
-. $HOME/.asdf/asdf.sh
-
-. $HOME/.asdf/completions/asdf.bash
