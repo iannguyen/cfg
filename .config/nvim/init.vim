@@ -239,7 +239,7 @@ set showmatch
 set mat=2
 
 " Ruler
-set colorcolumn=100
+" set colorcolumn=100
 
 " No annoying sound on errors
 set noerrorbells
