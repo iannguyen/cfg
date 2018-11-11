@@ -83,7 +83,6 @@ let g:ack_apply_qmappings = 1
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
-" let g:deoplete#max_processes = 1
 
 " Tell Neosnippet about the other snippets
 let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
@@ -107,11 +106,10 @@ endfunction
 let g:neosnippet#enable_snipmate_compatibility = 1
 
 " NERDTree
-let NERDTreeShowHidden=1
+let g:NERDTreeShowHidden = 1
 let g:NERDSpaceDelims = 1
 let g:NERDTreeWinSize = 35
 let g:NERDTreeWinPos = "right"
-
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -123,12 +121,6 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " JSX
 let g:jsx_ext_required = 0
-
-" IndentLine
-let g:indentLine_enabled = 0
-" let g:indentLine_setConceal = 0
-let g:indentLine_setColors = 0
-let g:indentLine_char = '|'
 
 " Fugitive
 set diffopt+=vertical
