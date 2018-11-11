@@ -268,10 +268,11 @@ nnoremap <C-B> :buffers<CR>:buffer<Space>
 map <Right> :bnext<cr>
 map <Left> :bprevious<cr>
 
-" Bclose
-""""""""""""""""""""
 " Close the current buffer
 map <leader>bd :Bclose<cr>:tabclose<cr>gT
+
+" BufcloseCloseIt
+""""""""""""""""""""
 " Don't close window, when deleting a buffer
 command! Bclose call <SID>BufcloseCloseIt()
 function! <SID>BufcloseCloseIt()
@@ -291,12 +292,6 @@ function! <SID>BufcloseCloseIt()
   if buflisted(l:currentBufNum)
     execute("bdelete! ".l:currentBufNum)
   endif
-endfunction
-
-function! CmdLine(str)
-  exe "menu Foo.Bar :" . a:str
-  emenu Foo.Bar
-  unmenu Foo
 endfunction
 
 " Close all the buffers
@@ -405,6 +400,12 @@ function! VisualSelection(direction, extra_filter) range
 
   let @/ = l:pattern
   let @" = l:saved_reg
+endfunction
+
+function! CmdLine(str)
+  exe "menu Foo.Bar :" . a:str
+  emenu Foo.Bar
+  unmenu Foo
 endfunction
 
 " Misc
