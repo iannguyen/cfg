@@ -72,28 +72,37 @@ filetype plugin indent on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" FZF
-let g:fzf_layout = { 'up': '~40%' }
-
-" Silversearcher & Ack
+" ACK & Silversearcher
 let g:ackprg = 'ag --vimgrep --nogroup --nocolor --column'
 let g:ackhighlight = 1
 let g:ack_qhandler = "botright copen 30"
 let g:ack_apply_qmappings = 1
 
+" ALE
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_text_changed = 'never'
+
 " Deoplete
 let g:deoplete#enable_at_startup = 1
 
-" Tell Neosnippet about the other snippets
-let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+" Emmet
+let g:user_emmet_leader_key='<C-E>'
+let g:emmet_html5 = 0
 
-" Plugin key-mappings.
-" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
+" GitFugitive
+set diffopt+=vertical
 
-" Multiple-cursors/Deoplete
+" FZF
+let g:fzf_layout = { 'up': '~40%' }
+
+" GitGutter
+let g:gitgutter_realtime = 0
+let g:gitgutter_eager = 0
+
+" JSX
+let g:jsx_ext_required = 0
+
+" Multiplecursors & Deoplete
 function! Multiple_cursors_before()
   let b:deoplete_disable_auto_complete = 1
 endfunction
@@ -102,7 +111,12 @@ function! Multiple_cursors_after()
   let b:deoplete_disable_auto_complete = 0
 endfunction
 
-" Enable snipMate compatibility feature.
+" Neosnippet
+let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+imap <C-k><Plug>(neosnippet_expand_or_jump)
+smap <C-k><Plug>(neosnippet_expand_or_jump)
+xmap <C-k><Plug>(neosnippet_expand_target)
 let g:neosnippet#enable_snipmate_compatibility = 1
 
 " NERDTree
@@ -112,30 +126,11 @@ let g:NERDTreeWinSize = 35
 let g:NERDTreeWinPos = "right"
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
 " Jump to the main window.
 autocmd VimEnter * wincmd p
 
 " SuperTAB
 let g:SuperTabDefaultCompletionType = "<c-n>"
-
-" JSX
-let g:jsx_ext_required = 0
-
-" Fugitive
-set diffopt+=vertical
-
-" Emmet
-let g:user_emmet_leader_key='<C-E>'
-let g:emmet_html5 = 0
-
-" GitGutter
-let g:gitgutter_realtime = 0
-let g:gitgutter_eager = 0
-
-" ALE
-let g:ale_lint_on_enter = 0
-let g:ale_lint_on_text_changed = 'never'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
