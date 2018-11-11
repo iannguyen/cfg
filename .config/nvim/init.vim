@@ -110,9 +110,11 @@ endfunction
 let g:neosnippet#enable_snipmate_compatibility = 1
 
 " NERDTree
+let NERDTreeShowHidden=1
 let g:NERDSpaceDelims = 1
 let g:NERDTreeWinSize = 35
 let g:NERDTreeWinPos = "right"
+
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
