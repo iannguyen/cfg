@@ -1,4 +1,5 @@
-##### Colors #####
+##### Terminal #####
+
 # Set CLICOLOR if you want Ansi Colors in iTerm2
 export CLICOLOR=1
 
@@ -11,6 +12,7 @@ plugins=(git)
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
 # User configuration
 source $ZSH/oh-my-zsh.sh
 
@@ -47,44 +49,21 @@ export DISABLE_AUTO_TITLE=true
 
 # terminal
 alias v="nvim"
-alias o="open"
-alias a="atom"
-alias sl="sublime"
-
-# editor
-alias atomfolder="cd ~/.atom"
-alias sublfolder="cd ~/Library/Application\ Support/Sublime\ Text\ 3"
 
 # shell
 alias bshcfg="v ~/.bashrc"
 alias zshcfg="v ~/.zshrc"
 alias gitcfg="v ~/.gitconfig"
-alias gitlst="v ~/.oh-my-zsh/plugins/git/git.plugin.zsh"
 alias nvimcfg="v ~/.config/nvim/init.vim"
 alias ohmyzsh="cd ~/.oh-my-zsh"
 
 # ruby & rails
 alias be="bundle exec"
 alias bi="bundle install"
-alias rake="bundle exec rake"
-alias rdb="bundle exec rails db"
-alias rdbm="bundle exec rake db:migrate"
-alias rdbms="bundle exec rake db:migrate:status"
 alias rc="bundle exec rails console"
 alias rr="bundle exec rails runner"
-alias env_test="RAILS_ENV=test"
-alias env_dev="RAILS_ENV=development"
 alias rs="WEB_ROOT=localhost:3000 bundle exec rails s -b 127.0.0.1"
 alias revive="bundle exec rake db:drop db:create db:structure:load db:migrate db:setup db:test:prepare db:seed"
-
-# rails services
-alias kill3000="kill -9 $(lsof -i tcp:3000 -t)"
-alias startmem="/usr/local/opt/memcached/bin/memcached"
-alias sidekiq="bundle exec sidekiq"
-alias resque="QUEUE=* be rake resque:work"
-
-# yarn
-alias yrd="yarn run dev"
 
 # linux
 alias lupdate="sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y"
