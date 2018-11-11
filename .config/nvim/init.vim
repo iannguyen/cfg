@@ -1,26 +1,6 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Sections:
-"    -> Vundle Settings
-"    -> Plugin Settings
-"    -> General
-"    -> VIM user interface
-"    -> Colors and Fonts
-"    -> Files and backups
-"    -> Text, tab and indent related
-"    -> Visual mode related
-"    -> Moving around, tabs and buffers
-"    -> Status line
-"    -> Editing mappings
-"    -> vimgrep searching and cope displaying
-"    -> Spell checking
-"    -> Misc
-"    -> Helper functions
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vundle Settings
+"================================================================================
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vundle Settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
 filetype off
 
@@ -62,47 +42,55 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-surround'
 
-" Color Schemes
 Plugin 'morhetz/gruvbox'
 Plugin 'mhartington/oceanic-next'
 
 call vundle#end()
 filetype plugin indent on
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugin Settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugin Settings
+"================================================================================
+
 " ACK & Silversearcher
+""""""""""""""""""""""""""""""""""""""""
 let g:ackprg = 'ag --vimgrep --nogroup --nocolor --column'
 let g:ackhighlight = 1
 let g:ack_qhandler = "botright copen 30"
 let g:ack_apply_qmappings = 1
 
 " ALE
+""""""""""""""""""""""""""""""""""""""""
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_text_changed = 'never'
 
 " Deoplete
+""""""""""""""""""""""""""""""""""""""""
 let g:deoplete#enable_at_startup = 1
 
 " Emmet
+""""""""""""""""""""""""""""""""""""""""
 let g:user_emmet_leader_key='<C-E>'
 let g:emmet_html5 = 0
 
 " GitFugitive
+""""""""""""""""""""""""""""""""""""""""
 set diffopt+=vertical
 
 " FZF
+""""""""""""""""""""""""""""""""""""""""
 let g:fzf_layout = { 'up': '~40%' }
 
 " GitGutter
+""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
 
 " JSX
+""""""""""""""""""""""""""""""""""""""""
 let g:jsx_ext_required = 0
 
 " Multiplecursors & Deoplete
+""""""""""""""""""""""""""""""""""""""""
 function! Multiple_cursors_before()
   let b:deoplete_disable_auto_complete = 1
 endfunction
@@ -112,6 +100,7 @@ function! Multiple_cursors_after()
 endfunction
 
 " Neosnippet
+""""""""""""""""""""""""""""""""""""""""
 let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
 " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
 imap <C-k> <Plug>(neosnippet_expand_or_jump)
@@ -120,6 +109,7 @@ xmap <C-k> <Plug>(neosnippet_expand_target)
 let g:neosnippet#enable_snipmate_compatibility = 1
 
 " NERDTree
+""""""""""""""""""""""""""""""""""""""""
 let g:NERDTreeShowHidden = 1
 let g:NERDSpaceDelims = 1
 let g:NERDTreeWinSize = 35
@@ -130,11 +120,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 autocmd VimEnter * wincmd p
 
 " SuperTAB
+""""""""""""""""""""""""""""""""""""""""
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => General
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" General
+"================================================================================
 " Sets how many lines of history VIM has to remember
 set history=500
 
