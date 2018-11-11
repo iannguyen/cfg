@@ -232,6 +232,16 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 set statusline+=%#warningmsg#
 set statusline+=%*
 
+" HasPaste
+""""""""""""""""""""
+" Returns true if paste mode is enabled
+function! HasPaste()
+  if &paste
+    return 'PASTE MODE  '
+  endif
+  return ''
+endfunction
+
 " Key Bindings
 "================================================================================
 
@@ -239,6 +249,8 @@ set statusline+=%*
 nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
 
+" Panes
+""""""""""""""""""""""""""""""""""""""""
 " Move between panes
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -250,17 +262,55 @@ nnoremap <leader>s :split<CR>
 nnoremap <leader>v :vsplit<CR>
 nnoremap <C-B> :buffers<CR>:buffer<Space>
 
+" Buffers
+""""""""""""""""""""""""""""""""""""""""
 " Move between buffers
 map <Right> :bnext<cr>
 map <Left> :bprevious<cr>
 
+" Bclose
+""""""""""""""""""""
 " Close the current buffer
 map <leader>bd :Bclose<cr>:tabclose<cr>gT
+" Don't close window, when deleting a buffer
+command! Bclose call <SID>BufcloseCloseIt()
+function! <SID>BufcloseCloseIt()
+  let l:currentBufNum = bufnr("%")
+  let l:alternateBufNum = bufnr("#")
+
+  if buflisted(l:alternateBufNum)
+    buffer #
+  else
+    bnext
+  endif
+
+  if bufnr("%") == l:currentBufNum
+    new
+  endif
+
+  if buflisted(l:currentBufNum)
+    execute("bdelete! ".l:currentBufNum)
+  endif
+endfunction
+
+function! CmdLine(str)
+  exe "menu Foo.Bar :" . a:str
+  emenu Foo.Bar
+  unmenu Foo
+endfunction
 
 " Close all the buffers
 map <leader>ba :bufdo bd<cr>
 
-" Useful mappings for managing tabs
+" Quickly open a buffer for scribble
+map <leader>q :e ~/buffer<cr>
+
+" Quickly open a markdown buffer for scribble
+map <leader>x :e ~/buffer.md<cr>
+
+" Tabs
+""""""""""""""""""""""""""""""""""""""""
+" Tab management
 map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
@@ -278,6 +328,8 @@ au TabLeave * let g:lasttab = tabpagenr()
 " Opens a new tab with the current buffer's path, useful when editing files in the same directory
 map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
+" Other
+""""""""""""""""""""""""""""""""""""""""
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
@@ -303,28 +355,57 @@ map <leader>sp [s
 map <leader>sa zg
 map <leader>s? z=
 
-" Insert a break point above
-nnoremap <leader>bp :call BreakPointInsert()<CR>
-
-" Quickly open a buffer for scribble
-map <leader>q :e ~/buffer<cr>
-
-" Quickly open a markdown buffer for scribble
-map <leader>x :e ~/buffer.md<cr>
-
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
 " Remove the Windows ^M - when the encodings gets messed up
 noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
 
-" Return to last edit position when opening files (You want this!)
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+" Insert a break point above
+""""""""""""""""""""
+nnoremap <leader>bp :call BreakPointInsert()<CR>
 
-" Visual mode pressing * or # searches for the current selection
-" Super useful! From an idea by Michael Naumann
+function! BreakPointInsert()
+  let g:pry_map = {
+        \ 'ruby' : "require 'pry'; binding.pry",
+        \ 'javascript' : 'debugger;',
+        \ 'javascript.jsx' : 'debugger;',
+        \ 'elixir' : 'require IEx; IEx.pry',
+        \ 'eelixir': '<% require IEx; IEx.pry %>'
+        \}
+
+  if has_key(g:pry_map, &filetype)
+    let text = get(g:pry_map, &filetype)
+    call feedkeys('O', 'i')
+    call feedkeys(text)
+    call feedkeys("\<Esc>")
+  else
+    echo 'No mapping defined for filetype: ' . &filetype
+  endif
+endfunction
+
+" VisualSelection
+""""""""""""""""""""
+" Visual mode pressing * or # searches for the current selection, Super useful! From an idea by Michael Naumann
 vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
 vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
+
+function! VisualSelection(direction, extra_filter) range
+  let l:saved_reg = @"
+  execute "normal! vgvy"
+
+  let l:pattern = escape(@", "\\/.*'$^~[]")
+  let l:pattern = substitute(l:pattern, "\n$", "", "")
+
+  if a:direction == 'gv'
+    call CmdLine("Ack '" . l:pattern . "' " )
+  elseif a:direction == 'replace'
+    call CmdLine("%s" . '/'. l:pattern . '/')
+  endif
+
+  let @/ = l:pattern
+  let @" = l:saved_reg
+endfunction
 
 " Misc
 "================================================================================
@@ -357,8 +438,8 @@ if has("gui_macvim")
   autocmd GUIEnter * set vb t_vb=
 endif
 
-" Helper functions
-"================================================================================
+" Return to last edit position when opening files (You want this!)
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 " Delete trailing white space on save, useful for some filetypes ;)
 fun! CleanExtraSpaces()
@@ -372,74 +453,3 @@ endfun
 if has("autocmd")
   autocmd BufWritePre *.txt,*.js,*.py,*.wiki,*.sh,*.coffee :call CleanExtraSpaces()
 endif
-
-" Returns true if paste mode is enabled
-function! HasPaste()
-  if &paste
-    return 'PASTE MODE  '
-  endif
-  return ''
-endfunction
-
-" Don't close window, when deleting a buffer
-command! Bclose call <SID>BufcloseCloseIt()
-function! <SID>BufcloseCloseIt()
-  let l:currentBufNum = bufnr("%")
-  let l:alternateBufNum = bufnr("#")
-
-  if buflisted(l:alternateBufNum)
-    buffer #
-  else
-    bnext
-  endif
-
-  if bufnr("%") == l:currentBufNum
-    new
-  endif
-
-  if buflisted(l:currentBufNum)
-    execute("bdelete! ".l:currentBufNum)
-  endif
-endfunction
-
-function! CmdLine(str)
-  exe "menu Foo.Bar :" . a:str
-  emenu Foo.Bar
-  unmenu Foo
-endfunction
-
-function! VisualSelection(direction, extra_filter) range
-  let l:saved_reg = @"
-  execute "normal! vgvy"
-
-  let l:pattern = escape(@", "\\/.*'$^~[]")
-  let l:pattern = substitute(l:pattern, "\n$", "", "")
-
-  if a:direction == 'gv'
-    call CmdLine("Ack '" . l:pattern . "' " )
-  elseif a:direction == 'replace'
-    call CmdLine("%s" . '/'. l:pattern . '/')
-  endif
-
-  let @/ = l:pattern
-  let @" = l:saved_reg
-endfunction
-
-function! BreakPointInsert()
-  let g:pry_map = {
-        \ 'ruby' : "require 'pry'; binding.pry",
-        \ 'javascript' : 'debugger;',
-        \ 'javascript.jsx' : 'debugger;',
-        \ 'elixir' : 'require IEx; IEx.pry',
-        \ 'eelixir': '<% require IEx; IEx.pry %>'
-        \}
-
-  if has_key(g:pry_map, &filetype)
-    let text = get(g:pry_map, &filetype)
-    call feedkeys('O', 'i')
-    call feedkeys(text)
-    call feedkeys("\<Esc>")
-  else
-    echo 'No mapping defined for filetype: ' . &filetype
-  endif
-endfunction
