@@ -147,52 +147,45 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 
 let mapleader=" " "Space mapleader for more commands
 
-set autoread " Set to auto read when a file is changed from the outside
+set autoindent                 " Auto indent
+set autoread                   " Set to auto read when a file is changed from the outside
 set backspace=eol,start,indent " Configure backspace so it acts
-set cmdheight=2 " Height of the command bar
-set cursorline " Highlight current line
-set hid " A buffer becomes hidden when it is abandoned
-set history=500 " Sets how many lines of history VIM has to remember
-set hlsearch " Highlight search results
-set ignorecase " Ignore case when searching
-set incsearch " Makes search act like search in modern browsers
-set lazyredraw " Don't redraw while executing macros (good performance config)
-set magic " For regular expressions turn magic on
-set mat=2 " How many tenths of a second to blink when matching brackets
-set number " Show current line number
-set relativenumber " Use relative numbers
-set ruler "Always show current position
-set scrolloff=15 " Set 15 lines to the cursor - when moving vertically using j/k
-set showcmd " Show Commands
-set showmatch " Show matching brackets when text indicator is over them
-set smartcase " When searching try to be smart about cases
-set whichwrap+=<,>,h,l " as it should act
-set wildmenu " Turn on the WiLd menu
-set encoding=utf8 " Set utf8 as standard encoding and en_US as the standard language
-set ffs=unix,dos,mac " Use Unix as the standard file type
-set nobackup
-set nowritebackup
-set noswapfile 
-set expandtab " Use spaces instead of tabs
-set smarttab " Be smart when using tabs ;)
-set shiftwidth=2
-set tabstop=2
+set cmdheight=2                " Height of the command bar
+set clipboard+=unnamedplus     " Yanked text get put onto clipboard
+set cursorline                 " Highlight current line
+set encoding=utf8              " Set utf8 as standard encoding and en_US as the standard language
+set expandtab                  " Use spaces instead of tabs
+set ffs=unix,dos,mac           " Use Unix as the standard file type
+set hid                        " A buffer becomes hidden when it is abandoned
+set history=500                " Sets how many lines of history VIM has to remember
+set hlsearch                   " Highlight search results
+set ignorecase                 " Ignore case when searching
+set incsearch                  " Makes search act like search in modern browsers
+set laststatus=2               " Always show the status line
+set lazyredraw                 " Don't redraw while executing macros (good performance config)
 set linebreak
-set textwidth=500 " Set linebreak for 500 chars
-set autoindent " Auto indent
-set smartindent " Smart indent
-set wrap " Wrap lines
-set splitbelow " New windows as current window"
+set magic                      " For regular expressions turn magic on
+set mat=2                      " How many tenths of a second to blink when matching brackets
+set nobackup
+set noswapfile
+set nowritebackup
+set number                     " Show current line number
+set relativenumber             " Use relative numbers
+set ruler                      " Always show current position
+set scrolloff=15               " Set 15 lines to the cursor - when moving vertically using j/k
+set shiftwidth=2
+set showcmd                    " Show Commands
+set showmatch                  " Show matching brackets when text indicator is over them
+set smartcase                  " When searching try to be smart about cases
+set smartindent                " Smart indent
+set smarttab                   " Be smart when using tabs ;)
+set splitbelow                 " New windows as current window                                    "
 set splitright
-set laststatus=2 " Always show the status line
-
-" Set extra options when running in GUI mode
-if has("gui_running")
-  set guioptions-=T
-  set guioptions-=e
-  set t_Co=256
-  set guitablabel=%M\ %t
-endif
+set tabstop=2
+set textwidth=500              " Set linebreak for 500 chars
+set whichwrap+=<,>,h,l         " as it should act
+set wildmenu                   " Turn on the WiLd menu
+set wrap                       " Wrap lines
 
 " => Interface
 "================================================================================
@@ -207,6 +200,14 @@ endif
 " Enable 256 colors palette in Gnome Terminal
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
+endif
+
+" Set extra options when running in GUI mode
+if has("gui_running")
+  set guioptions-=T
+  set guioptions-=e
+  set t_Co=256
+  set guitablabel=%M\ %t
 endif
 
 set background=dark
@@ -228,15 +229,105 @@ let g:airline#extensions#ale#enabled = 1
 """"""""""""""""""""""""""""""""""""""""
 " Format the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
-" Statusline
 set statusline+=%#warningmsg#
 set statusline+=%*
 
-" Misc
+" Key Bindings
 "================================================================================
 
-" Yanked text get put onto clipboard
-set clipboard+=unnamedplus
+" Turn off highlight on escape
+nnoremap <esc> :noh<return><esc>
+nnoremap <esc>^[ <esc>^[
+
+" Move between panes
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" Pane management
+nnoremap <leader>s :split<CR>
+nnoremap <leader>v :vsplit<CR>
+nnoremap <C-B> :buffers<CR>:buffer<Space>
+
+" Move between buffers
+map <Right> :bnext<cr>
+map <Left> :bprevious<cr>
+
+" Close the current buffer
+map <leader>bd :Bclose<cr>:tabclose<cr>gT
+
+" Close all the buffers
+map <leader>ba :bufdo bd<cr>
+
+" Useful mappings for managing tabs
+map <leader>tn :tabnew<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>tm :tabmove
+
+" Switch between tabs
+nnoremap <Up> :tabprevious<CR>
+nnoremap <Down> :tabnext<CR>
+
+" Let 'tl' toggle between this and the last accessed tab
+let g:lasttab = 1
+nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
+au TabLeave * let g:lasttab = tabpagenr()
+
+" Opens a new tab with the current buffer's path, useful when editing files in the same directory
+map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
+
+" Switch CWD to the directory of the open buffer
+map <leader>cd :cd %:p:h<cr>:pwd<cr>
+
+" Move a line of text using ALT+[jk]
+nmap ∆ mz:m+<cr>`z
+nmap ˚ mz:m-2<cr>`z
+vmap ∆ :m '>+<cr>`<my`>mzgv`yo`z
+vmap ˚ :m '<-2<cr>`>my`<mzgv`yo`z
+
+if has("mac") || has("macunix")
+  nmap <D-j> <M-j>
+  nmap <D-k> <M-k>
+  vmap <D-j> <M-j>
+  vmap <D-k> <M-k>
+endif
+
+" Pressing ,ss will toggle and untoggle spell checking
+map <leader>ss :setlocal spell!<cr>
+
+" Shortcuts using <leader>
+map <leader>sn ]s
+map <leader>sp [s
+map <leader>sa zg
+map <leader>s? z=
+
+" Insert a break point above
+nnoremap <leader>bp :call BreakPointInsert()<CR>
+
+" Quickly open a buffer for scribble
+map <leader>q :e ~/buffer<cr>
+
+" Quickly open a markdown buffer for scribble
+map <leader>x :e ~/buffer.md<cr>
+
+" Toggle paste mode on and off
+map <leader>pp :setlocal paste!<cr>
+
+" Remove the Windows ^M - when the encodings gets messed up
+noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
+
+" Return to last edit position when opening files (You want this!)
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" Visual mode pressing * or # searches for the current selection
+" Super useful! From an idea by Michael Naumann
+vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
+vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
+
+" Misc
+"================================================================================
 
 " Make help windows appear vertical split
 autocmd FileType help wincmd L
@@ -266,75 +357,8 @@ if has("gui_macvim")
   autocmd GUIEnter * set vb t_vb=
 endif
 
-" => Visual mode related
-""""""""""""""""""""""""""""""
-" Visual mode pressing * or # searches for the current selection
-" Super useful! From an idea by Michael Naumann
-vnoremap <silent> * :<C-u>call VisualSelection('', '')<CR>/<C-R>=@/<CR><CR>
-vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
-
-" Key Bindings
-""""""""""""""""""""""""""""""
-nnoremap <esc> :noh<return><esc>
-nnoremap <esc>^[ <esc>^[
-
-" Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
-
-" Close the current buffer
-map <leader>bd :Bclose<cr>:tabclose<cr>gT
-
-" Close all the buffers
-map <leader>ba :bufdo bd<cr>
-
-" Move between buffers
-map <Right> :bnext<cr>
-map <Left> :bprevious<cr>
-
-" Useful mappings for managing tabs
-map <leader>tn :tabnew<cr>
-map <leader>to :tabonly<cr>
-map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove
-
-" Switch between tabs
-nnoremap <Up> :tabprevious<CR>
-nnoremap <Down> :tabnext<CR>
-
-" Pane management
-nnoremap <leader>s :split<CR>
-nnoremap <leader>v :vsplit<CR>
-nnoremap <C-B> :buffers<CR>:buffer<Space>
-
-" Insert a break point above
-nnoremap <leader>bp :call BreakPointInsert()<CR>
-
-" Let 'tl' toggle between this and the last accessed tab
-let g:lasttab = 1
-nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
-au TabLeave * let g:lasttab = tabpagenr()
-
-" Opens a new tab with the current buffer's path,useful when editing files in the same directory
-map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
-
-" Switch CWD to the directory of the open buffer
-map <leader>cd :cd %:p:h<cr>:pwd<cr>
-
-" Move a line of text using ALT+[jk]
-nmap ∆ mz:m+<cr>`z
-nmap ˚ mz:m-2<cr>`z
-vmap ∆ :m '>+<cr>`<my`>mzgv`yo`z
-vmap ˚ :m '<-2<cr>`>my`<mzgv`yo`z
-
-if has("mac") || has("macunix")
-  nmap <D-j> <M-j>
-  nmap <D-k> <M-k>
-  vmap <D-j> <M-j>
-  vmap <D-k> <M-k>
-endif
+" Helper functions
+"================================================================================
 
 " Delete trailing white space on save, useful for some filetypes ;)
 fun! CleanExtraSpaces()
@@ -348,33 +372,6 @@ endfun
 if has("autocmd")
   autocmd BufWritePre *.txt,*.js,*.py,*.wiki,*.sh,*.coffee :call CleanExtraSpaces()
 endif
-
-" Pressing ,ss will toggle and untoggle spell checking
-map <leader>ss :setlocal spell!<cr>
-
-" Shortcuts using <leader>
-map <leader>sn ]s
-map <leader>sp [s
-map <leader>sa zg
-map <leader>s? z=
-
-" Remove the Windows ^M - when the encodings gets messed up
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
-
-" Quickly open a buffer for scribble
-map <leader>q :e ~/buffer<cr>
-
-" Quickly open a markdown buffer for scribble
-map <leader>x :e ~/buffer.md<cr>
-
-" Toggle paste mode on and off
-map <leader>pp :setlocal paste!<cr>
-
-" Return to last edit position when opening files (You want this!)
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-
-" Helper functions
-"================================================================================
 
 " Returns true if paste mode is enabled
 function! HasPaste()
