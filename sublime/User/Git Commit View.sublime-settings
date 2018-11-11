@@ -1,5 +1,0 @@
-// These settings override both User and Default settings for the Git Commit View syntax
-{
-    "color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
-
-}
