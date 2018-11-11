@@ -51,6 +51,8 @@ filetype plugin indent on
 " Plugin Settings
 "================================================================================
 
+let mapleader=" "
+
 " ACK & Silversearcher
 """"""""""""""""""""""""""""""""""""""""
 let g:ackprg = 'ag --vimgrep --nogroup --nocolor --column'
@@ -144,8 +146,6 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " General
 "================================================================================
-
-let mapleader=" " "Space mapleader for more commands
 
 set autoindent                 " Auto indent
 set autoread                   " Set to auto read when a file is changed from the outside
@@ -260,7 +260,6 @@ map <C-l> <C-W>l
 " Pane management
 nnoremap <leader>s :split<CR>
 nnoremap <leader>v :vsplit<CR>
-nnoremap <C-B> :buffers<CR>:buffer<Space>
 
 " Buffers
 """"""""""""""""""""""""""""""""""""""""
