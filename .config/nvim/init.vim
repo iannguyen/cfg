@@ -1,4 +1,4 @@
-" Vundle Settings
+" VUNDLE
 "================================================================================
 
 set nocompatible
@@ -48,7 +48,7 @@ Plugin 'mhartington/oceanic-next'
 call vundle#end()
 filetype plugin indent on
 
-" Plugin Settings
+" PLUGINS
 "================================================================================
 
 let mapleader=" "
@@ -144,7 +144,7 @@ nmap ,m :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""""""""""""
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
-" General
+" GENERAL
 "================================================================================
 
 set autoindent                 " Auto indent
@@ -187,7 +187,7 @@ set whichwrap+=<,>,h,l         " as it should act
 set wildmenu                   " Turn on the WiLd menu
 set wrap                       " Wrap lines
 
-" => Interface
+" => INTERFACE
 "================================================================================
 
 syntax enable " Enable syntax highlighting
@@ -242,7 +242,7 @@ function! HasPaste()
   return ''
 endfunction
 
-" Key Bindings
+" KEY BINDINGS
 "================================================================================
 
 " Turn off highlight on escape
@@ -407,7 +407,7 @@ function! CmdLine(str)
   unmenu Foo
 endfunction
 
-" Misc
+" MISC
 "================================================================================
 
 " Make help windows appear vertical split
