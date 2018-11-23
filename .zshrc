@@ -66,4 +66,4 @@ alias rs="WEB_ROOT=localhost:3000 bundle exec rails s -b 127.0.0.1"
 alias revive="bundle exec rake db:drop db:create db:structure:load db:migrate db:setup db:test:prepare db:seed"
 
 # linux
-alias lupdate="sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y"
+alias lupdate="sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt install -f && sudo apt autoclean -y && sudo apt autoremove -y"

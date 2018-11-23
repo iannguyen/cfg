@@ -4,7 +4,8 @@ clear
 echo "============================================================"
 echo "INSTALLING DEPENDENCIES"
 echo "============================================================"
-sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev libpq-dev inotify-tools -y
+cd
+sudo apt install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev libreadline-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm-dev libpq-dev inotify-tools -f -y
 
 echo "============================================================"
 echo "INSTALLING POSTGRES"
@@ -24,9 +25,9 @@ git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 echo "============================================================"
 echo "INSTALLING RUBY"
 echo "============================================================"
-rbenv install 2.5.1 --verbose
+rbenv install 2.5.3 --verbose
 rbenv rehash
-rbenv global 2.5.1
+rbenv global 2.5.3
 source ~/.zshrc
 gem install bundler
 gem install pry
@@ -34,12 +35,18 @@ gem install pry
 echo "============================================================"
 echo "INSTALLING NVM"
 echo "============================================================"
-sudo apt-get install build-essential libssl-dev
+sudo apt install build-essential libssl-dev -f -y
+mkdir .nvm
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 source ~/.zshrc
 nvm install node
 nvm use node
 source ~/.zshrc
+
+echo "============================================================"
+echo "INSTALLING asdf"
+echo "============================================================"
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.6.1
 
 echo "============================================================"
 echo "RUNNING APT AUTOREMOVE"
