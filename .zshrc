@@ -67,3 +67,6 @@ alias revive="bundle exec rake db:drop db:create db:structure:load db:migrate db
 
 # linux
 alias lupdate="sudo apt update -y && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo apt install -f && sudo apt autoclean -y && sudo apt autoremove -y"
+
+# kubs
+export PATH=$HOME/bin:$PATH

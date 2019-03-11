@@ -40,6 +40,7 @@ git clone https://github.com/iannguyen/cfg.git ~/Desktop/cfg
 mkdir ~/.oh-my-zsh/custom/themes
 ln -sf ~/Desktop/cfg/.oh-my-zsh/custom/themes/mein.zsh-theme ~/.oh-my-zsh/custom/themes/mein.zsh-theme
 ln -sf ~/Desktop/cfg/.zshrc
+ln -sf ~/Desktop/cfg/.ignore ~/
 
 echo "============================================================"
 echo "INSTALLING SILVER SEARCHER"
