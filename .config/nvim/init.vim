@@ -140,6 +140,10 @@ autocmd VimEnter * wincmd p
 nmap ,n :NERDTreeFind<CR>
 nmap ,m :NERDTreeToggle<CR>
 
+" NERDTree
+""""""""""""""""""""""""""""""""""""""""
+let b:surround_indent = 0
+
 " SuperTAB
 """"""""""""""""""""""""""""""""""""""""
 let g:SuperTabDefaultCompletionType = "<c-n>"
@@ -170,7 +174,7 @@ set nobackup
 set noswapfile
 set nowritebackup
 set number                     " Show current line number
-set relativenumber             " Use relative numbers
+" set relativenumber             " Use relative numbers
 set ruler                      " Always show current position
 set scrolloff=15               " Set 15 lines to the cursor - when moving vertically using j/k
 set shiftwidth=2
