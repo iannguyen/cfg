@@ -73,6 +73,10 @@ nnoremap <leader>a :ArgWrap<CR>
 """"""""""""""""""""""""""""""""""""""""
 let g:deoplete#enable_at_startup = 1
 
+call deoplete#custom#option({
+      \ 'auto_refresh_delay': 0
+      \ })
+
 " Emmet
 """"""""""""""""""""""""""""""""""""""""
 let g:user_emmet_leader_key='<C-E>'
@@ -217,7 +221,7 @@ endif
 set background=dark
 
 try
-  colorscheme OceanicNext
+  colorscheme oceanicnext
 catch
 endtry
 
