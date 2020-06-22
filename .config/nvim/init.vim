@@ -10,7 +10,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'mileszs/ack.vim'
-Plugin 'w0rp/ale'
+Plugin 'dense-analysis/ale'
 Plugin 'rrrene/credo'
 Plugin 'raimondi/delimitmate'
 Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -34,7 +34,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'ludovicchabant/vim-gutentags'
 Plugin 'jeetsukumaran/vim-indentwise'
 Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
+Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-repeat'
@@ -180,6 +180,7 @@ set nowritebackup
 set number                     " Show current line number
 " set relativenumber             " Use relative numbers
 set ruler                      " Always show current position
+" set colorcolumn=80             " For max line length
 set scrolloff=15               " Set 15 lines to the cursor - when moving vertically using j/k
 set shiftwidth=2
 set showcmd                    " Show Commands
@@ -219,16 +220,18 @@ if has("gui_running")
 endif
 
 set background=dark
+let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_sign_column='dark0_hard'
 
 try
-  colorscheme oceanicnext
+  colorscheme gruvbox
 catch
 endtry
 
 " Airline
 """"""""""""""""""""""""""""""""""""""""
 let g:airline_powerline_fonts = 1
-let g:airline_theme='oceanicnext'
+let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_splits = 1
 let g:airline#extensions#ale#enabled = 1
